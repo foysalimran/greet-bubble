@@ -3,7 +3,7 @@
 Plugin Name:  Greet Bubble
 Plugin URI:   https://themeatelier.net/plugins/greet/
 Description:  Professional video bubble plugin for putting videos on your website in a great and fun way.
-Version:      1.0.2
+Version:      1.0.3
 Author:       ThemeAtelier
 Author URI:   https://themeatelier.net/
 License:      GPL2

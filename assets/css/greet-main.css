@@ -143,3 +143,32 @@
     height: 350px;
   }
 }
+
+
+.greet-external-buttons {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  display:none;
+  transition: 0.5s;
+}
+.greet_wrapper-full .greet-external-buttons{
+  display:flex;
+  bottom: 0px;
+}
+.greet-external-buttons a {
+  background: #7432ff;
+  padding: 8px 18px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.greet-external-buttons a:hover {
+  background: black;
+}

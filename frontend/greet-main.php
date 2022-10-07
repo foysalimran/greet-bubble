@@ -58,6 +58,13 @@ function greet_plugin_content()
                 <i class="icofont-expand"></i>
             </div>
         </div>
+
+        <div class="greet-external-buttons">
+            <a href="greet-external-buttons--single" href="#">Click here</a>
+            <a href="greet-external-buttons--single" href="#">Submit quote</a>
+            <a href="greet-external-buttons--single" href="#">Contact us</a>
+        </div>
+
     </div>
 </div>
 <style>
