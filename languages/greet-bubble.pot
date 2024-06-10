@@ -1,0 +1,357 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Greet Bubble\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-10 10:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.9; wp-6.5.4\n"
+"X-Domain: greet-bubble"
+
+#: admin/greet-bubble-options.php:59 admin/greet-bubble-options.php:92
+#: admin/greet-bubble-options.php:119
+msgid ""
+"Add button text here. If you don't want to show the button just keep it "
+"blank."
+msgstr ""
+
+#: admin/greet-bubble-options.php:67
+msgid ""
+"Add link for opening as external link on first button click. Remove link if "
+"you want to load second video instead of link."
+msgstr ""
+
+#: admin/greet-bubble-options.php:321
+msgid "Additional CSS"
+msgstr ""
+
+#: admin/greet-bubble-options.php:330
+msgid "Additional JS"
+msgstr ""
+
+#: admin/greet-bubble-options.php:315
+msgid "ADVANCED"
+msgstr ""
+
+#: admin/greet-bubble-options.php:151
+msgid "APPEARANCE"
+msgstr ""
+
+#: admin/greet-bubble-options.php:242
+msgid "Background hover"
+msgstr ""
+
+#: admin/greet-bubble-options.php:240
+msgid "Backorund"
+msgstr ""
+
+#: admin/greet-bubble-options.php:342
+msgid "BACKUP"
+msgstr ""
+
+#: admin/greet-bubble-options.php:210
+msgid "Border Color"
+msgstr ""
+
+#: admin/greet-bubble-options.php:181
+msgid "Bubble position"
+msgstr ""
+
+#: admin/greet-bubble-options.php:66
+msgid "Button link"
+msgstr ""
+
+#: admin/greet-bubble-options.php:230
+msgid "Button radius"
+msgstr ""
+
+#: admin/greet-bubble-options.php:58
+msgid "Button text"
+msgstr ""
+
+#: admin/greet-bubble-options.php:218
+msgid "Button type"
+msgstr ""
+
+#: admin/greet-bubble-options.php:238
+msgid "Buttons colors"
+msgstr ""
+
+#: admin/greet-bubble-options.php:211
+msgid "Change bubble border color here"
+msgstr ""
+
+#: admin/greet-bubble-options.php:165
+msgid "Change small hello text here"
+msgstr ""
+
+#: admin/greet-bubble-options.php:271
+msgid "CONTROLS"
+msgstr ""
+
+#: admin/greet-bubble-options.php:42
+msgid "Default video poster"
+msgstr ""
+
+#: admin/greet-bubble-options.php:158
+msgid ""
+"Explore the benefits of upgrading to the professional version by <a "
+"target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>"
+"clicking here</i></strong></a>."
+msgstr ""
+
+#: admin/greet-bubble-options.php:344
+msgid "Export or import to use same settings in different websites."
+msgstr ""
+
+#: admin/greet-bubble-options.php:136
+msgid "Fourth video on button click (mp4)"
+msgstr ""
+
+#: admin/greet-bubble-options.php:355
+msgid "GET HELP"
+msgstr ""
+
+#: greet-bubble.php:56
+msgid "Go Pro!"
+msgstr ""
+
+#: admin/greet-bubble-options.php:16
+msgid "Greet"
+msgstr ""
+
+#. Name of the plugin
+msgid "Greet Bubble"
+msgstr ""
+
+#: admin/greet-bubble-options.php:14
+msgid "Greet video"
+msgstr ""
+
+#: admin/greet-bubble-options.php:167
+msgid "Hello"
+msgstr ""
+
+#: admin/greet-bubble-options.php:164
+msgid "Hi text Input"
+msgstr ""
+
+#: admin/greet-bubble-options.php:174
+msgid "Hi text typography"
+msgstr ""
+
+#: admin/greet-bubble-options.php:194
+msgid "Hide for session"
+msgstr ""
+
+#: admin/greet-bubble-options.php:301
+msgid "Hide fullscreen control"
+msgstr ""
+
+#: admin/greet-bubble-options.php:291
+msgid "Hide mute/unmute control"
+msgstr ""
+
+#: admin/greet-bubble-options.php:281
+msgid "Hide re-play control"
+msgstr ""
+
+#: admin/greet-bubble-options.php:243
+msgid "Hover text color"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://themeatelier.net/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wp-plugins.themeatelier.net/greet/"
+msgstr ""
+
+#: admin/greet-bubble-options.php:83
+msgid "If you add video here the video will play on first button click"
+msgstr ""
+
+#: admin/greet-bubble-options.php:52
+msgid ""
+"If you do not have a mp4 video you may use <a href=\"http://www.freeconvert."
+"com\" target=\"_blank\">this website</a> to convert your current version of "
+"video."
+msgstr ""
+
+#: admin/greet-bubble-options.php:19
+msgid ""
+"If you love the plugin don't forgot to add a review at <a target=\"_blank\" "
+"href=\"https://wordpress.org/support/plugin/greet-bubble/reviews/#new-post\">"
+"WordPress plugin repository</a>. "
+msgstr ""
+
+#: admin/greet-bubble-options.php:185
+msgid "Left"
+msgstr ""
+
+#: admin/greet-bubble-options.php:61
+msgid "Make a booking"
+msgstr ""
+
+#: admin/greet-bubble-options.php:286 admin/greet-bubble-options.php:296
+#: admin/greet-bubble-options.php:306
+msgid "No"
+msgstr ""
+
+#: admin/greet-bubble-options.php:202
+msgid "Pause video when leaving page"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Professional video bubble plugin for putting videos on your website in a "
+"great and fun way."
+msgstr ""
+
+#: admin/greet-bubble-options.php:100
+msgid ""
+"Put link for opening as external link on second button click. Remove link if "
+"you want to load third video instead of link."
+msgstr ""
+
+#: admin/greet-bubble-options.php:127
+msgid ""
+"Put link for opening as external link on third button click. Remove link if "
+"you want to load fourth video instead of link"
+msgstr ""
+
+#: admin/greet-bubble-options.php:184
+msgid "Right"
+msgstr ""
+
+#: admin/greet-bubble-options.php:221
+msgid "Rounded"
+msgstr ""
+
+#: admin/greet-bubble-options.php:99
+msgid "Second button link"
+msgstr ""
+
+#: admin/greet-bubble-options.php:91
+msgid "Second button text"
+msgstr ""
+
+#: admin/greet-bubble-options.php:82
+msgid "Second video on first button click (mp4)"
+msgstr ""
+
+#: admin/greet-bubble-options.php:182
+msgid "Select bubble position you want to show"
+msgstr ""
+
+#: admin/greet-bubble-options.php:262
+msgid "Select pages"
+msgstr ""
+
+#: greet-bubble.php:45
+msgid "Settings"
+msgstr ""
+
+#: admin/greet-bubble-options.php:256
+msgid "Show Specefic pages only"
+msgstr ""
+
+#: admin/greet-bubble-options.php:43
+msgid ""
+"Specifies an image to be shown while the video is downloading, or until the "
+"user hits the play button. If this is not included, the first frame of the "
+"video will be used instead."
+msgstr ""
+
+#: admin/greet-bubble-options.php:220
+msgid "Square"
+msgstr ""
+
+#: admin/greet-bubble-options.php:241
+msgid "Text color"
+msgstr ""
+
+#. Author of the plugin
+msgid "ThemeAtelier"
+msgstr ""
+
+#: admin/greet-bubble-options.php:126
+msgid "Third button link"
+msgstr ""
+
+#: admin/greet-bubble-options.php:118
+msgid "Third button text"
+msgstr ""
+
+#: admin/greet-bubble-options.php:109
+msgid "Third video on button click (mp4)"
+msgstr ""
+
+#: admin/greet-bubble-options.php:110
+msgid "This video will play on second button click."
+msgstr ""
+
+#: admin/greet-bubble-options.php:137
+msgid "This video will play on third button click."
+msgstr ""
+
+#: admin/greet-bubble-options.php:173
+msgid ""
+"To unlock These Typography (940+ Google Fonts) options, <a target=\"_blank\" "
+"href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i>"
+"</strong></a>"
+msgstr ""
+
+#: admin/greet-bubble-options.php:203
+msgid "Turn on the option to pause video if they switch browser tab. "
+msgstr ""
+
+#: admin/greet-bubble-options.php:195
+msgid ""
+"Turn on to hide permenently for this session of user visit on close button "
+"click. <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong>"
+"<i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: admin/greet-bubble-options.php:35
+msgid "UPLOAD VIDEO"
+msgstr ""
+
+#: admin/greet-bubble-options.php:51
+msgid "Upload Video (mp4)*"
+msgstr ""
+
+#: admin/greet-bubble-options.php:278
+msgid ""
+"Want essential controls over your <strong>Greet bubble</strong>? <a "
+"href=\"https://1.envato.market/gbdm79\" target=\"_blank\"><b>Upgrade To Pro!"
+"</b></a>"
+msgstr ""
+
+#: admin/greet-bubble-options.php:76
+msgid ""
+"Want to add multiple video with multiple button control over your <strong>"
+"Greet Bubble</strong>? <a href=\"https://1.envato.market/gbdm79\" "
+"target=\"_blank\"><b>Upgrade To Pro!</b></a>."
+msgstr ""
+
+#: admin/greet-bubble-options.php:263
+msgid ""
+"Want to show your <strong>Greet Bubble</srong> on specefic page only? <a "
+"target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade "
+"To Pro!</i></strong></a>"
+msgstr ""
+
+#: admin/greet-bubble-options.php:285 admin/greet-bubble-options.php:295
+#: admin/greet-bubble-options.php:305
+msgid "Yes"
+msgstr ""
