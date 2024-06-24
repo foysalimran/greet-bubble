@@ -3,7 +3,7 @@
 Plugin Name:  Greet Bubble
 Plugin URI:   https://wp-plugins.themeatelier.net/greet/
 Description:  Professional video bubble plugin for putting videos on your website in a great and fun way.
-Version:      3.6.1
+Version:      3.6.2
 Author:       ThemeAtelier
 Author URI:   https://themeatelier.net/
 License:      GPL2
@@ -37,6 +37,7 @@ if (!defined('GREET_DIR_PATH'))
 if (!defined('GREET_DIR_URL'))
     define('GREET_DIR_URL', plugin_dir_url(__FILE__));
 
+
 // Plugin settings in plugin list
 add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'greet_settings_link');
 function greet_settings_link(array $links)
@@ -58,6 +59,7 @@ function greet_pro_link(array $links)
     return $links;
 }
 
+
 // Require files
 require_once dirname(__FILE__) . '/admin/greet-framework/classes/setup.class.php'; // greet setup
 require_once dirname(__FILE__) . '/admin/greet-bubble-options.php'; // Greet options
@@ -77,5 +79,4 @@ function greet_video_bubble_appsero_init()
     // Active insights
     $client->insights()->init();
 }
-
 greet_video_bubble_appsero_init();

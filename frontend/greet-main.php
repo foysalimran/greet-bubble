@@ -45,6 +45,8 @@ function greet_plugin_content()
 {
     // Greet options
     $options = get_option('_greet');
+   
+    $greet_button_target = isset($options['button_link']['target']) ? $options['button_link']['target'] : '_self';
 ?>
 
     <?php if (!empty($options['mp4']['url'])) : ?>
@@ -82,7 +84,7 @@ function greet_plugin_content()
                     <?php if ($options['button_text']) {  ?>
                         <div class="greet_video">
                             <?php if ($options['button_text']) {  ?>
-                                <a target="_blank" href="<?php echo esc_attr($options['button_link']['url']) ?>"><?php echo esc_html($options['button_text']) ?></a>
+                                <a target="<?php echo esc_attr($greet_button_target); ?>" href="<?php echo esc_attr($options['button_link']['url']) ?>"><?php echo esc_html($options['button_text']) ?></a>
                             <?php } ?>
                         </div>
                     <?php } ?>

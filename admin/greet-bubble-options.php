@@ -11,7 +11,7 @@ $prefix = '_greet';
 // Create options
 //
 GREET::createOptions($prefix, array(
-    'menu_title' => esc_html__('Greet video', 'greet-bubble'),
+    'menu_title' => esc_html__('Greet Video', 'greet-bubble'),
     'menu_slug'  => 'greet-options',
     'framework_title'   => esc_html__('Greet', 'greet-bubble'),
     'show_bar_menu' => false,

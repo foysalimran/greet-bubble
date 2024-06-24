@@ -4,7 +4,7 @@ Donate link: https://1.envato.market/gbdm79
 Tags: Welcome, Video, Engagement, greetings, introduce
 Requires at least: 5.0
 Tested up to: 6.5.4
-Stable tag: 3.6.1
+Stable tag: 3.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -182,4 +182,8 @@ Greet 3.4.7
 3.6.1
 1. Updated language file for latest language strings
 2. Added plugin short description as per WordPress recommendation
+
+3.6.2
+1. Fixed: Button link target issue 
+
 == Upgrade Notice ==
