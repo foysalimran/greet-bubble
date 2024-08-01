@@ -25,6 +25,45 @@ Whether you're looking to increase engagement, build brand awareness, or simply 
 == Video demo ==
 [youtube https://youtu.be/3LbuUw7SdNQ]
 
+== HERE’S WHAT USERS SAY ABOUT "Greet.wp - Video bubble WordPress plugin" ==
+
+>😻 __for Customer Support__
+
+>Awesome, i love this one and the support is awesome! Thank you so much for your nice work!
+- By @AroundWorld
+
+>😻 __for Design Quality__
+
+>I like the plugin.
+Easy to install and configure.
+Nice experience!
+- By @rainerruff
+
+>😻 __for Feature Availability__
+
+>great plugin for adding conversions to your website
+- By @Steveeb
+
+>😻 __for Customer Support__
+
+>Great developer. After purchasing the plugin, some errors were found, which the author quickly corrected. At the moment, this is the best plugin for video greetings. Works with the Avada theme 100 percent
+- By @son185
+
+>😻 __for Feature Availability__
+
+>Hi - this plugin is awesome, and just what I needed without monthly fees. Keep up the good work. You can see an example on my homepage here: www.firmafotografering.dk
+- By @firmafotografering
+
+>😻 __for Feature Availability__
+
+>This plugin is wonderful! It is possible to place different bubble videos within posts or pages. For example, on the HOME page I place bubble video 1. On the CONTACT page I place bubble video 2 and so on. We can also put up to 4 videos or links in the same bubble, which is fantastic. Bubble customization is also possible, which makes it easy to match the style of the site. The possibilities are endless and the best, without paying abusive monthly fees for it. The developer is very attentive and helpful. I loved the plugin and recommend it to anyone looking for a solution like this.
+- By @angelotaquari
+
+>😻 __for Feature Other__
+
+>I loved it, super simple and very useful!
+- By @mariavaleria
+
 == CORE FEATURES ==
 
 👉 Show a intro video about your product or service with a external button.
