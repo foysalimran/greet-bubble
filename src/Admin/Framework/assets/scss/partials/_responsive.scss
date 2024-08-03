@@ -1,0 +1,157 @@
+/**
+ * 12. Responsive
+ */
+@media only screen and (max-width:1200px){
+
+  .greet-bubble-metabox{
+
+    .greet-bubble-field{
+
+      .greet-bubble-title{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .greet-bubble-fieldset{
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:782px){
+
+  .greet-bubble-header-inner{
+    text-align: center;
+
+    h1{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .greet-bubble-form-result{
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .greet-bubble-search,
+  .greet-bubble-header-right,
+  .greet-bubble-header-left{
+    width: 100%;
+  }
+
+  .greet-bubble-search{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .greet-bubble-footer{
+    text-align: center;
+  }
+
+  .greet-bubble-buttons{
+    float: none;
+  }
+
+  .greet-bubble-copyright{
+    float: none;
+    margin-top: 10px;
+  }
+
+  .greet-bubble-nav,
+  .greet-bubble-expand-all,
+  .greet-bubble-reset-section,
+  .greet-bubble-nav-background{
+    display: none !important;
+  }
+
+  .greet-bubble-nav-normal + .greet-bubble-content{
+    margin-left: 0;
+  }
+
+  .greet-bubble-section-title,
+  .greet-bubble-section{
+    display: block !important;
+  }
+
+  .greet-bubble-field{
+
+    .greet-bubble-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .greet-bubble-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .greet-bubble-field-color{
+
+    .button.wp-picker-clear{
+      padding: 0 8px;
+      line-height: 2.14285714;
+      min-height: 32px;
+    }
+  }
+
+  .greet-bubble-profile-options,
+  .greet-bubble-taxonomy-edit-fields{
+
+    > .greet-bubble-field{
+
+      > .greet-bubble-title{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      > .greet-bubble-fieldset{
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .greet-bubble-nav-menu-options{
+
+    > .greet-bubble-fields{
+      margin-left: -10px;
+      margin-right: -10px;
+
+      > .greet-bubble-field{
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 782px) {
+
+  .greet-bubble-modal{
+
+    .greet-bubble-modal-inner{
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-height: 750px) {
+
+  .greet-bubble-modal{
+
+    .greet-bubble-modal-inner{
+      height: auto;
+    }
+
+    .greet-bubble-modal-content{
+      height: calc(100vh - 200px);
+    }
+  }
+}

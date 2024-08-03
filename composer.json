@@ -1,0 +1,18 @@
+{
+    "name": "themeatelier/greet-bubble",
+    "description": "Professional video bubble plugin for putting videos on your website in a great and fun way.",
+    "type": "wordpress-plugins",
+    "license": "GPL-2.0+",
+    "autoload": {
+        "psr-4": {
+            "ThemeAtelier\\GreetBubble\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ThemeAtelier",
+            "email": "themeatelierbd@gmail.com"
+        }
+    ],
+    "require": {}
+}

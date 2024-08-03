@@ -1,0 +1,185 @@
+/**
+ * 05. Widget
+ */
+.control-section{
+
+  .greet-bubble-field{
+    padding: 0;
+
+    .greet-bubble-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 6px;
+
+      h4{
+        display: block;
+        font-size: 13px;
+        line-height: 1;
+        font-weight: 600;
+        color: inherit;
+      }
+    }
+
+    .greet-bubble-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .greet-bubble-help{
+    top: -5px;
+    right: -5px;
+  }
+
+  .greet-bubble-field-select select{
+    width: 100%;
+  }
+
+  .greet-bubble-field-heading{
+    color: inherit;
+    font-size: 14px;
+    line-height: 1em;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 15px;
+  }
+
+  .greet-bubble-field-subheading{
+    color: inherit;
+    font-size: 11px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 10px 15px;
+  }
+
+  .greet-bubble-subtitle-text{
+    margin-top: 4px;
+    font-size: 12px;
+  }
+
+  .greet-bubble-field-submessage .greet-bubble-submessage{
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 15px;
+  }
+
+  .greet-bubble-fieldset{
+
+    .greet-bubble-field-submessage .greet-bubble-submessage,
+    .greet-bubble-field-heading,
+    .greet-bubble-field-subheading{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .greet-bubble-field-date,
+  .greet-bubble-field-datetime{
+
+    label{
+      display: block;
+    }
+
+    .greet-bubble--to{
+      margin-top: 4px;
+      margin-left: 0;
+    }
+  }
+
+  .greet-bubble-field-sorter{
+
+    ul li{
+      padding: 5px;
+    }
+
+    .greet-bubble-modules{
+      float: none;
+      width: 100%;
+    }
+
+    .greet-bubble-modules:first-child{
+      padding-right: 0;
+      padding-bottom: 15px;
+    }
+  }
+
+  .greet-bubble-field-background{
+
+    .greet-bubble--background-attributes{
+      flex-direction: column;
+    }
+  }
+
+  .greet-bubble-field-spacing{
+    input{
+      width: 90px;
+    }
+  }
+
+  .greet-bubble-field-border{
+
+    .greet-bubble--input{
+      flex: 1 50%;
+    }
+
+    input,
+    select{
+      width: 100%;
+    }
+  }
+
+  .greet-bubble-field-spinner{
+    input{
+      width: 50px;
+    }
+  }
+
+  .greet-bubble-field-number{
+
+    .greet-bubble--wrap{
+      width: 100%;
+    }
+  }
+
+  .greet-bubble-field-backup{
+
+    .greet-bubble-export-data{
+      display: none;
+    }
+  }
+
+  .greet-bubble-field-fieldset{
+
+    .greet-bubble-fieldset-content{
+      border-color: #e5e5e5;
+    }
+  }
+
+  .greet-bubble-tabbed-content,
+  .greet-bubble-sortable-content,
+  .greet-bubble-repeater-content,
+  .greet-bubble-fieldset-content,
+  .greet-bubble-cloneable-content,
+  .greet-bubble-accordion-content{
+
+    > .greet-bubble-field{
+      padding: 10px;
+
+      .greet-bubble-title{
+        margin-bottom: 5px;
+      }
+
+      h4{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .greet-bubble-depend-hidden.greet-bubble-depend-on{
+    display: none !important;
+  }
+
+  .greet-bubble-depend-visible.greet-bubble-depend-on{
+    border-top: 0 !important;
+  }
+}
