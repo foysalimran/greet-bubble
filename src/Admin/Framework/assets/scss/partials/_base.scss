@@ -1,0 +1,470 @@
+/**
+ * 01. Base
+ */
+.greet_bubble{
+  position: relative;
+
+  label{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.greet-bubble-ab-icon{
+  top: 2px;
+}
+
+#screen-meta-links + .greet-bubble-options{
+  margin-top: 40px;
+}
+
+.greet-bubble-options{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/**
+ * 01. 01. Header
+ */
+.greet-bubble-header{
+  position: relative;
+}
+
+.greet-bubble-header-inner{
+  padding: 25px;
+  transition: box-shadow .3s ease;
+
+  h1{
+    float: left;
+    font-size: 1.5em;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0;
+
+    small{
+      font-size: 11px;
+      font-weight: 500;
+    }
+  }
+}
+
+/**
+ * 01. 02. Sticky
+ */
+.greet-bubble-sticky{
+
+  .greet-bubble-header-inner{
+    position: fixed;
+    z-index: 99;
+    top: 32px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+}
+
+/**
+ * 01. 03. Header Buttons
+ */
+.greet-bubble-buttons{
+  float: right;
+
+  .button{
+    margin: 0 2px;
+    line-height: 26px;
+
+    &:focus{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .greet-bubble-save{
+    min-width: 72px;
+  }
+}
+
+.greet-bubble-header-left{
+  float: left;
+}
+
+.greet-bubble-header-right{
+  float: right;
+}
+
+/**
+ * 01. 04. Navigation
+ */
+.greet-bubble-nav{
+  display: block;
+  position: relative;
+  z-index: 10;
+  float: left;
+
+  ul{
+    clear: left;
+    margin: 0;
+    list-style-type: none;
+
+    li{
+      margin-bottom: 0;
+
+      a{
+        font-size: 13px;
+        position: relative;
+        display: block;
+        padding: 14px 12px;
+        text-decoration: none;
+        transition-property: color, background;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+
+        &:focus{
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      .greet-bubble-arrow:after{
+        content: "\f054";
+        display: inline-block;
+        font-family: "IcoFont";
+        font-weight: 900;
+        font-size: 9px;
+        line-height: 1;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -4px;
+      }
+
+      &.greet-bubble-tab-expanded{
+
+        .greet-bubble-arrow:after{
+          transform: rotate(90deg);
+        }
+
+        ul{
+          display: block;
+        }
+      }
+    }
+
+    ul{
+      display: none;
+      position: relative;
+
+      li{
+
+        a{
+          font-size: 12px;
+          padding: 12px 14px 12px 24px;
+        }
+      }
+    }
+  }
+
+  .greet-bubble-tab-icon{
+    width: 20px;
+    margin-right: 5px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .greet-bubble-label-error{
+    margin-left: 4px;
+    vertical-align: top;
+  }
+}
+
+.greet-bubble-nav-normal{
+  width: 225px;
+
+  + .greet-bubble-content{
+    margin-left: 225px;
+  }
+}
+
+.greet-bubble-nav-inline{
+  width: 100%;
+
+  ul{
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+
+.greet-bubble-nav-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 225px;
+}
+
+/**
+ * 01. 05. Wrapper
+ */
+.greet-bubble-wrapper{
+  position: relative;
+}
+
+/**
+ * 01. 06. Content
+ */
+.greet-bubble-content{
+  position: relative;
+  background-color: #fff;
+}
+
+/**
+ * 01. 07. Section
+ */
+.greet-bubble-sections{
+  float: left;
+  width: 100%;
+}
+
+.greet-bubble-section-title{
+  display: none;
+  padding: 20px 30px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  h3{
+    margin: 0;
+    padding: 0 ;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .greet-bubble-section-icon{
+    margin-right: 5px;
+  }
+}
+
+/**
+ * 01. 08. Footer
+ */
+.greet-bubble-footer{
+  padding: 20px;
+  font-size: 11px;
+}
+
+/**
+ * 01. 09. Copyright
+ */
+.greet-bubble-copyright{
+  float: left;
+  margin-top: 5px;
+}
+
+/**
+ * 01. 10. Show All Settings
+ */
+.greet-bubble-search-all,
+.greet-bubble-show-all{
+  .greet-bubble-nav-background,
+  .greet-bubble-nav{
+    display: none;
+  }
+
+  .greet-bubble-content{
+    margin-left: 0;
+  }
+
+  .greet-bubble-section-title,
+  .greet-bubble-section{
+    display: block !important;
+  }
+}
+
+.greet-bubble-search-all{
+  .greet-bubble-section-title{
+    display: none !important;
+  }
+}
+
+//
+// Expand
+//
+.greet-bubble-expand-all{
+  float: left;
+  padding: 0 8px;
+  margin-right: 4px;
+  z-index: 1;
+  font-size: 13px;
+  line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 2px;
+  transition: all .2s;
+
+  span{
+    font-size: 11px;
+    vertical-align: middle;
+  }
+}
+
+/**
+ * 01. 11. Search Input
+ */
+.greet-bubble-search{
+  float: left;
+
+  input{
+    margin: 0 2px 0 0;
+    border: none;
+    font-size: 12px;
+    line-height: 30px;
+    min-height: 30px;
+    text-align: inherit;
+    padding: 0 10px;
+    border-radius: 2px;
+    box-shadow: none;
+
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
+
+.greet-bubble-saving{
+
+  .greet-bubble-buttons,
+  .greet-bubble-content{
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+/**
+ * 01. 12. Metabox
+ */
+.greet-bubble-metabox{
+  margin: -6px -12px -12px -12px;
+
+  .greet-bubble-field{
+    padding: 20px;
+  }
+
+  .greet-bubble-section-title{
+    padding: 20px;
+  }
+}
+
+.block-editor-page{
+
+  .greet-bubble-metabox{
+    margin: -6px -14px -14px -14px;
+  }
+}
+
+.block-editor-editor-skeleton__content{
+
+  .greet-bubble-metabox{
+    border-left: 1px solid #e2e4e7;
+    border-right: 1px solid #e2e4e7;
+  }
+}
+
+.greet-bubble-sections-reset{
+  float: left;
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid #eee;
+
+  .greet-bubble-button-cancel,
+  input{
+    display: none;
+  }
+
+  label{
+    padding: 10px;
+  }
+
+  span{
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+
+  input:checked ~ .greet-bubble-button-reset{
+    display: none;
+  }
+
+  input:checked ~ .greet-bubble-button-cancel{
+    display: inline-block;
+  }
+
+}
+
+#side-sortables{
+
+  .greet-bubble-section-title{
+    padding: 12px;
+  }
+
+  .greet-bubble-field{
+    padding: 10px 15px;
+
+    .greet-bubble-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+
+    .greet-bubble-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .greet-bubble-field-text input{
+    width: 100%;
+  }
+
+  .greet-bubble-notice{
+    padding: 10px 15px;
+  }
+}
+
+/**
+ * 01. 13. Comment Metabox
+ */
+.greet-bubble-comment-metabox{
+  margin: -6px -12px -12px -12px;
+
+  .greet-bubble-field{
+    padding: 20px;
+  }
+
+  .greet-bubble-section-title{
+    padding: 20px;
+  }
+}
+
+
+/**
+ * 01. 14. Help Tooltip
+ */
+.greet-bubble-tooltip{
+  position: absolute;
+  z-index: 5000001;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 12px;
+  max-width: 200px;
+  color: #fff;
+  background-color: #000;
+  background-color: rgba(black, 0.85);
+  border-radius: 4px;
+}
