@@ -12,9 +12,7 @@
  */
 
 namespace ThemeAtelier\GreetBubble\Admin\Views;
-
 use ThemeAtelier\GreetBubble\Admin\Framework\Classes\GREET_BUBBLE;
-use ThemeAtelier\GreetBubble\Admin\Views\GetHelp;
 
 class GreetBubbleOptions
 {
@@ -28,9 +26,9 @@ class GreetBubbleOptions
     public static function options($prefix)
     {
         GREET_BUBBLE::createOptions($prefix, array(
-            'menu_title' => esc_html__('Greet Video', 'greet-bubble'),
+            'menu_title' => esc_html__('Greet Bubble', 'greet-bubble'),
             'menu_slug'  => 'greet-bubble-settings',
-            'framework_title'   => esc_html__('Greet', 'greet-bubble'),
+            'framework_title'   => esc_html__('Greet Bubble', 'greet-bubble'),
             'show_bar_menu' => false,
             'menu_icon' => 'dashicons-format-video',
             'footer_text'             => __('If you love the plugin don\'t forgot to add a review at <a target="_blank" href="https://wordpress.org/support/plugin/greet-bubble/reviews/#new-post">WordPress plugin repository</a>. ', 'greet-bubble'),
@@ -165,7 +163,7 @@ class GreetBubbleOptions
 
         GREET_BUBBLE::createSection($prefix, array(
             'title'       => __('APPEARANCE', 'greet-bubble'),
-            'icon'        => 'icofont-monitor',
+            'icon'        => 'icofont-paint',
             'fields'      => array(
                 array(
                     'type'    => 'notice',
@@ -362,7 +360,6 @@ class GreetBubbleOptions
                 array(
                     'type' => 'backup',
                 ),
-
             )
         ));
 

@@ -3,8 +3,8 @@ Contributors: ThemeAtelier
 Donate link: https://1.envato.market/gbdm79
 Tags: Welcome, Video, Engagement, greetings, introduce
 Requires at least: 5.0
-Tested up to: 6.5.4
-Stable tag: 3.6.2
+Tested up to: 6.6.1
+Stable tag: 4.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,7 +77,16 @@ Nice experience!
 👉 All devices are friendly so users can see this perfectly from any device.
 👉 Can be show bottom right or bottom left side of your website.
 👉 Option to add custom CSS and JS codes from plugin option panel.
-👉 Easy installation
+👉 Multisite Supported.  
+👉 Multilingual Ready.  
+👉 RTL Supported.  
+👉 Compatible with any theme.  
+👉 Developer-friendly & easy to customize.  
+👉 SEO friendly & optimized for speed.  
+👉 Support all modern browsers: IE, Firefox, Chrome, Safari, Opera, Edge, etc.
+👉 Documentation and Video Tutorials.  
+👉 Fast and Active Support.
+👉 And much more.
 
 ==== Greet 3.0 ====
 <strong>Greet 3.0</strong>  has completely been rebuilt and this provides you now many improvements and new amazing features.
@@ -131,7 +140,6 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 7. Backup - Admin option
 8. Get Help - Admin option
 
-
 == Who is for? ==
 <h4>Online business</h4>
 If you running an online business you can try this video bubble. By which you can give customers an intro about your business.
@@ -150,62 +158,20 @@ Video bubbles can help you to give an intro about yourself to your audience. It 
 
 == Changelog ==
 
-Greet 1.0
-1. Initial release
+= 4.0.0  – Aug 06, 2024
+- Fix: Update code structure
+- Update: Code compatibility with latest WordPress version
+- Update: Code compatibility with latest PHP version
+- Update: Plugin description
 
-Greet 1.0.1
-1. Updated code stractures
-
-Greet 1.2
-1. Added option to add button as external link
-
-Greet 3.0.0
-1. Completely new admin option panel.
-2. Option to enable pause video when leaving page.
-3. Added option to customize different things for buttons like color, border, text etc.
-4. There has 2 different button version called Square & Rounded.
-5. Export or import option to use same settings in different websites.
-
-Greet 3.2.0
-1. Added multiple button group
-
-Greet 3.4.1
-1. Added auto preload poser to avoild blank screen on iphone deveices.
-
-Greet 3.4.2
-1. Updated all language strings
-2. Added compatibility with WordPress 6.3.2
-
-Greet 3.4.3
-1. Added compatibility with WordPress 6.4.2
-
-Greet 3.4.4
-1. Changed admin UI to more user friendly
-2. Added some translation strings
-
-Greet 3.4.5
-1. Fixed video circle issue on the Firefox browser
-
-Greet 3.4.6
-1. Admin UI improvement
-
-Greet 3.4.7
-1. Updated coding standards for good performance
-
-3.4.8
-1. Fixed javascript code confiliction issue
-
-3.4.9
-1. Added help video in admin
-
-3.4.10
-1. Fixed visibility of push icon issue on browser tab switch
-
-3.5.0
+= 3.6.2
+1. Fixed: Button link target issue 
+ 
+= 3.5.0
 1. Compatibility with latest WordPress version
 2. Compatibility with latest php version
 
-3.6.0
+= 3.6.0
 1. Added: Default video poster option
 2. Updated language file for latest language strings
 3. Compatibility with latest WordPress version
@@ -216,13 +182,62 @@ Greet 3.4.7
 8. Added pro version compare fields
 9. Update some codebase
 10. Fixed video reply button click JS error
-11. Fixed video push button not dissapering when back from another tab on pushed video
+11. Fixed video push button not dissapering when back from another tab on pushed vid
 
-3.6.1
+= 3.6.1
 1. Updated language file for latest language strings
 2. Added plugin short description as per WordPress recommendation
 
-3.6.2
-1. Fixed: Button link target issue 
+= 3.4.10
+1. Fixed visibility of push icon issue on browser tab switch
+
+= 3.4.9
+1. Added help video in admin
+
+= 3.4.8
+1. Fixed javascript code confiliction issue
+
+= Greet 3.4.7
+1. Updated coding standards for good performance
+
+= Greet 3.4.6
+1. Admin UI improvement
+
+= Greet 3.4.5
+1. Fixed video circle issue on the Firefox browser
+
+= Greet 3.4.4
+1. Changed admin UI to more user friendly
+2. Added some translation strings
+
+= Greet 3.4.3
+1. Added compatibility with WordPress 6.4.2
+
+= Greet 3.4.2
+1. Updated all language strings
+2. Added compatibility with WordPress 6.3.2
+
+= Greet 3.4.1
+1. Added auto preload poser to avoild blank screen on iphone deveices.
+
+= Greet 3.2.0
+1. Added multiple button group
+
+= Greet 3.0.0
+1. Completely new admin option panel.
+2. Option to enable pause video when leaving page.
+3. Added option to customize different things for buttons like color, border, text etc.
+4. There has 2 different button version called Square & Rounded.
+5. Export or import option to use same settings in different websites.
+
+= Greet 1.2
+1. Added option to add button as external link
+
+= Greet 1.0.1
+1. Updated code stractures
+
+= Greet 1.0
+1. Initial release
 
 == Upgrade Notice ==
+It's recommended to have a backup of your website before hitting the update button.
