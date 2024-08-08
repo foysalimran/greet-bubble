@@ -1,7 +1,7 @@
 {
   "name": "greet-bubble",
   "version": "4.0.1",
-  "description": "WordPress Blood Donation Plugin",
+  "description": "WordPress Video Bubble Plugin",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass src/assets/sass/greet-css.scss src/assets/css/greet-style.css -w",
