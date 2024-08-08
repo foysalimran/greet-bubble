@@ -41,8 +41,12 @@ function greet_bubble()
     $greet_bubble->run();
 }
 
+include_once ABSPATH . 'wp-admin/includes/plugin.php';
+$pro_plugin_slug = 'greet-bubble-pro/greet-bubble-pro.php';
 // kick-off the plugin
+if (!is_plugin_active($pro_plugin_slug)) {
 greet_bubble();
+}
 
 /**
  * Initialize the plugin tracker
