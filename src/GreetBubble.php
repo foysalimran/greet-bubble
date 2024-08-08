@@ -131,7 +131,7 @@ class GreetBubble
     public function redirect_to($plugin)
     {
         if (GREET_BUBBLE_BASENAME === $plugin) {
-            $redirect_url = esc_url(admin_url('?page=greet-bubble-settings'));
+            $redirect_url = esc_url(admin_url('admin.php?page=greet-bubble-settings'));
             exit(wp_kses_post(wp_safe_redirect($redirect_url)));
         }
     }
