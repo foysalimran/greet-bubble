@@ -178,7 +178,7 @@ class GreetBubbleOptions
                     'title' => esc_html__('Hi text Input', 'greet-bubble'),
                     'desc' => esc_html__('Change small hello text here', 'greet-bubble'),
                     'type'  => 'text',
-                    'default' =>  esc_html__('Hello', 'greet-bubble'),
+                    'default' =>  esc_html__('Hi 👋', 'greet-bubble'),
                 ),
 
                 array(

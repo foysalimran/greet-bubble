@@ -510,7 +510,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Options' ) ) {
 
             echo ( $this->args['show_form_warning'] ) ? '<div class="greet-bubble-form-result greet-bubble-form-warning">'. esc_html__( 'You have unsaved changes, save your changes!', 'greet-bubble' ) .'</div>' : '';
 
-            echo ( $has_nav && $this->args['show_all_options'] ) ? '<div class="greet-bubble-expand-all" title="'. esc_html__( 'show all settings', 'greet-bubble' ) .'"><i class="fas fa-outdent"></i></div>' : '';
+            echo ( $has_nav && $this->args['show_all_options'] ) ? '<div class="greet-bubble-expand-all" title="'. esc_html__( 'show all settings', 'greet-bubble' ) .'"><i class="icofont-outdent"></i></div>' : '';
 
             echo ( $this->args['show_search'] ) ? '<div class="greet-bubble-search"><input type="text" name="greet-bubble-search" placeholder="'. esc_html__( 'Search...', 'greet-bubble' ) .'" autocomplete="off" /></div>' : '';
 

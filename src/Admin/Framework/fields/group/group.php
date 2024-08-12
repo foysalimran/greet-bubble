@@ -49,9 +49,9 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_group' ) ) {
         echo '<div class="greet-bubble-cloneable-item greet-bubble-cloneable-hidden" data-depend-id="'. esc_attr( $this->field['id'] ) .'">';
 
           echo '<div class="greet-bubble-cloneable-helper">';
-          echo '<i class="greet-bubble-cloneable-sort fas fa-arrows-alt"></i>';
-          echo '<i class="greet-bubble-cloneable-clone far fa-clone"></i>';
-          echo '<i class="greet-bubble-cloneable-remove greet-bubble-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'greet-bubble' ) .'"></i>';
+          echo '<i class="greet-bubble-cloneable-sort icofont-drag"></i>';
+          echo '<i class="greet-bubble-cloneable-clone icofont-copy-invert"></i>';
+          echo '<i class="greet-bubble-cloneable-remove greet-bubble-confirm icofont-close" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'greet-bubble' ) .'"></i>';
           echo '</div>';
 
           echo '<h4 class="greet-bubble-cloneable-title">';
@@ -104,9 +104,9 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_group' ) ) {
             echo '<div class="greet-bubble-cloneable-item">';
 
               echo '<div class="greet-bubble-cloneable-helper">';
-              echo '<i class="greet-bubble-cloneable-sort fas fa-arrows-alt"></i>';
-              echo '<i class="greet-bubble-cloneable-clone far fa-clone"></i>';
-              echo '<i class="greet-bubble-cloneable-remove greet-bubble-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'greet-bubble' ) .'"></i>';
+              echo '<i class="greet-bubble-cloneable-sort icofont-drag"></i>';
+              echo '<i class="greet-bubble-cloneable-clone icofont-copy-invert"></i>';
+              echo '<i class="greet-bubble-cloneable-remove greet-bubble-confirm icofont-close" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'greet-bubble' ) .'"></i>';
               echo '</div>';
 
               echo '<h4 class="greet-bubble-cloneable-title">';

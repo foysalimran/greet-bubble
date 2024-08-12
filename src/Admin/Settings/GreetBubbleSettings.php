@@ -28,7 +28,7 @@ class IDonateSettings
             $prefix,
             array(
                 'title'  => esc_html__('GENERAL', 'greet-bubble'),
-                'icon'    => 'greet-bubble-tab-icon fa fa-gear',
+                'icon'    => 'greet-bubble-tab-icon icofont-gear',
                 'fields' => array(
                     array(
                         'id'       => 'test',
@@ -42,7 +42,7 @@ class IDonateSettings
             $prefix,
             array(
                 'title'  => esc_html__('GENERAL', 'greet-bubble'),
-                'icon'    => 'greet-bubble-tab-icon fas fa-cogs',
+                'icon'    => 'greet-bubble-tab-icon icofont-settings-alt',
                 'fields' => array(
                     array(
                         'id'       => 'test',

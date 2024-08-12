@@ -846,8 +846,8 @@
         animate: false,
         heightStyle: 'content',
         icons: {
-          'header': 'greet-bubble-cloneable-header-icon fas fa-angle-right',
-          'activeHeader': 'greet-bubble-cloneable-header-icon fas fa-angle-down'
+          'header': 'greet-bubble-cloneable-header-icon icofont-rounded-right',
+          'activeHeader': 'greet-bubble-cloneable-header-icon icofont-rounded-down'
         },
         activate: function( event, ui ) {
 
@@ -2906,7 +2906,7 @@
                                 '<div class="greet-bubble--transparent-slider"></div>' +
                                 '<div class="greet-bubble--transparent-offset"></div>' +
                                 '<div class="greet-bubble--transparent-text"></div>' +
-                                '<div class="greet-bubble--transparent-button">transparent <i class="fas fa-toggle-off"></i></div>' +
+                                '<div class="greet-bubble--transparent-button">transparent <i class="icofont-toggle-off"></i></div>' +
                                 '</div>').appendTo( $container.find('.wp-picker-holder') ),
               $transparent_slider = $transparent_wrap.find('.greet-bubble--transparent-slider'),
               $transparent_text   = $transparent_wrap.find('.greet-bubble--transparent-text'),

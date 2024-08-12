@@ -8,7 +8,8 @@
 
 @font-face
 {
-font-family: "IcoFont";
+ 
+  font-family: "IcoFont";
 font-weight: normal;
 font-style: "Regular";
 src: url("./fonts/icofont.woff2") format("woff2"),
@@ -47,29 +48,9 @@ url("./fonts/icofont.woff") format("woff");
   content: "\eee7";
 }
 
-.icofont-monitor:before
-{
-  content: "\ea48";
-}
-
-.icofont-duotone.icofont-eye-open:before
-{
-  content: "\13b1b";
-}
-
-.icofont-duotone.icofont-eye-open:after
-{
-  content: "\13b1a";
-}
-
 .icofont-eye-alt:before
 {
   content: "\ef21";
-}
-
-.icofont-eye-open:before
-{
-  content: "\e80b";
 }
 
 .icofont-code-alt:before
@@ -197,16 +178,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ecb8";
 }
 
-.icofont-duotone.icofont-expand-full:before
-{
-  content: "\13b15";
-}
-
-.icofont-duotone.icofont-expand-full:after
-{
-  content: "\13b14";
-}
-
 .icofont-expand:before
 {
   content: "\ef1e";
@@ -225,21 +196,6 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-close-circled:before
 {
   content: "\eedd";
-}
-
-.icofont-email:before
-{
-  content: "\ef12";
-}
-
-.icofont-duotone.icofont-envelope:before
-{
-  content: "\13b0f";
-}
-
-.icofont-duotone.icofont-envelope:after
-{
-  content: "\13b0e";
 }
 
 .icofont-search-1:before
@@ -280,6 +236,211 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-paint:before
 {
   content: "\efb3";
+}
+
+.icofont-long-arrow-down:before
+{
+  content: "\ea92";
+}
+
+.icofont-long-arrow-left:before
+{
+  content: "\ea93";
+}
+
+.icofont-long-arrow-right:before
+{
+  content: "\ea94";
+}
+
+.icofont-long-arrow-up:before
+{
+  content: "\ea95";
+}
+
+.icofont-simple-left:before
+{
+  content: "\eab5";
+}
+
+.icofont-bubble-left:before
+{
+  content: "\ea64";
+}
+
+.icofont-caret-left:before
+{
+  content: "\ea68";
+}
+
+.icofont-caret-right:before
+{
+  content: "\ea69";
+}
+
+.icofont-bubble-right:before
+{
+  content: "\ea65";
+}
+
+.icofont-simple-right:before
+{
+  content: "\eab8";
+}
+
+.icofont-plus:before
+{
+  content: "\efc2";
+}
+
+.icofont-plus-circle:before
+{
+  content: "\efc0";
+}
+
+.icofont-copy-invert:before
+{
+  content: "\ede9";
+}
+
+.icofont-ui-copy:before
+{
+  content: "\ec51";
+}
+
+.icofont-question-circle:before
+{
+  content: "\efca";
+}
+
+.icofont-minus:before
+{
+  content: "\ef9a";
+}
+
+.icofont-minus-circle:before
+{
+  content: "\ef98";
+}
+
+.icofont-download-alt:before
+{
+  content: "\ef07";
+}
+
+.icofont-downloaded:before
+{
+  content: "\ef09";
+}
+
+.icofont-loop:before
+{
+  content: "\ef80";
+}
+
+.icofont-blood-drop:before
+{
+  content: "\ec0d";
+}
+
+.icofont-volume-off:before
+{
+  content: "\ecb9";
+}
+
+.icofont-user-male:before
+{
+  content: "\ed03";
+}
+
+.icofont-close-line-circled:before
+{
+  content: "\eede";
+}
+
+.icofont-check-circled:before
+{
+  content: "\eed7";
+}
+
+.icofont-drag:before
+{
+  content: "\ef0a";
+}
+
+.icofont-drag1:before
+{
+  content: "\ef0b";
+}
+
+.icofont-envelope:before
+{
+  content: "\ef14";
+}
+
+.icofont-envelope-open:before
+{
+  content: "\ef13";
+}
+
+.icofont-gear:before
+{
+  content: "\ef3a";
+}
+
+.icofont-gears:before
+{
+  content: "\ef3b";
+}
+
+.icofont-gear-alt:before
+{
+  content: "\ef39";
+}
+
+.icofont-hand:before
+{
+  content: "\ef41";
+}
+
+.icofont-location-pin:before
+{
+  content: "\ef79";
+}
+
+.icofont-toggle-off:before
+{
+  content: "\f011";
+}
+
+.icofont-toggle-on:before
+{
+  content: "\f012";
+}
+
+.icofont-question:before
+{
+  content: "\efcc";
+}
+
+.icofont-outdent:before
+{
+  content: "\edf9";
+}
+
+.icofont-settings-alt:before
+{
+  content: "\efe1";
+}
+
+.icofont-monitor:before
+{
+  content: "\ea48";
+}
+
+.icofont-ui-mute:before
+{
+  content: "\ec6c";
 }
 
 [class^="icofont-"].icofont-duotone,

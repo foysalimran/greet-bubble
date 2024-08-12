@@ -17,8 +17,8 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_dimensions' ) ) {
     public function render() {
 
       $args = wp_parse_args( $this->field, array(
-        'width_icon'         => '<i class="fas fa-arrows-alt-h"></i>',
-        'height_icon'        => '<i class="fas fa-arrows-alt-v"></i>',
+        'width_icon'         => '<i class="icofont-drag-h"></i>',
+        'height_icon'        => '<i class="icofont-drag-v"></i>',
         'width_placeholder'  => esc_html__( 'width', 'greet-bubble' ),
         'height_placeholder' => esc_html__( 'height', 'greet-bubble' ),
         'width'              => true,

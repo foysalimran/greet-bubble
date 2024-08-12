@@ -19,7 +19,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_repeater' ) ) {
       $args = wp_parse_args( $this->field, array(
         'max'          => 0,
         'min'          => 0,
-        'button_title' => '<i class="fas fa-plus-circle"></i>',
+        'button_title' => '<i class="icofont-plus-circle"></i>',
       ) );
 
       if ( preg_match( '/'. preg_quote( '['. $this->field['id'] .']' ) .'/', $this->unique ) ) {
@@ -43,9 +43,9 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_repeater' ) ) {
         echo '</div>';
         echo '<div class="greet-bubble-repeater-helper">';
         echo '<div class="greet-bubble-repeater-helper-inner">';
-        echo '<i class="greet-bubble-repeater-sort fas fa-arrows-alt"></i>';
-        echo '<i class="greet-bubble-repeater-clone far fa-clone"></i>';
-        echo '<i class="greet-bubble-repeater-remove greet-bubble-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'greet-bubble' ) .'"></i>';
+        echo '<i class="greet-bubble-repeater-sort icofont-drag"></i>';
+        echo '<i class="greet-bubble-repeater-clone icofont-copy-invert"></i>';
+        echo '<i class="greet-bubble-repeater-remove greet-bubble-confirm icofont-close" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'greet-bubble' ) .'"></i>';
         echo '</div>';
         echo '</div>';
         echo '</div>';
@@ -71,9 +71,9 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_repeater' ) ) {
             echo '</div>';
             echo '<div class="greet-bubble-repeater-helper">';
             echo '<div class="greet-bubble-repeater-helper-inner">';
-            echo '<i class="greet-bubble-repeater-sort fas fa-arrows-alt"></i>';
-            echo '<i class="greet-bubble-repeater-clone far fa-clone"></i>';
-            echo '<i class="greet-bubble-repeater-remove greet-bubble-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'greet-bubble' ) .'"></i>';
+            echo '<i class="greet-bubble-repeater-sort icofont-drag"></i>';
+            echo '<i class="greet-bubble-repeater-clone icofont-copy-invert"></i>';
+            echo '<i class="greet-bubble-repeater-remove greet-bubble-confirm icofont-close" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'greet-bubble' ) .'"></i>';
             echo '</div>';
             echo '</div>';
             echo '</div>';

@@ -65,7 +65,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_sortable' ) ) {
 
           echo '</div>';
 
-          echo '<div class="greet-bubble-sortable-helper"><i class="fas fa-arrows-alt"></i></div>';
+          echo '<div class="greet-bubble-sortable-helper"><i class="icofont-drag"></i></div>';
 
         echo '</div>';
 

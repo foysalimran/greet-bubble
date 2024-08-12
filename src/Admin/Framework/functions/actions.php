@@ -20,9 +20,8 @@ if ( ! function_exists( 'greet_bubble_get_icons' ) ) {
 
     ob_start();
 
-    $icon_library = ( apply_filters( 'greet_bubble_fa4', false ) ) ? 'fa4' : 'fa5';
 
-    GREET_BUBBLE::include_plugin_file( 'fields/icon/'. $icon_library .'-icons.php' );
+    GREET_BUBBLE::include_plugin_file( 'fields/icon/icofont.php' );
 
     $icon_lists = apply_filters( 'greet_bubble_field_icon_add_icons', greet_bubble_get_default_icons() );
 

@@ -72,7 +72,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Fields' ) ) {
 
       $output  = ( ! empty( $this->field['after'] ) ) ? '<div class="greet-bubble-after-text">'. $this->field['after'] .'</div>' : '';
       $output .= ( ! empty( $this->field['desc'] ) ) ? '<div class="clear"></div><div class="greet-bubble-desc-text">'. $this->field['desc'] .'</div>' : '';
-      $output .= ( ! empty( $this->field['help'] ) ) ? '<div class="greet-bubble-help"><span class="greet-bubble-help-text">'. $this->field['help'] .'</span><i class="fas fa-question-circle"></i></div>' : '';
+      $output .= ( ! empty( $this->field['help'] ) ) ? '<div class="greet-bubble-help"><span class="greet-bubble-help-text">'. $this->field['help'] .'</span><i class="icofont-question-circle"></i></div>' : '';
       $output .= ( ! empty( $this->field['_error'] ) ) ? '<div class="greet-bubble-error-text">'. $this->field['_error'] .'</div>' : '';
 
       return $output;

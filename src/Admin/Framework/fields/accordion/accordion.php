@@ -28,7 +28,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_accordion' ) ) {
 
         echo '<div class="greet-bubble-accordion-item">';
 
-          $icon = ( ! empty( $accordion['icon'] ) ) ? 'greet-bubble--icon '. $accordion['icon'] : 'greet-bubble-accordion-icon fas fa-angle-right';
+          $icon = ( ! empty( $accordion['icon'] ) ) ? 'greet-bubble--icon '. $accordion['icon'] : 'greet-bubble-accordion-icon icofont-rounded-right';
 
           echo '<h4 class="greet-bubble-accordion-title">';
           echo '<i class="'. esc_attr( $icon ) .'"></i>';

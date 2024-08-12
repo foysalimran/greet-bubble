@@ -305,7 +305,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_typography' ) ) {
 
         if ( ! empty( $args['preview'] ) ) {
           echo '<div class="greet-bubble--block greet-bubble--block-preview'. esc_attr( $always_preview ) .'">';
-          echo '<div class="greet-bubble--toggle fas fa-toggle-off"></div>';
+          echo '<div class="greet-bubble--toggle icofont-toggle-off"></div>';
           echo '<div class="greet-bubble--preview">'. esc_attr( $args['preview_text'] ) .'</div>';
           echo '</div>';
         }
