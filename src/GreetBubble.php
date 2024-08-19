@@ -144,6 +144,7 @@ class GreetBubble
     public function init_plugin()
     {
         do_action('greet_bubble_loaded');
+        load_plugin_textdomain('greet-bubble', false, GREET_BUBBLE_DIRNAME . "/languages");
     }
 
     /**
