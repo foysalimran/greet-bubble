@@ -140,7 +140,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_group' ) ) {
 
         echo '</div>';
 
-        echo '<div class="greet-bubble-cloneable-alert greet-bubble-cloneable-max">'. esc_html__( 'You cannot add more.', 'greet-bubble' ) .'</div>';
+        echo '<div class="greet-bubble-cloneable-alert greet-bubble-cloneable-max">'. __( 'You cannot add more. <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>Upgrade To Pro!</i></strong></a>', 'greet-bubble' ) .'</div>';
         echo '<div class="greet-bubble-cloneable-alert greet-bubble-cloneable-min">'. esc_html__( 'You cannot remove more.', 'greet-bubble' ) .'</div>';
         echo '<a href="#" class="button button-primary greet-bubble-cloneable-add">'. $args['button_title'] .'</a>';
 

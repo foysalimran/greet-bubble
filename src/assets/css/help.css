@@ -1,28 +1,32 @@
 /* Pro fields disable CSS */
 
-.greet_bubble_pro_only .greet-bubble--typography, .greet_bubble_pro_only .greet-bubble--switcher, .greet_bubble_pro_only .greet-bubble--placeholder, .greet_bubble_pro_only.greet-bubble-field-text .greet-bubble-fieldset, .greet_bubble_pro_only.greet-bubble-field-link .greet-bubble-fieldset, .greet_bubble_pro_only.greet-bubble-field-select .chosen-container{
-    pointer-events: none;
-    opacity: 0.3;
+.greet_bubble_pro_only .greet-bubble--typography,
+.greet_bubble_pro_only .greet-bubble--switcher,
+.greet_bubble_pro_only .greet-bubble--placeholder,
+.greet_bubble_pro_only.greet-bubble-field-text .greet-bubble-fieldset,
+.greet_bubble_pro_only.greet-bubble-field-link .greet-bubble-fieldset,
+.greet_bubble_pro_only.greet-bubble-field-select .chosen-container {
+  pointer-events: none;
+  opacity: 0.3;
 }
 
-
-.greet_bubble_pro_only .greet-bubble--ball{
+.greet_bubble_pro_only .greet-bubble--ball {
   position: relative;
 }
-.greet_bubble_pro_only .greet-bubble--ball:after{
+.greet_bubble_pro_only .greet-bubble--ball:after {
   content: "PRO";
-    position: absolute;
-    text-align: center;
-    width: 24px;
-    float: right;
-    font-weight: 600;
-    font-size: 8px;
-    color: #8796a1;
-    opacity: 1;
-    line-height: 18px;
-    background: #fff;
+  position: absolute;
+  text-align: center;
+  width: 24px;
+  float: right;
+  font-weight: 600;
+  font-size: 8px;
+  color: #8796a1;
+  opacity: 1;
+  line-height: 18px;
+  background: #fff;
 }
-.greet_bubble_pro_notice{
+.greet_bubble_pro_notice {
   padding: 0px;
 }
 .greet_bubble_pro_notice .greet-bubble-notice.greet-bubble-notice-normal {
@@ -78,4 +82,9 @@
 }
 .greet_bubble__btn--secondary:hover {
   background-color: #ebe4ff;
+}
+.button_behavior.greet-bubble-field-button_set
+  .greet-bubble--button:last-child {
+  pointer-events: none;
+  opacity: 0.3;
 }

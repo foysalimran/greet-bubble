@@ -9,12 +9,13 @@
  * @link       https://themeatelier.net
  * @since      1.0.0
  *
- * @package idonate-pro
- * @subpackage idonate-pro/Frontend
+ * @package greet-bubble
+ * @subpackage greet-bubble/Frontend
  * @author     ThemeAtelier<themeatelierbd@gmail.com>
  */
 
 namespace ThemeAtelier\GreetBubble\Frontend;
+use ThemeAtelier\GreetBubble\Frontend\Templates\Template;
 
 /**
  * The Frontend class to manage all public facing stuffs.
@@ -60,16 +61,43 @@ class Frontend
      */
     public static function enqueue_scripts()
     {
-        $options = get_option('_greet');
-        $custom_js            = isset($options['greet_additional_js']) ? $options['greet_additional_js'] : '';
-        $custom_css            = isset($options['greet_additional_css']) ? $options['greet_additional_css'] : '';
+        $options                = get_option('_greet');
+        $custom_js              = isset($options['greet_additional_js']) ? $options['greet_additional_js'] : '';
+        $additional_css         = isset($options['greet_additional_css']) ? $options['greet_additional_css'] : '';
 
         wp_enqueue_style('ico-font');
         wp_enqueue_style('greet-style');
 
+        $button_type           = isset($options['button_type']) ? $options['button_type'] : '';
+        $button_radius           = isset($options['button_radius']) ? $options['button_radius'] : '';
+        $border_color           = isset($options['border_color']) ? $options['border_color'] : '#7432ff';
+        $buttonsColors          = isset($options['buttonsColors']) ? $options['buttonsColors'] : '';
+        $buttons_bg             = isset($buttonsColors['buttons_bg']) ? $buttonsColors['buttons_bg'] : '#7432ff';
+        $buttons_hover_bg       = isset($buttonsColors['buttons_hover_bg']) ? $buttonsColors['buttons_hover_bg'] : '#7432ff';
+        $buttons_color          = isset($buttonsColors['buttons_color']) ? $buttonsColors['buttons_color'] : '#ffffff';
+        $buttons_hover_color    = isset($buttonsColors['buttons_hover_color']) ? $buttonsColors['buttons_hover_color'] : '#ffffff';
+        $scroll_bar_colors      = isset($options['scroll_bar_colors']) ? $options['scroll_bar_colors'] : '';
+        $thumb_bg               = isset($scroll_bar_colors['thumb_bg']) ? $scroll_bar_colors['thumb_bg'] : '#7432ff';
+        $track_bg               = isset($scroll_bar_colors['track_bg']) ? $scroll_bar_colors['track_bg'] : '#eeeeee';
+        $custom_css = "
+        :root {
+            --border-color: {$border_color};
+            --buttons-bg-color: {$buttons_bg};
+            --buttons-hover-bg-color: {$buttons_hover_bg};
+            --buttons-color: {$buttons_color};
+            --buttons-hover-color: {$buttons_hover_color};
+            --thumb-bg: {$thumb_bg};
+            --track-bg: {$track_bg};
+        }
+        ";
+        if ($button_type == 'rounded') {
+            $custom_css .= ".greet_wrapper_full .greet_change_video [class*=video] a {border-radius: {$button_radius}px}";
+        }
+        wp_add_inline_style('greet-style', $custom_css);
+
         wp_enqueue_script('greet-script');
-        if (!empty($custom_css)) {
-            wp_add_inline_style('greet-style', $custom_css);
+        if (!empty($additional_css)) {
+            wp_add_inline_style('greet-style', $additional_css);
         }
         if (!empty($custom_js)) {
             wp_add_inline_script('greet-script', $custom_js);
@@ -80,84 +108,33 @@ class Frontend
             array(
                 'pause_on_switch' => esc_attr($options['pause-video']),
                 'hide_for_session' => esc_attr($options['session-hide']),
+                'ajaxurl' => admin_url('admin-ajax.php'),
+                'nonce'   => wp_create_nonce('greet_nonce'),
             )
         );
     }
 
     public function greet_bubble_content()
     {
-        // Greet options
+        // Meta csf option
         $options = get_option('_greet');
+        $show_pages = $options['show_pages'];
+        $meta = get_post_meta(get_the_ID(), '_greet_meta', true);
 
-        $greet_button_target = isset($options['button_link']['target']) ? $options['button_link']['target'] : '_self';
-?>
+        if (!empty($meta['video']['url'])) :
+            Template::content($meta);
+        else :
+            $video = isset($options['video']) ? $options['video'] : '';
+            $video_url = isset($video['url']) ? $video['url'] : '';
 
-        <?php if (!empty($options['mp4']['url'])) : ?>
-            <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr($options['greet_positon']) ?>">
-                <video id="greet_video" <?php if (isset($options['poster']['url'])) : ?>poster="<?php echo esc_url($options['poster']['url']); ?>" <?php endif; ?>>
-                    <source id="playVideo" type="video/mp4" src="<?php echo esc_url($options['mp4']['url']) ?>#t=0.5" />
-                </video>
-                <h4 id="greet_text" class="greet_text"><?php echo esc_html($options['hi_text'])  ?></h4>
+            if ($show_pages && $video_url) :
+                if (is_page($show_pages)) :
+                    Template::content($options);
+                endif;
+            elseif ($video_url) :
 
-                <div class="greet_close">
-                    <i class="icofont-close-circled"></i>
-                </div>
-                <div id="greet_full-btn">
-                    <div class="greet_full-close">
-                        <i class="icofont-close-line"></i>
-                    </div>
-                    <div id="greet_full-play" class="greet_full-play">
-                        <i class="icofont-play"></i>
-                    </div>
-                    <div class="greet_media-action">
-                        <div id="greet_full-replay" class="greet_full-replay" onclick="videoChange('<?php echo esc_url($options['mp4']['url']) ?>')">
-                            <i class="icofont-spinner-alt-3"></i>
-                        </div>
-                        <div id="greet_full-volume" class="greet_full-volume">
-                            <i class="icofont-volume-up"></i>
-                        </div>
-                        <div id="greet_full-mute" class="greet_full-mute">
-                            <i class="icofont-ui-mute"></i>
-                        </div>
-                        <div id="greet_full-expand" class="greet_full-expand">
-                            <i class="icofont-expand"></i>
-                        </div>
-                    </div>
-                    <div class="greet_change-video">
-                        <?php if ($options['button_text']) {  ?>
-                            <div class="greet_video">
-                                <?php if ($options['button_text']) {  ?>
-                                    <a target="<?php echo esc_attr($greet_button_target); ?>" href="<?php echo esc_attr($options['button_link']['url']) ?>"><?php echo esc_html($options['button_text']) ?></a>
-                                <?php } ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                    <div class="greet__powered__by">
-                        Powered By: <a target="_blank" style="color:#fff" href="https://wordpress.org/plugins/greet-bubble/">Greet</a>
-                    </div>
-                </div>
-
-            </div>
-            <style>
-                .greet_wrapper video {
-                    border-color: <?php echo esc_attr($options['border_color']) ?>;
-                }
-
-                .greet_wrapper-full .greet_change-video [class*="video"] a {
-                    background-color: <?php echo esc_attr($options['buttonsColors']['buttons_bg']) ?>;
-                    color: <?php echo esc_attr($options['buttonsColors']['buttons_color']) ?>;
-                    <?php if ($options['button_type'] == 'rounded') {
-                    ?>border-radius: <?php echo esc_attr($options['button_radius']) ?>px;
-                    <?php
-                    }
-                    ?>
-                }
-
-                .greet_wrapper-full .greet_change-video [class*="video"] a:hover {
-                    background-color: <?php echo esc_attr($options['buttonsColors']['buttons_hover_bg']) ?>;
-                    color: <?php echo esc_attr($options['buttonsColors']['buttons_hover_color']) ?>;
-                }
-            </style>
-<?php endif;
+                Template::content($options);
+            endif;
+        endif;
     }
 }

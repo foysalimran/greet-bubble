@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-08-08 05:40+0000\n"
+"POT-Creation-Date: 2024-08-19 04:03+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -16,286 +16,6 @@ msgstr ""
 
 #: greet-bubble.php:32
 msgid "You should not access this file directly.!"
-msgstr ""
-
-#: src/GreetBubble.php:208
-msgid "Settings"
-msgstr ""
-
-#: src/Admin/Settings/GreetBubbleSettings.php:30, src/Admin/Settings/GreetBubbleSettings.php:44
-msgid "GENERAL"
-msgstr ""
-
-#: src/Admin/Settings/GreetBubbleSettings.php:36, src/Admin/Settings/GreetBubbleSettings.php:50
-msgid "Test"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:29, src/Admin/Views/GreetBubbleOptions.php:31
-msgid "Greet Bubble"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:34
-msgid "If you love the plugin don't forgot to add a review at <a target=\"_blank\" href=\"https://wordpress.org/support/plugin/greet-bubble/reviews/#new-post\">WordPress plugin repository</a>. "
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:49
-msgid "UPLOAD VIDEO"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:56
-msgid "Default video poster"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:57
-msgid "Specifies an image to be shown while the video is downloading, or until the user hits the play button. If this is not included, the first frame of the video will be used instead."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:65
-msgid "Upload Video (mp4)*"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:66
-msgid "If you do not have a mp4 video you may use <a href=\"http://www.freeconvert.com\" target=\"_blank\">this website</a> to convert your current version of video."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:72
-msgid "Button text"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:73, src/Admin/Views/GreetBubbleOptions.php:106, src/Admin/Views/GreetBubbleOptions.php:133
-msgid "Add button text here. If you don't want to show the button just keep it blank."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:75
-msgid "Make a booking"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:80
-msgid "Button link"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:81
-msgid "Add link for opening as external link on first button click. Remove link if you want to load second video instead of link."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:90
-msgid "Want to add multiple video with multiple button control over your <strong>Greet Bubble</strong>? <a href=\"https://1.envato.market/gbdm79\" target=\"_blank\"><b>Upgrade To Pro!</b></a>."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:96
-msgid "Second video on first button click (mp4)"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:97
-msgid "If you add video here the video will play on first button click"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:105
-msgid "Second button text"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:113
-msgid "Second button link"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:114
-msgid "Put link for opening as external link on second button click. Remove link if you want to load third video instead of link."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:123
-msgid "Third video on button click (mp4)"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:124
-msgid "This video will play on second button click."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:132
-msgid "Third button text"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:140
-msgid "Third button link"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:141
-msgid "Put link for opening as external link on third button click. Remove link if you want to load fourth video instead of link"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:150
-msgid "Fourth video on button click (mp4)"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:151
-msgid "This video will play on third button click."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:165
-msgid "APPEARANCE"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:172
-msgid "Explore the benefits of upgrading to the professional version by <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>clicking here</i></strong></a>."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:178
-msgid "Hi text Input"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:179
-msgid "Change small hello text here"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:181
-msgid "Hello"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:187
-msgid "To unlock These Typography (940+ Google Fonts) options, <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:188
-msgid "Hi text typography"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:195
-msgid "Bubble position"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:196
-msgid "Select bubble position you want to show"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:198, src/Admin/Framework/fields/typography/typography.php:175
-msgid "Right"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:199, src/Admin/Framework/fields/typography/typography.php:173
-msgid "Left"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:208
-msgid "Hide for session"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:209
-msgid "Turn on to hide permenently for this session of user visit on close button click. <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:216
-msgid "Pause video when leaving page"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:217
-msgid "Turn on the option to pause video if they switch browser tab. "
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:224
-msgid "Border Color"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:225
-msgid "Change bubble border color here"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:232
-msgid "Button type"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:234
-msgid "Square"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:235
-msgid "Rounded"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:244
-msgid "Button radius"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:252
-msgid "Buttons colors"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:254
-msgid "Backorund"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:255
-msgid "Text color"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:256
-msgid "Background hover"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:257
-msgid "Hover text color"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:270
-msgid "Show Specefic pages only"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:276
-msgid "Select pages"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:277
-msgid "Want to show your <strong>Greet Bubble</srong> on specefic page only? <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:285
-msgid "CONTROLS"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:292
-msgid "Want essential controls over your <strong>Greet bubble</strong>? <a href=\"https://1.envato.market/gbdm79\" target=\"_blank\"><b>Upgrade To Pro!</b></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:295
-msgid "Hide re-play control"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:299, src/Admin/Views/GreetBubbleOptions.php:309, src/Admin/Views/GreetBubbleOptions.php:319
-msgid "Yes"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:300, src/Admin/Views/GreetBubbleOptions.php:310, src/Admin/Views/GreetBubbleOptions.php:320
-msgid "No"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:305
-msgid "Hide mute/unmute control"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:315
-msgid "Hide fullscreen control"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:329
-msgid "ADVANCED"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:335
-msgid "Additional CSS"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:344
-msgid "Additional JS"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:356
-msgid "BACKUP"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:358
-msgid "Export or import to use same settings in different websites."
-msgstr ""
-
-#: src/Admin/Views/Views.php:32
-msgid "Greet Video Options"
 msgstr ""
 
 #: src/Admin/Framework/Classes/GREET_BUBBLE.php:461
@@ -322,7 +42,7 @@ msgstr ""
 msgid "Field not found!"
 msgstr ""
 
-#: src/Admin/Framework/Classes/GREET_BUBBLE_Metabox.php:264, src/Admin/Framework/Classes/GREET_BUBBLE_Options.php:618, src/Admin/Framework/functions/actions.php:43, src/Admin/Framework/fields/button_set/button_set.php:56, src/Admin/Framework/fields/checkbox/checkbox.php:82, src/Admin/Framework/fields/radio/radio.php:75, src/Admin/Framework/fields/select/select.php:113
+#: src/Admin/Framework/Classes/GREET_BUBBLE_Metabox.php:264, src/Admin/Framework/Classes/GREET_BUBBLE_Options.php:618, src/Admin/Framework/fields/button_set/button_set.php:56, src/Admin/Framework/fields/checkbox/checkbox.php:82, src/Admin/Framework/fields/radio/radio.php:75, src/Admin/Framework/fields/select/select.php:113, src/Admin/Framework/functions/actions.php:42
 msgid "No data available."
 msgstr ""
 
@@ -390,51 +110,15 @@ msgstr ""
 msgid "Are you sure you want to reset all settings to default values?"
 msgstr ""
 
-#: src/Admin/Framework/functions/actions.php:18, src/Admin/Framework/functions/actions.php:70, src/Admin/Framework/functions/actions.php:108, src/Admin/Framework/functions/actions.php:143, src/Admin/Framework/functions/actions.php:172
-msgid "Error: Invalid nonce verification."
-msgstr ""
-
-#: src/Admin/Framework/functions/actions.php:74, src/Admin/Framework/functions/actions.php:112
-msgid "Error: Invalid key."
-msgstr ""
-
-#: src/Admin/Framework/functions/actions.php:116
-msgid "Error: The response is not a valid JSON response."
-msgstr ""
-
-#: src/Admin/Framework/functions/actions.php:176
-msgid "Error: Invalid term ID."
-msgstr ""
-
-#: src/Admin/Framework/functions/actions.php:182
-msgid "Error: You do not have permission to do that."
-msgstr ""
-
-#: src/Admin/Framework/functions/validate.php:14, src/Admin/Framework/functions/validate.php:86
-msgid "Please enter a valid email address."
-msgstr ""
-
-#: src/Admin/Framework/functions/validate.php:32, src/Admin/Framework/functions/validate.php:106
-msgid "Please enter a valid number."
-msgstr ""
-
-#: src/Admin/Framework/functions/validate.php:50, src/Admin/Framework/functions/validate.php:126
-msgid "This field is required."
-msgstr ""
-
-#: src/Admin/Framework/functions/validate.php:68, src/Admin/Framework/functions/validate.php:146
-msgid "Please enter a valid URL."
-msgstr ""
-
 #: src/Admin/Framework/fields/background/background.php:38, src/Admin/Framework/fields/media/media.php:59
 msgid "Not selected"
 msgstr ""
 
-#: src/Admin/Framework/fields/background/background.php:74, src/Admin/Framework/fields/date/date.php:31, src/Admin/Framework/fields/datetime/datetime.php:36
+#: src/Admin/Framework/fields/background/background.php:74, src/Admin/Framework/fields/datetime/datetime.php:36, src/Admin/Framework/fields/date/date.php:31
 msgid "From"
 msgstr ""
 
-#: src/Admin/Framework/fields/background/background.php:92, src/Admin/Framework/fields/date/date.php:32, src/Admin/Framework/fields/datetime/datetime.php:37
+#: src/Admin/Framework/fields/background/background.php:92, src/Admin/Framework/fields/datetime/datetime.php:37, src/Admin/Framework/fields/date/date.php:32
 msgid "To"
 msgstr ""
 
@@ -706,8 +390,8 @@ msgstr ""
 msgid "Are you sure to delete this item?"
 msgstr ""
 
-#: src/Admin/Framework/fields/group/group.php:143, src/Admin/Framework/fields/repeater/repeater.php:89
-msgid "You cannot add more."
+#: src/Admin/Framework/fields/group/group.php:143
+msgid "You cannot add more. <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
 msgstr ""
 
 #: src/Admin/Framework/fields/group/group.php:144, src/Admin/Framework/fields/repeater/repeater.php:90
@@ -770,6 +454,10 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
+#: src/Admin/Framework/fields/repeater/repeater.php:89
+msgid "You cannot add more."
+msgstr ""
+
 #: src/Admin/Framework/fields/sorter/sorter.php:21
 msgid "Enabled"
 msgstr ""
@@ -822,8 +510,16 @@ msgstr ""
 msgid "Inherit"
 msgstr ""
 
+#: src/Admin/Framework/fields/typography/typography.php:173, src/Admin/Views/GreetBubbleOptions.php:160
+msgid "Left"
+msgstr ""
+
 #: src/Admin/Framework/fields/typography/typography.php:174
 msgid "Center"
+msgstr ""
+
+#: src/Admin/Framework/fields/typography/typography.php:175, src/Admin/Views/GreetBubbleOptions.php:159
+msgid "Right"
 msgstr ""
 
 #: src/Admin/Framework/fields/typography/typography.php:176
@@ -912,4 +608,288 @@ msgstr ""
 
 #: src/Admin/Framework/fields/typography/typography.php:390
 msgid "Google Web Fonts"
+msgstr ""
+
+#: src/Admin/Framework/functions/actions.php:18, src/Admin/Framework/functions/actions.php:69, src/Admin/Framework/functions/actions.php:107, src/Admin/Framework/functions/actions.php:142, src/Admin/Framework/functions/actions.php:171
+msgid "Error: Invalid nonce verification."
+msgstr ""
+
+#: src/Admin/Framework/functions/actions.php:73, src/Admin/Framework/functions/actions.php:111
+msgid "Error: Invalid key."
+msgstr ""
+
+#: src/Admin/Framework/functions/actions.php:115
+msgid "Error: The response is not a valid JSON response."
+msgstr ""
+
+#: src/Admin/Framework/functions/actions.php:175
+msgid "Error: Invalid term ID."
+msgstr ""
+
+#: src/Admin/Framework/functions/actions.php:181
+msgid "Error: You do not have permission to do that."
+msgstr ""
+
+#: src/Admin/Framework/functions/validate.php:14, src/Admin/Framework/functions/validate.php:86
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: src/Admin/Framework/functions/validate.php:32, src/Admin/Framework/functions/validate.php:106
+msgid "Please enter a valid number."
+msgstr ""
+
+#: src/Admin/Framework/functions/validate.php:50, src/Admin/Framework/functions/validate.php:126
+msgid "This field is required."
+msgstr ""
+
+#: src/Admin/Framework/functions/validate.php:68, src/Admin/Framework/functions/validate.php:146
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: src/Admin/Settings/GreetBubbleSettings.php:30, src/Admin/Settings/GreetBubbleSettings.php:44
+msgid "GENERAL"
+msgstr ""
+
+#: src/Admin/Settings/GreetBubbleSettings.php:36, src/Admin/Settings/GreetBubbleSettings.php:50
+msgid "Test"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:29, src/Admin/Views/GreetBubbleOptions.php:31
+msgid "Greet Bubble"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:34
+msgid "If you love the plugin don't forgot to add a review at <a target=\"_blank\" href=\"https://wordpress.org/support/plugin/greet-bubble/reviews/#new-post\">WordPress plugin repository</a>. "
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:49
+msgid "UPLOAD VIDEO"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:56
+msgid "Default video poster"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:57
+msgid "Specifies an image to be shown while the video is downloading, or until the user hits the play button. If this is not included, the first frame of the video will be used instead."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:65, src/Admin/Views/GreetBubbleOptions.php:103
+msgid "Upload Video (mp4)*"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:66, src/Admin/Views/GreetBubbleOptions.php:104
+msgid "If you do not have a mp4 video you may use <a href=\"http://www.freeconvert.com\" target=\"_blank\">this website</a> to convert your current version of video."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:75
+msgid "Include Buttons"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:76
+msgid "By including a button you will able to use different functionalities on button click"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:80
+msgid "Button Text"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:81
+msgid "Add button text here. If you don't want to show the button just keep it blank."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:83
+msgid "Make a booking"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:91
+msgid "Button Behavior"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:92
+msgid "Select option to behave on button click"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:94
+msgid "Another Video"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:95
+msgid "External Link"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:96
+msgid "Contact Form"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:111
+msgid "Add Button Link"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:112
+msgid "Add link for opening as external link on first button click. Remove link if you want to load second video instead of link."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:126
+msgid "APPEARANCE"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:133
+msgid "Explore the benefits of upgrading to the professional version by <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>clicking here</i></strong></a>."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:139
+msgid "Hi text Input"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:140
+msgid "Change small hello text here"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:142
+msgid "Hi 👋"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:148
+msgid "To unlock These Typography (940+ Google Fonts) options, <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:149
+msgid "Hi text typography"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:156
+msgid "Bubble position"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:157
+msgid "Select bubble position you want to show"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:169
+msgid "Hide for session"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:170
+msgid "Turn on to hide permenently for this session of user visit on close button click. <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:177
+msgid "Pause video when leaving page"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:178
+msgid "Turn on the option to pause video if they switch browser tab. "
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:185
+msgid "Border Color"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:186
+msgid "Change bubble border color here"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:193
+msgid "Button type"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:195
+msgid "Square"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:196
+msgid "Rounded"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:205
+msgid "Button radius"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:213
+msgid "Buttons colors"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:215
+msgid "Backorund"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:216
+msgid "Text color"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:217
+msgid "Background hover"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:218
+msgid "Hover text color"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:231
+msgid "Show Specefic pages only"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:237
+msgid "Select pages"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:238
+msgid "Want to show your <strong>Greet Bubble</srong> on specefic page only? <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:246
+msgid "CONTROLS"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:253
+msgid "Want essential controls over your <strong>Greet bubble</strong>? <a href=\"https://1.envato.market/gbdm79\" target=\"_blank\"><b>Upgrade To Pro!</b></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:256
+msgid "Hide re-play control"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:260, src/Admin/Views/GreetBubbleOptions.php:270, src/Admin/Views/GreetBubbleOptions.php:280
+msgid "Yes"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:261, src/Admin/Views/GreetBubbleOptions.php:271, src/Admin/Views/GreetBubbleOptions.php:281
+msgid "No"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:266
+msgid "Hide mute/unmute control"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:276
+msgid "Hide fullscreen control"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:290
+msgid "ADVANCED"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:296
+msgid "Additional CSS"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:305
+msgid "Additional JS"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:317
+msgid "BACKUP"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:319
+msgid "Export or import to use same settings in different websites."
+msgstr ""
+
+#: src/Admin/Views/Views.php:32
+msgid "Greet Video Options"
+msgstr ""
+
+#: src/GreetBubble.php:208
+msgid "Settings"
 msgstr ""
