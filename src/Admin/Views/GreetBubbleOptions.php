@@ -60,7 +60,7 @@ class GreetBubbleOptions
 
 
                 array(
-                    'id'      => 'mp4',
+                    'id'      => 'video',
                     'type'    => 'media',
                     'title'   => esc_html__('Upload Video (mp4)*', 'greet-bubble'),
                     'desc'  =>  __('If you do not have a mp4 video you may use <a href="http://www.freeconvert.com" target="_blank">this website</a> to convert your current version of video.', 'greet-bubble'),
@@ -68,92 +68,53 @@ class GreetBubbleOptions
                 ),
 
                 array(
-                    'id'    => 'button_text',
-                    'title' => esc_html__('Button text', 'greet-bubble'),
-                    'desc' => esc_html__('Add button text here. If you don\'t want to show the button just keep it blank.', 'greet-bubble'),
-                    'type'  => 'text',
-                    'default' => esc_html__('Make a booking', 'greet-bubble'),
-                ),
+                    'id'     => 'bubble_buttons',
+                    'type'   => 'group',
+                    'max'   => 3,
+                    'accordion_title_number' => true,
+                    'title'  => esc_html__('Include Buttons', 'greet-bubble'),
+                    'desc'   => __('By including a button you will able to use different functionalities on button click', 'greet-bubble'),
+                    'fields' => array(
+                        array(
+                            'id'    => 'button_text',
+                            'title' => esc_html__('Button Text', 'greet-bubble'),
+                            'desc' => esc_html__('Add button text here. If you don\'t want to show the button just keep it blank.', 'greet-bubble'),
+                            'type'  => 'text',
+                            'default' => esc_html__('Make a booking', 'greet-bubble'),
+                        ),
 
-                array(
-                    'id'    => 'button_link',
-                    'title' => esc_html__('Button link', 'greet-bubble'),
-                    'desc' => esc_html__('Add link for opening as external link on first button click. Remove link if you want to load second video instead of link.', 'greet-bubble'),
-                    'type'  => 'link',
-                ),
+                        array(
+                            'id'        => 'button_behavior',
+                            'type'      => 'button_set',
+                            'inline'    => 'true',
+                            'class'     => 'button_behavior',
+                            'title'     => esc_html__('Button Behavior', 'greet-bubble'),
+                            'desc'      => esc_html__('Select option to behave on button click', 'greet-bubble'),
+                            'options'    => array(
+                                'another_video' => esc_html__('Another Video', 'greet-bubble'),
+                                'external_link' => esc_html__('External Link', 'greet-bubble'),
+                                'contact_form' => esc_html__('Contact Form', 'greet-bubble'),
+                            ),
+                            'default' => 'another_video',
+                        ),
+                        array(
+                            'id'      => 'video_link',
+                            'type'    => 'media',
+                            'title'   => esc_html__('Upload Video (mp4)*', 'greet-bubble'),
+                            'desc'  =>  __('If you do not have a mp4 video you may use <a href="http://www.freeconvert.com" target="_blank">this website</a> to convert your current version of video.', 'greet-bubble'),
+                            'library' => 'video',
+                            'dependency' => array('button_behavior', '==', 'another_video'),
+                        ),
 
-                // Second video
-                array(
-                    'type'    => 'notice',
-                    'style'   => 'normal',
-                    'class'   => 'greet_pro_notice',
-                    'content' => __('Want to add multiple video with multiple button control over your <strong>Greet Bubble</strong>? <a href="https://1.envato.market/gbdm79" target="_blank"><b>Upgrade To Pro!</b></a>.', 'greet-bubble'),
+                        array(
+                            'id'    => 'button_link',
+                            'title' => esc_html__('Add Button Link', 'greet-bubble'),
+                            'desc' => esc_html__('Add link for opening as external link on first button click. Remove link if you want to load second video instead of link.', 'greet-bubble'),
+                            'type'  => 'link',
+                            'dependency' => array('button_behavior', '==', 'external_link'),
+                        ),
+                    ),
                 ),
-                array(
-                    'id'      => 'second__video',
-                    'class'   => 'greet_bubble_pro_only',
-                    'type'    => 'media',
-                    'title'   => __('Second video on first button click (mp4)', 'greet-bubble'),
-                    'desc' => __('If you add video here the video will play on first button click', 'greet-bubble'),
-                    'library' => 'video',
-                    'dependency' => array('button_link', '==', 'false'),
-                ),
-
-                array(
-                    'id'    => 'button_second_text',
-                    'class'   => 'greet_bubble_pro_only',
-                    'title' => __('Second button text', 'greet-bubble'),
-                    'desc' => __('Add button text here. If you don\'t want to show the button just keep it blank.', 'greet-bubble'),
-                    'type'  => 'text',
-                ),
-
-                array(
-                    'id'    => 'button_second_link',
-                    'class'   => 'greet_bubble_pro_only',
-                    'title' => __('Second button link', 'greet-bubble'),
-                    'desc' => __('Put link for opening as external link on second button click. Remove link if you want to load third video instead of link.', 'greet-bubble'),
-                    'type'  => 'link',
-                ),
-
-                // Third video
-                array(
-                    'id'      => 'third__video',
-                    'class'   => 'greet_bubble_pro_only',
-                    'type'    => 'media',
-                    'title'   => __('Third video on button click (mp4)', 'greet-bubble'),
-                    'desc' => __('This video will play on second button click.', 'greet-bubble'),
-                    'library' => 'video',
-                    'dependency' => array('button_second_link', '==', 'false'),
-                ),
-
-                array(
-                    'id'    => 'button_third_text',
-                    'class'   => 'greet_bubble_pro_only',
-                    'title' => __('Third button text', 'greet-bubble'),
-                    'desc' => __('Add button text here. If you don\'t want to show the button just keep it blank.', 'greet-bubble'),
-                    'type'  => 'text',
-                ),
-
-                array(
-                    'id'    => 'button_third_link',
-                    'class'   => 'greet_bubble_pro_only',
-                    'title' => __('Third button link', 'greet-bubble'),
-                    'desc' => __('Put link for opening as external link on third button click. Remove link if you want to load fourth video instead of link', 'greet-bubble'),
-                    'type'  => 'link',
-                ),
-
-                // Fourth video
-                array(
-                    'id'      => 'fourth__video',
-                    'class'   => 'greet_bubble_pro_only',
-                    'type'    => 'media',
-                    'title'   => __('Fourth video on button click (mp4)', 'greet-bubble'),
-                    'desc' => __('This video will play on third button click.', 'greet-bubble'),
-                    'library' => 'video',
-                    'dependency' => array('button_third_link', '==', 'false'),
-                ),
-
-
             )
         ));
 
