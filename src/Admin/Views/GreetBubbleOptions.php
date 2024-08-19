@@ -57,7 +57,28 @@ class GreetBubbleOptions
                     'desc'  => __('Specifies an image to be shown while the video is downloading, or until the user hits the play button. If this is not included, the first frame of the video will be used instead.', 'greet-bubble'),
                     'library' => 'image',
                 ),
-
+                array(
+                    'id'     => 'opt-fieldset-1',
+                    'type'   => 'fieldset',
+                    'title'  => 'Fieldset',
+                    'fields' => array(
+                      array(
+                        'id'    => 'opt-text',
+                        'type'  => 'text',
+                        'title' => 'Text',
+                      ),
+                      array(
+                        'id'    => 'opt-color',
+                        'type'  => 'color',
+                        'title' => 'Color',
+                      ),
+                      array(
+                        'id'    => 'opt-switcher',
+                        'type'  => 'switcher',
+                        'title' => 'Switcher',
+                      ),
+                    ),
+                  ),
 
                 array(
                     'id'      => 'video',
