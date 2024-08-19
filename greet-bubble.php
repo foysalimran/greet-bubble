@@ -20,16 +20,10 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use ThemeAtelier\GreetBubble\GreetBubble;
 
-// load text domain from plugin folder
-function greet_load_textdomain()
-{
-    load_plugin_textdomain('greet-bubble', false, dirname(__FILE__) . "/languages");
-}
-add_action("plugins_loaded", 'greet_load_textdomain');
-
 define('GREET_BUBBLE_VERSION', '4.0.2');
 define('GREET_BUBBLE_FILE', __FILE__);
 define('GREET_ALERT_MSG', esc_html__('You should not access this file directly.!', 'greet-bubble'));
+define('GREET_BUBBLE_DIRNAME', dirname(__FILE__));
 define('GREET_DIR_PATH', plugin_dir_path(__FILE__));
 define('GREET_DIR_URL', plugin_dir_url(__FILE__));
 define('GREET_BUBBLE_BASENAME', plugin_basename(__FILE__));
