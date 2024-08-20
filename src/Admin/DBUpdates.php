@@ -24,7 +24,7 @@ class DBUpdates
      * @var array
      */
     private static $updates = array(
-        '4.0.3' => 'updates/update-4.0.3.php',
+        '4.1.0' => 'updates/update-4.1.0.php',
     );
     
     /**

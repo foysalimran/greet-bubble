@@ -3,8 +3,8 @@
 /**
  * Update version.
  */
-update_option('greet_bubble_version', '4.0.1');
-update_option('greet_bubble_db_version', '4.0.1');
+update_option('greet_bubble_version', GREET_BUBBLE_VERSION);
+update_option('greet_bubble_db_version', GREET_BUBBLE_VERSION);
 
 /**
  * Convert old data keys to new ones.
