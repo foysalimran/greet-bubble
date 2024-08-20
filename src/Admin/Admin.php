@@ -13,6 +13,7 @@
 
 namespace ThemeAtelier\GreetBubble\Admin;
 
+use ThemeAtelier\GreetBubble\Admin\DBUpdates;
 use ThemeAtelier\GreetBubble\Admin\Views\Views;
 use ThemeAtelier\GreetBubble\Admin\Views\GreetBubbleOptions;
 
@@ -61,6 +62,8 @@ class Admin
         $this->min         = defined('WP_DEBUG') && WP_DEBUG ? '' : '.min';
         Views::metaboxes('_greet_meta');
         GreetBubbleOptions::options('_greet');
+        // Database Updater.
+		new DBUpdates();
     }
 
     /**
