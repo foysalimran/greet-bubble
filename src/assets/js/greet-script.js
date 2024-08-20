@@ -131,12 +131,14 @@ if (greetWrapper) {
       greetWrapper.classList.remove("greet_wrapper-resize");
     }
   });
+
 }
-/* VIDEO CHANGE ON REPLY BTN CLICK */
-function videoChange(videoUrl) {
-  video.setAttribute("src", videoUrl);
-  greetVideo.load();
-  greetVideo.play();
-  greetFullPlay.style.display = "none";
-  greetWrapper.classList.add("play-video");
-}
+  /* VIDEO CHANGE ON REPLY BTN CLICK */
+  function videoChange(videoUrl) {
+    video.setAttribute("src", videoUrl);
+    greetVideo.load();
+    greetVideo.play();
+    greetFullPlay.style.display = "none";
+    greetWrapper.classList.add("play-video");
+  }
+  
