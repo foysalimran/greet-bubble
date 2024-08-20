@@ -158,6 +158,9 @@ Video bubbles can help you to give an intro about yourself to your audience. It 
 Video bubbles can help you to give an intro about yourself to your audience. It will make your website looks good.
 
 == Changelog ==
+= 4.1.0  – Aug 20, 2024
+- Fixed: Old data migration
+
 = 4.0.2  – Aug 20, 2024
 - Added: Repetative video option
 - Added: Multiple video option
