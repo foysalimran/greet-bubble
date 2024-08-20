@@ -66,8 +66,8 @@ Nice experience!
 
 == CORE FEATURES ==
 
-👉 Show a intro video about your product or service with a external button.
-👉 Link for button can be added from your available pages also you will able to set external link.
+👉 Show repetative intro videos about your product or service with external buttons.
+👉 Link for buttons can be added from your available pages also you will able to set external link.
 👉 Bubble intro text can be change.
 👉 Option to pause video when leaving different tab.
 👉 Options to change all colors to your own brand color.
@@ -97,6 +97,7 @@ Nice experience!
 * Added option to customize different things for buttons like color, border, text etc.
 * There has 2 different button version called Square & Rounded.
 * Export or import option to use same settings in different websites.
+
 
 == OTHER AMAZING PRODUCTS FROM ThemeAtelier ==
 
