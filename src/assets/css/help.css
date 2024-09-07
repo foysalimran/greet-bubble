@@ -1,5 +1,24 @@
 /* Pro fields disable CSS */
+.greet-bubble-field-button_set .disabled.greet-bubble--button{
+  opacity: 0.9;
+  pointer-events: none;
+}
 
+.greet-bubble-field-button_set .disabled.greet-bubble--button:after{
+position: absolute;
+    top: 0;
+    right: 0;
+    color: #5E6E7D;
+    background-color: #cbd6df;
+    font-weight: 600;
+    padding: 0 4px;
+    content: "PRO";
+    text-align: center;
+    font-size: 8px;
+    line-height: 11px;
+    opacity: 1;
+    border-radius: 0 2px 0 2px;
+  }
 .greet_bubble_pro_only .greet-bubble--typography,
 .greet_bubble_pro_only .greet-bubble--switcher,
 .greet_bubble_pro_only .greet-bubble--placeholder,

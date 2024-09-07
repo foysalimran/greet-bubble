@@ -131,7 +131,7 @@ class GreetBubble
     public function redirect_to($plugin)
     {
         if (GREET_BUBBLE_BASENAME === $plugin) {
-            $redirect_url = esc_url(admin_url('admin.php?page=greet-bubble-settings'));
+            $redirect_url = esc_url(admin_url('admin.php?page=greet-bubble'));
             exit(wp_kses_post(wp_safe_redirect($redirect_url)));
         }
     }
@@ -205,7 +205,7 @@ class GreetBubble
     // Plugin settings in plugin list
     public function greet_bubble_plugin_action_links(array $links)
     {
-        $url = get_admin_url() . "admin.php?page=greet-bubble-settings#tab=upload-video";
+        $url = get_admin_url() . "admin.php?page=greet-bubble#tab=upload-video";
         $settings_link = '<a href="' . esc_url($url) . '">' . esc_html__('Settings', 'greet-bubble') . '</a>';
         $links[] = $settings_link;
         return $links;

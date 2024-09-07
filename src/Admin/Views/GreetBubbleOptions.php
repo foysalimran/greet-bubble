@@ -27,7 +27,8 @@ class GreetBubbleOptions
     {
         GREET_BUBBLE::createOptions($prefix, array(
             'menu_title' => esc_html__('Greet Bubble', 'greet-bubble'),
-            'menu_slug'  => 'greet-bubble-settings',
+            'menu_slug'  => 'greet-bubble',
+            'menu_type'               => 'submenu',
             'framework_title'   => esc_html__('Greet Bubble', 'greet-bubble'),
             'show_bar_menu' => false,
             'menu_icon' => 'dashicons-format-video',
@@ -91,9 +92,17 @@ class GreetBubbleOptions
                             'title'     => esc_html__('Button Behavior', 'greet-bubble'),
                             'desc'      => __('Select option to behave on button click. To access advanced form features such as WhatsApp forms, Web3 forms, and third-party form shortcodes, please <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>Upgrade To Pro!</i></strong></a>', 'greet-bubble'),
                             'options'    => array(
-                                'another_video' => esc_html__('Another Video', 'greet-bubble'),
-                                'external_link' => esc_html__('External Link', 'greet-bubble'),
-                                'contact_form' => esc_html__('Contact Form', 'greet-bubble'),
+
+                                'another_video' => array(
+                                    'text' => __( 'Another Video', 'greet-bubble' ),
+                                ),
+                                'external_link' => array(
+                                    'text' => __( 'External Link', 'greet-bubble' ),
+                                ),
+                                'contact_form' => array(
+                                    'text' => __( 'Contact Form', 'greet-bubble' ),
+                                ),
+                              
                             ),
                             'default' => 'another_video',
                         ),
@@ -126,13 +135,12 @@ class GreetBubbleOptions
             'title'       => __('APPEARANCE', 'greet-bubble'),
             'icon'        => 'icofont-paint',
             'fields'      => array(
-                array(
-                    'type'    => 'notice',
-                    'style'   => 'normal',
-                    'class'   => 'greet_pro_notice',
-                    'content' => __('Explore the benefits of upgrading to the professional version by <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>clicking here</i></strong></a>.', 'greet-bubble'),
-                ),
+                
 
+                array(
+                    'type'  => 'heading',
+                    'title' => esc_html__('Bubble', 'greet-bubble'),
+                ),
 
                 array(
                     'id'    => 'hi_text',
@@ -156,8 +164,12 @@ class GreetBubbleOptions
                     'title'       => esc_html__('Bubble position', 'greet-bubble'),
                     'desc' => esc_html__('Select bubble position you want to show.', 'greet-bubble'),
                     'options'     => array(
-                        'right'     => esc_html__('Right', 'greet-bubble'),
-                        'greet-left'     => esc_html__('Left', 'greet-bubble'),
+                        'right' => array(
+                            'text' => __( 'Right', 'greet-bubble' ),
+                        ),
+                        'greet-left' => array(
+                            'text' => __( 'Left', 'greet-bubble' ),
+                        ),
                     ),
                     'default'     => 'right'
                 ),
@@ -186,15 +198,52 @@ class GreetBubbleOptions
                     'desc'   => esc_html__('Change bubble border color here.', 'greet-bubble'),
                     'default' => '#7432ff',
                 ),
+                
+                array(
+                    'type'  => 'heading',
+                    'title' => esc_html__('Buttons', 'greet-bubble'),
+                ),
 
+                array(
+                    'id'    => 'buttons_typography',
+                    'class'  => 'greet_bubble_pro_only',
+                    'desc'  => __('To unlock These Typography (940+ Google Fonts) options, <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>Upgrade To Pro!</i></strong></a>', 'greet-bubble'),
+                    'type'  => 'typography',
+                    'title' => esc_html__('Buttons Typography', 'greet-bubble'),
+                    'color' => false,
+                    'text_align'    => false,
+                  ),
+                  array(
+                    'id'    => 'button_display_type',
+                    'type'    => 'button_set',
+                    'title'   => esc_html__('Button Display Type', 'greet-bubble'),
+                    'options' => array(
+                        'text_only' => array(
+                            'text' => __( 'Text Only', 'greet-bubble' ),
+                        ),
+                        'with_icon_and_text' => array(
+                            'text' => __( 'With Icon and Text', 'greet-bubble' ),
+                            'pro_only' => true,
+                        ),
+                        'icon_only' => array(
+                            'text' => __( 'Icon Only', 'greet-bubble' ),
+                            'pro_only' => true,
+                        ),
+                    ),
+                    'default'   => 'text_only',
+                ),
                 array(
                     'id'      => 'button_type',
                     'type'    => 'button_set',
                     'title'   => esc_html__('Button type', 'greet-bubble'),
                     'desc'   => esc_html__('Select type of the buttons.', 'greet-bubble'),
                     'options' => array(
-                        'square'    => esc_html__('Square', 'greet-bubble'),
-                        'rounded'   => esc_html__('Rounded', 'greet-bubble'),
+                        'square' => array(
+                            'text' => __( 'Square', 'greet-bubble' ),
+                        ),
+                        'rounded' => array(
+                            'text' => __( 'Rounded', 'greet-bubble' ),
+                        ),
                     ),
                     'default' => 'rounded',
                 ),
@@ -228,6 +277,11 @@ class GreetBubbleOptions
                     )
                 ),
                 array(
+                    'type'  => 'heading',
+                    'title' => esc_html__('Others', 'greet-bubble'),
+                ),
+                
+                array(
                     'id'          => 'show_pages',
                     'class'       => 'greet_bubble_pro_only',
                     'type'        => 'select',
@@ -240,7 +294,7 @@ class GreetBubbleOptions
                     'placeholder' => __('Select pages', 'greet-bubble'),
                     'desc'  => __('Want to show your <strong>Greet Bubble</strong> on specefic page only? <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>Upgrade To Pro!</i></strong></a>', 'greet-bubble'),
                 ),
-
+               
             )
         ));
 

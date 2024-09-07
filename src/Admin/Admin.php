@@ -64,6 +64,7 @@ class Admin
         GreetBubbleOptions::options('_greet');
         // Database Updater.
 		new DBUpdates();
+        add_action('admin_menu', array($this, 'add_plugin_page'));
     }
 
     /**
@@ -73,8 +74,41 @@ class Admin
      */
     public static function enqueue_scripts($hook)
     {
-        if ('toplevel_page_greet-bubble-settings' == $hook) {
+        if ('toplevel_page_greet-bubble' == $hook) {
             wp_enqueue_style('greet-help');
         }
+        wp_enqueue_style('greet-global-admin');
     }
+
+
+    public function add_plugin_page()
+    {
+        // This page will be under "Settings"
+        add_menu_page(
+            esc_html__('Greet Bubble', 'greet-bubble'),
+            esc_html__('Greet Bubble', 'greet-bubble'),
+            'manage_options',
+            'greet-bubble',
+            array($this, 'greet_bubble_settings'),
+            'dashicons-format-video',
+            6
+        );
+
+        // Greet Bubble Settings Page.
+        add_submenu_page(
+            'greet-bubble',
+            esc_html__('Settings', 'greet-bubble'),
+            esc_html__('Settings', 'greet-bubble'),
+            'manage_options',
+            'greet-bubble',
+            array($this, 'greet_bubble_settings')
+        );
+
+        add_submenu_page('greet-bubble', __('👑 Upgrade to Pro!', 'greet-bubble'), sprintf('<span class="greet-bubble-pro-text">%s</span>', __('👑 Upgrade to Pro!', 'greet-bubble')), 'manage_options', 'https://1.envato.market/greet');
+    }
+
+    /**
+     * Options page callback
+     */
+    public function greet_bubble_settings() {}
 }

@@ -41,10 +41,11 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_button_set' ) ) {
             $extra   = ( $args['multiple'] ) ? '[]' : '';
             $active  = ( in_array( $key, $value ) || ( empty( $value ) && empty( $key ) )  ) ? ' greet-bubble--active' : '';
             $checked = ( in_array( $key, $value ) || ( empty( $value ) && empty( $key ) ) ) ? ' checked' : '';
+            $pro_only = isset( $option['pro_only'] ) ? ' disabled' : '';
 
-            echo '<div class="greet-bubble--sibling greet-bubble--button'. esc_attr( $active ) .'">';
-            echo '<input type="'. esc_attr( $type ) .'" name="'. esc_attr( $this->field_name( $extra ) ) .'" value="'. esc_attr( $key ) .'"'. $this->field_attributes() . esc_attr( $checked ) .'/>';
-            echo $option;
+            echo '<div class="greet-bubble--sibling ' . esc_attr( $pro_only ) . ' greet-bubble--button'. esc_attr( $active ) .'">';
+            echo '<input type="'. esc_attr( $type ) .'" ' . $pro_only . ' name="'. esc_attr( $this->field_name( $extra ) ) .'" value="'. esc_attr( $key ) .'"'. $this->field_attributes() . esc_attr( $checked ) .'/>';
+            echo wp_kses_post( $option['text'] );
             echo '</div>';
 
           }
