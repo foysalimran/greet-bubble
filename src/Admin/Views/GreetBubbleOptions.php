@@ -158,13 +158,7 @@ class GreetBubbleOptions
                                     'default' =>  esc_html__('Hi', 'greet-bubble'),
                                 ),
                 
-                                array(
-                                    'id'     => 'hi_text_typography',
-                                    'class'  => 'greet_bubble_pro_only',
-                                    'desc'  => __('To unlock These Typography (940+ Google Fonts) options, <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>Upgrade To Pro!</i></strong></a>', 'greet-bubble'),
-                                    'title'  => __('\'Hi\' text typography.', 'greet-bubble'),
-                                    'type'   => 'typography',
-                                ),
+
 
                                 array(
                                     'id'          => 'greet_positon',
@@ -212,15 +206,7 @@ class GreetBubbleOptions
                         array(
                             'title' => esc_html__('Button', 'greet-bubble'),
                             'fields'    => array(
-                                array(
-                                    'id'    => 'buttons_typography',
-                                    'class'  => 'greet_bubble_pro_only',
-                                    'desc'  => __('To unlock These Typography (940+ Google Fonts) options, <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>Upgrade To Pro!</i></strong></a>', 'greet-bubble'),
-                                    'type'  => 'typography',
-                                    'title' => esc_html__('Buttons Typography', 'greet-bubble'),
-                                    'color' => false,
-                                    'text_align'    => false,
-                                  ),
+
                                   array(
                                     'id'    => 'button_display_type',
                                     'type'    => 'button_set',
@@ -367,6 +353,32 @@ class GreetBubbleOptions
                 ),
             )
         ));
+
+
+        GREET_BUBBLE::createSection($prefix, array(
+            'title'       => esc_html__('TYPOGRAPHY', 'greet-bubble-pro'),
+            'icon'        => 'icofont-font',
+            'fields'      => array(
+                array(
+                    'id'     => 'hi_text_typography',
+                    'class'  => 'greet_bubble_pro_only',
+                    'desc'  => __('To unlock These Typography (940+ Google Fonts) options, <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>Upgrade To Pro!</i></strong></a>', 'greet-bubble'),
+                    'title'  => __('\'Hi\' text typography.', 'greet-bubble'),
+                    'type'   => 'typography',
+                ),
+                array(
+                    'id'    => 'buttons_typography',
+                    'class'  => 'greet_bubble_pro_only',
+                    'desc'  => __('To unlock These Typography (940+ Google Fonts) options, <a target="_blank" href="https://1.envato.market/gbdm79"><strong><i>Upgrade To Pro!</i></strong></a>', 'greet-bubble'),
+                    'type'  => 'typography',
+                    'title' => esc_html__('Buttons Typography', 'greet-bubble'),
+                    'color' => false,
+                    'text_align'    => false,
+                  ),
+
+            )
+        ));
+
 
 
         GREET_BUBBLE::createSection($prefix, array(

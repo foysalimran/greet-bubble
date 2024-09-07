@@ -443,6 +443,126 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ec6c";
 }
 
+.icofont-brand-whatsapp:before
+{
+  content: "\e957";
+}
+
+.icofont-whatsapp:before
+{
+  content: "\ed86";
+}
+
+.icofont-ui-messaging:before
+{
+  content: "\ec68";
+}
+
+.icofont-ui-message:before
+{
+  content: "\ec67";
+}
+
+.icofont-text-height:before
+{
+  content: "\ee07";
+}
+
+.icofont-text-width:before
+{
+  content: "\ee08";
+}
+
+.icofont-mobile-phone:before
+{
+  content: "\ef9b";
+}
+
+.icofont-ui-video-message:before
+{
+  content: "\ec91";
+}
+
+.icofont-ui-text-chat:before
+{
+  content: "\ec86";
+}
+
+.icofont-ui-video-chat:before
+{
+  content: "\ec90";
+}
+
+.icofont-wechat:before
+{
+  content: "\ed84";
+}
+
+.icofont-chat:before
+{
+  content: "\eed5";
+}
+
+.icofont-snapchat:before
+{
+  content: "\ed6c";
+}
+
+.icofont-ui-chat:before
+{
+  content: "\ec4a";
+}
+
+.icofont-brand-snapchat:before
+{
+  content: "\e936";
+}
+
+.icofont-ui-call:before
+{
+  content: "\ec46";
+}
+
+.icofont-telephone:before
+{
+  content: "\f008";
+}
+
+.icofont-address-book:before
+{
+  content: "\eea1";
+}
+
+.icofont-google-map:before
+{
+  content: "\ed42";
+}
+
+.icofont-search-map:before
+{
+  content: "\ed16";
+}
+
+.icofont-ui-map:before
+{
+  content: "\ec66";
+}
+
+.icofont-map-pins:before
+{
+  content: "\ef8a";
+}
+
+.icofont-map:before
+{
+  content: "\ef8b";
+}
+
+.icofont-font:before
+{
+  content: "\edef";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {

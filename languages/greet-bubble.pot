@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-07 10:24+0000\n"
+"POT-Creation-Date: 2024-09-07 12:20+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -138,203 +138,203 @@ msgstr ""
 msgid "Hi"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:164, src/Admin/Views/GreetBubbleOptions.php:218
-msgid "To unlock These Typography (940+ Google Fonts) options, <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:165
-msgid "'Hi' text typography."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:172
+#: src/Admin/Views/GreetBubbleOptions.php:166
 msgid "Bubble position"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:173
+#: src/Admin/Views/GreetBubbleOptions.php:167
 msgid "Select bubble position you want to show."
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:176, src/Admin/Framework/fields/typography/typography.php:175
+#: src/Admin/Views/GreetBubbleOptions.php:170, src/Admin/Framework/fields/typography/typography.php:175
 msgid "Right"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:179, src/Admin/Framework/fields/typography/typography.php:173
+#: src/Admin/Views/GreetBubbleOptions.php:173, src/Admin/Framework/fields/typography/typography.php:173
 msgid "Left"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:189
+#: src/Admin/Views/GreetBubbleOptions.php:183
 msgid "Hide for session"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:190
+#: src/Admin/Views/GreetBubbleOptions.php:184
 msgid "Turn on to hide permenently for this session of user visit on close button click. <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:197
+#: src/Admin/Views/GreetBubbleOptions.php:191
 msgid "Pause video when leaving page"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:198
+#: src/Admin/Views/GreetBubbleOptions.php:192
 msgid "Turn on the option to pause video if they switch browser tab. "
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:205
+#: src/Admin/Views/GreetBubbleOptions.php:199
 msgid "Border Color"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:206
+#: src/Admin/Views/GreetBubbleOptions.php:200
 msgid "Change bubble border color here."
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:213
+#: src/Admin/Views/GreetBubbleOptions.php:207
 msgid "Button"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:220
-msgid "Buttons Typography"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:227
+#: src/Admin/Views/GreetBubbleOptions.php:213
 msgid "Button Display Type"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:230
+#: src/Admin/Views/GreetBubbleOptions.php:216
 msgid "Text Only"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:233
+#: src/Admin/Views/GreetBubbleOptions.php:219
 msgid "With Icon and Text"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:236
+#: src/Admin/Views/GreetBubbleOptions.php:222
 msgid "Icon Only"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:245
+#: src/Admin/Views/GreetBubbleOptions.php:231
 msgid "Button type"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:246
+#: src/Admin/Views/GreetBubbleOptions.php:232
 msgid "Select type of the buttons."
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:249
+#: src/Admin/Views/GreetBubbleOptions.php:235
 msgid "Square"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:252
+#: src/Admin/Views/GreetBubbleOptions.php:238
 msgid "Rounded"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:262
+#: src/Admin/Views/GreetBubbleOptions.php:248
 msgid "Button radius"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:263
+#: src/Admin/Views/GreetBubbleOptions.php:249
 msgid "Use buttons border radius value in px."
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:271
+#: src/Admin/Views/GreetBubbleOptions.php:257
 msgid "Buttons colors"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:272
+#: src/Admin/Views/GreetBubbleOptions.php:258
 msgid "Change buttons Background, text, and hover colors from here. "
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:274
+#: src/Admin/Views/GreetBubbleOptions.php:260
 msgid "Backorund"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:275
+#: src/Admin/Views/GreetBubbleOptions.php:261
 msgid "Text color"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:276
+#: src/Admin/Views/GreetBubbleOptions.php:262
 msgid "Background hover"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:277
+#: src/Admin/Views/GreetBubbleOptions.php:263
 msgid "Hover text color"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:289
+#: src/Admin/Views/GreetBubbleOptions.php:275
 msgid "Other"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:295
+#: src/Admin/Views/GreetBubbleOptions.php:281
 msgid "Scroll bar colors"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:296
+#: src/Admin/Views/GreetBubbleOptions.php:282
 msgid "Some popup elements like contact forms uses scroll bars. Change their colors from this option."
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:298
+#: src/Admin/Views/GreetBubbleOptions.php:284
 msgid "Track background"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:299
+#: src/Admin/Views/GreetBubbleOptions.php:285
 msgid "Thumb background"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:311
+#: src/Admin/Views/GreetBubbleOptions.php:297
 msgid "Show Specefic pages only"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:317
+#: src/Admin/Views/GreetBubbleOptions.php:303
 msgid "Select pages"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:318
+#: src/Admin/Views/GreetBubbleOptions.php:304
 msgid "Want to show your <strong>Greet Bubble</strong> on specefic page only? <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:329
+#: src/Admin/Views/GreetBubbleOptions.php:315
 msgid "CONTROLS"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:336
+#: src/Admin/Views/GreetBubbleOptions.php:322
 msgid "Want essential controls over your <strong>Greet bubble</strong>? <a href=\"https://1.envato.market/gbdm79\" target=\"_blank\"><b>Upgrade To Pro!</b></a>"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:339
+#: src/Admin/Views/GreetBubbleOptions.php:325
 msgid "Hide re-play control"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:343, src/Admin/Views/GreetBubbleOptions.php:353, src/Admin/Views/GreetBubbleOptions.php:363
+#: src/Admin/Views/GreetBubbleOptions.php:329, src/Admin/Views/GreetBubbleOptions.php:339, src/Admin/Views/GreetBubbleOptions.php:349
 msgid "Yes"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:344, src/Admin/Views/GreetBubbleOptions.php:354, src/Admin/Views/GreetBubbleOptions.php:364
+#: src/Admin/Views/GreetBubbleOptions.php:330, src/Admin/Views/GreetBubbleOptions.php:340, src/Admin/Views/GreetBubbleOptions.php:350
 msgid "No"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:349
+#: src/Admin/Views/GreetBubbleOptions.php:335
 msgid "Hide mute/unmute control"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:359
+#: src/Admin/Views/GreetBubbleOptions.php:345
 msgid "Hide fullscreen control"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:373
+#: src/Admin/Views/GreetBubbleOptions.php:365, src/Admin/Views/GreetBubbleOptions.php:372
+msgid "To unlock These Typography (940+ Google Fonts) options, <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:366
+msgid "'Hi' text typography."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:374
+msgid "Buttons Typography"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:385
 msgid "ADVANCED"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:379
+#: src/Admin/Views/GreetBubbleOptions.php:391
 msgid "Additional CSS"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:388
+#: src/Admin/Views/GreetBubbleOptions.php:400
 msgid "Additional JS"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:400
+#: src/Admin/Views/GreetBubbleOptions.php:412
 msgid "BACKUP"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:402
+#: src/Admin/Views/GreetBubbleOptions.php:414
 msgid "Export or import to use same settings in different websites."
 msgstr ""
 
