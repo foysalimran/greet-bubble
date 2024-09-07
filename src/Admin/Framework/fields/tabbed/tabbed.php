@@ -22,7 +22,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_tabbed' ) ) {
 
       echo $this->field_before();
 
-      echo '<div class="greet-bubble-tabbed-nav" data-depend-id="'. esc_attr( $this->field['id'] ) .'">';
+      echo '<div class="greet-bubble-tabbed-nav">';
       foreach ( $this->field['tabs'] as $key => $tab ) {
 
         $tabbed_icon   = ( ! empty( $tab['icon'] ) ) ? '<i class="greet-bubble--icon '. esc_attr( $tab['icon'] ) .'"></i>' : '';
@@ -47,7 +47,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_tabbed' ) ) {
           $field_id      = ( isset( $field['id'] ) ) ? $field['id'] : '';
           $field_default = ( isset( $field['default'] ) ) ? $field['default'] : '';
           $field_value   = ( isset( $this->value[$field_id] ) ) ? $this->value[$field_id] : $field_default;
-          $unique_id     = ( ! empty( $this->unique ) ) ? $this->unique .'['. $this->field['id'] .']' : $this->field['id'];
+          $unique_id     = ( ! empty( $this->unique ) ) ? $this->unique : '';
 
           GREET_BUBBLE::field( $field, $field_value, $unique_id, 'field/tabbed' );
 
@@ -58,7 +58,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_tabbed' ) ) {
       }
       echo '</div>';
 
-      echo $this->field_after();
+      echo wp_kses_post( $this->field_after() );
 
     }
 

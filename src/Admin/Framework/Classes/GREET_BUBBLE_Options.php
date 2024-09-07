@@ -242,78 +242,158 @@ if ( ! class_exists( 'GREET_BUBBLE_Options' ) ) {
 
           $this->notice = esc_html__( 'Default settings restored.', 'greet-bubble' );
 
-        } else if ( ! empty( $transient['reset_section'] ) && ! empty( $section_id ) ) {
+        } else if (!empty($transient['reset_section']) && !empty($section_id)) {
 
-          if ( ! empty( $this->pre_sections[$section_id-1]['fields'] ) ) {
+          if (!empty($this->pre_sections)) {
+						foreach ($this->pre_sections as $fields) {
+              $name = isset($fields['name']) ? $fields['name'] : '';
+							if ($name === $section_id) {
+								foreach ($fields['fields'] as $field) {
+									if ('tabbed' === $field['type']) {
+										$tabs = $field['tabs'];
+										foreach ($tabs as $fields) {
+											$fields = $fields['fields'];
+											foreach ($fields as $field) {
+												if (isset($field['id'])) {
+													$data[$field['id']] = $this->get_default($field);
+												}
+											}
+										}
+									} else {
+										if (!empty($field['id'])) {
+											$data[$field['id']] = $this->get_default($field);
+										}
+									}
+								}
+							}
+						}
+					}
 
-            foreach ( $this->pre_sections[$section_id-1]['fields'] as $field ) {
-              if ( ! empty( $field['id'] ) ) {
-                $data[$field['id']] = $this->get_default( $field );
-              }
-            }
+          // if (!empty($this->pre_sections[$section_id - 1]['fields'])) {
 
-          }
+          //   foreach ($this->pre_sections[$section_id - 1]['fields'] as $field) {
+          //     if (!empty($field['id'])) {
+          //       $data[$field['id']] = $this->get_default($field);
+          //     }
+          //   }
+          // }
 
-          $data = wp_parse_args( $data, $this->options );
+          $data = wp_parse_args($data, $this->options);
 
           $this->notice = esc_html__( 'Default settings restored.', 'greet-bubble' );
 
         } else {
 
           // sanitize and validate
-          foreach ( $this->pre_fields as $field ) {
+          foreach ($this->pre_fields as $field) {
 
-            if ( ! empty( $field['id'] ) ) {
+            if ('tabbed' === $field['type']) {
+							$tabs = $field['tabs'];
+							foreach ($tabs as $fields) {
+								$fields = $fields['fields'];
+								foreach ($fields as $field) {
+									$field_id    = isset($field['id']) ? $field['id'] : '';
+									$field_value = isset($options[$field_id]) ? $options[$field_id] : '';
+									// Ajax and Importing doing wp_unslash already.
+									if (!$ajax && !$importing) {
+										$field_value = wp_unslash($field_value);
+									}
+									// Sanitize "post" request of field.
+									if (!isset($field['sanitize'])) {
+										if (is_array($field_value)) {
+											$data[$field_id] = wp_kses_post_deep($field_value);
+										} else {
+											$data[$field_id] = wp_kses_post($field_value);
+										}
+									} elseif (isset($field['sanitize']) && is_callable($field['sanitize'])) {
+										$data[$field_id] = call_user_func($field['sanitize'], $field_value);
+									} else {
+										$data[$field_id] = $field_value;
+									}
 
-              $field_id    = $field['id'];
-              $field_value = isset( $options[$field_id] ) ? $options[$field_id] : '';
+									// Validate "post" request of field.
+									if (isset($field['validate']) && is_callable($field['validate'])) {
+										$has_validated = call_user_func($field['validate'], $field_value);
+										if (!empty($has_validated)) {
+											$data[$field_id]         = (isset($this->options[$field_id])) ? $this->options[$field_id] : '';
+											$this->errors[$field_id] = $has_validated;
+										}
+									}
+								}
+							}
+						} elseif (!empty($field['id'])) {
+							$field_id    = $field['id'];
+							$field_value = isset($options[$field_id]) ? $options[$field_id] : '';
+							// Ajax and Importing doing wp_unslash already.
+							if (!$ajax && !$importing) {
+								$field_value = wp_unslash($field_value);
+							}
+							// Sanitize "post" request of field.
+							if (!isset($field['sanitize'])) {
+								if (is_array($field_value)) {
+									$data[$field_id] = wp_kses_post_deep($field_value);
+								} else {
+									$data[$field_id] = wp_kses_post($field_value);
+								}
+							} elseif (isset($field['sanitize']) && is_callable($field['sanitize'])) {
+								$data[$field_id] = call_user_func($field['sanitize'], $field_value);
+							} else {
+								$data[$field_id] = $field_value;
+							}
 
-              // Ajax and Importing doing wp_unslash already.
-              if ( ! $ajax && ! $importing ) {
-                $field_value = wp_unslash( $field_value );
-              }
+							// Validate "post" request of field.
+							if (isset($field['validate']) && is_callable($field['validate'])) {
 
-              // Sanitize "post" request of field.
-              if ( ! isset( $field['sanitize'] ) ) {
+								$has_validated = call_user_func($field['validate'], $field_value);
 
-                if( is_array( $field_value ) ) {
+								if (!empty($has_validated)) {
 
-                  $data[$field_id] = wp_kses_post_deep( $field_value );
+									$data[$field_id]         = (isset($this->options[$field_id])) ? $this->options[$field_id] : '';
+									$this->errors[$field_id] = $has_validated;
+								}
+							}
+						}
+            // if (!empty($field['id'])) {
 
-                } else {
+            //   $field_id    = $field['id'];
+            //   $field_value = isset($options[$field_id]) ? $options[$field_id] : '';
 
-                  $data[$field_id] = wp_kses_post( $field_value );
+            //   // Ajax and Importing doing wp_unslash already.
+            //   if (!$ajax && !$importing) {
+            //     $field_value = wp_unslash($field_value);
+            //   }
 
-                }
+            //   // Sanitize "post" request of field.
+            //   if (!isset($field['sanitize'])) {
 
-              } else if( isset( $field['sanitize'] ) && is_callable( $field['sanitize'] ) ) {
+            //     if (is_array($field_value)) {
 
-                $data[$field_id] = call_user_func( $field['sanitize'], $field_value );
+            //       $data[$field_id] = wp_kses_post_deep($field_value);
+            //     } else {
 
-              } else {
+            //       $data[$field_id] = wp_kses_post($field_value);
+            //     }
+            //   } else if (isset($field['sanitize']) && is_callable($field['sanitize'])) {
 
-                $data[$field_id] = $field_value;
+            //     $data[$field_id] = call_user_func($field['sanitize'], $field_value);
+            //   } else {
 
-              }
+            //     $data[$field_id] = $field_value;
+            //   }
 
-              // Validate "post" request of field.
-              if ( isset( $field['validate'] ) && is_callable( $field['validate'] ) ) {
+            //   // Validate "post" request of field.
+            //   if (isset($field['validate']) && is_callable($field['validate'])) {
 
-                $has_validated = call_user_func( $field['validate'], $field_value );
+            //     $has_validated = call_user_func($field['validate'], $field_value);
 
-                if ( ! empty( $has_validated ) ) {
+            //     if (!empty($has_validated)) {
 
-                  $data[$field_id] = ( isset( $this->options[$field_id] ) ) ? $this->options[$field_id] : '';
-                  $this->errors[$field_id] = $has_validated;
-
-                }
-
-              }
-
-            }
-
+            //       $data[$field_id] = (isset($this->options[$field_id])) ? $this->options[$field_id] : '';
+            //       $this->errors[$field_id] = $has_validated;
+            //     }
+            //   }
+            // }
           }
-
         }
 
         $data = apply_filters( "greet_bubble_{$this->unique}_save", $data, $this );

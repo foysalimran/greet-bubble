@@ -98,7 +98,6 @@ class Template
                     ?>
                 </div>
             </div>
-
         </div>
 <?php
     }
