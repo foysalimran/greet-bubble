@@ -53,6 +53,11 @@ position: absolute;
   padding-bottom: 20px;
   font-size: 14px;
 }
+.greet-bubble-pro-only.greet-bubble-field-color_group .greet-bubble-field-color{
+  pointer-events: none;
+    opacity: 0.6;
+}
+
 /* Help page CSS */
 .greet-bubble-help-wrapper {
   max-width: 1050px;
@@ -101,21 +106,4 @@ position: absolute;
 }
 .greet_bubble__btn--secondary:hover {
   background-color: #ebe4ff;
-}
-.greet_bubble_pro_only.greet-bubble-field-button_set
-  .greet-bubble--button:last-child {
-  pointer-events: none;
-  opacity: 0.3;
-}
-.greet_bubble_pro_only.greet-bubble-field-button_set .greet-bubble--button:last-child:before {
-  content: "PRO";
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 8px;
-  background: red;
-  padding: 0px 5px;
-  z-index: 999;
-  opacity: 1;
-  line-height: 12px;
 }

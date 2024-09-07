@@ -181,6 +181,12 @@
           color: #fff;
           font-size: 14px;
           text-decoration: none;
+          &.with_icon_and_text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+          }
           &:hover {
             background-color: var(--buttons-hover-bg-color);
           }

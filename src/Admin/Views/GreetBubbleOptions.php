@@ -85,6 +85,13 @@ class GreetBubbleOptions
                         ),
 
                         array(
+                            'id'    => 'button_icon',
+                            'title' => esc_html__('Button Icon', 'greet-bubble-pro'),
+                            'desc' => esc_html__('Select Button icon', 'greet-bubble-pro'),
+                            'type'  => 'icon',
+                        ),
+
+                        array(
                             'id'        => 'button_behavior',
                             'type'      => 'button_set',
                             'inline'    => 'true',
@@ -101,6 +108,7 @@ class GreetBubbleOptions
                                 ),
                                 'contact_form' => array(
                                     'text' => __( 'Contact Form', 'greet-bubble' ),
+                                    'pro_only'  => true,
                                 ),
                               
                             ),
@@ -223,7 +231,6 @@ class GreetBubbleOptions
                         ),
                         'with_icon_and_text' => array(
                             'text' => __( 'With Icon and Text', 'greet-bubble' ),
-                            'pro_only' => true,
                         ),
                         'icon_only' => array(
                             'text' => __( 'Icon Only', 'greet-bubble' ),
@@ -279,6 +286,22 @@ class GreetBubbleOptions
                 array(
                     'type'  => 'heading',
                     'title' => esc_html__('Others', 'greet-bubble'),
+                ),
+
+                array(
+                    'id'        => 'scroll_bar_colors',
+                    'type'      => 'color_group',
+                    'class'     => 'greet-bubble-pro-only',
+                    'title'     => esc_html__('Scroll bar colors', 'greet-bubble'),
+                    'desc'      => esc_html__('Some popup elements like contact forms uses scroll bars. Change their colors from this option.', 'greet-bubble'),
+                    'options'   => array(
+                        'track_bg' => esc_html__('Track background', 'greet-bubble'),
+                        'thumb_bg' => esc_html__('Thumb background', 'greet-bubble'),
+                    ),
+                    'default'   => array(
+                        'thumb_bg' => '#7432ff',
+                        'track_bg' => '#eeeeee',
+                    )
                 ),
                 
                 array(
