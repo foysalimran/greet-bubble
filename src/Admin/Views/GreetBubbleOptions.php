@@ -86,8 +86,8 @@ class GreetBubbleOptions
 
                         array(
                             'id'    => 'button_icon',
-                            'title' => esc_html__('Button Icon', 'greet-bubble-pro'),
-                            'desc' => esc_html__('Select Button icon', 'greet-bubble-pro'),
+                            'title' => esc_html__('Button Icon', 'greet-bubble'),
+                            'desc' => esc_html__('Select Button icon', 'greet-bubble'),
                             'type'  => 'icon',
                         ),
 
