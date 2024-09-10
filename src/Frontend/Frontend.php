@@ -102,12 +102,16 @@ class Frontend
         if (!empty($custom_js)) {
             wp_add_inline_script('greet-script', $custom_js);
         }
+
+        $pause_video = isset($options['pause-video']) ? $options['pause-video'] : false;
+        $session_hide = isset($options['session-hide']) ? $options['session-hide'] : false;
+
         wp_localize_script(
             'greet-script',
             'frontend_scripts',
             array(
-                'pause_on_switch' => esc_attr($options['pause-video']),
-                'hide_for_session' => esc_attr($options['session-hide']),
+                'pause_on_switch' => esc_attr($pause_video),
+                'hide_for_session' => esc_attr($session_hide),
                 'ajaxurl' => admin_url('admin-ajax.php'),
                 'nonce'   => wp_create_nonce('greet_nonce'),
             )
@@ -118,7 +122,7 @@ class Frontend
     {
         // Meta csf option
         $options = get_option('_greet');
-        $show_pages = $options['show_pages'];
+        $show_pages = isset($options['show_pages']) ? $options['show_pages'] : false;
         $meta = get_post_meta(get_the_ID(), '_greet_meta', true);
 
         if (!empty($meta['video']['url'])) :
