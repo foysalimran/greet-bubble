@@ -67,16 +67,26 @@ Nice experience!
 == CORE FEATURES ==
 
 👉 Show repetative intro videos about your product or service with external buttons.
+👉 Buttons can be also use for playing different types of videos.
+👉 Drag and drop for each video item.
+👉 Default video poster can be set.
+👉 Editable button texts.
+👉 Option to add icon for buttons.
+👉 Button behavior can beh change to use another video or external link.
 👉 Link for buttons can be added from your available pages also you will able to set external link.
 👉 Bubble intro text can be change.
+👉 Position your bubble left or right.
+👉 Exact mesurment with px, em, % for positioning bubble on left bottom side or right bottom side.
 👉 Option to pause video when leaving different tab.
 👉 Options to change all colors to your own brand color.
 👉 Highly customizeable appereance options
+👉 2 different button displah type: Text only, With icon and text.
 👉 You will able to change button styles to Square or Rounded.
+👉 Border radius changing option for buttons on rounded type.
+👉 Buttons background, color, hover background and hover color can be changed.
+👉 Option to add custom CSS and JS codes from plugin option panel.
 👉 Easy and powerful settings panel
 👉 All devices are friendly so users can see this perfectly from any device.
-👉 Can be show bottom right or bottom left side of your website.
-👉 Option to add custom CSS and JS codes from plugin option panel.
 👉 Multisite Supported.  
 👉 Multilingual Ready.  
 👉 RTL Supported.  
@@ -89,7 +99,7 @@ Nice experience!
 👉 And much more.
 
 ==== Greet 3.0 ====
-<strong>Greet 3.0</strong>  has completely been rebuilt and this provides you now many improvements and new amazing features.
+**Greet 3.0**  has completely been rebuilt and this provides you now many improvements and new amazing features.
 == You will able to get these new features ==
 
 * Completely new admin option panel.
@@ -132,29 +142,33 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 3. Access Greet video menu in left panel of dashboard.
 
 == Screenshots ==
-1. Default look after adding video
-2. After clicking bubble
-3. Video upload - Admin option
-4. Apperance - Admin option
-5. Controls - Admin option
-6. Advanced - Admin option
-7. Backup - Admin option
-8. Get Help - Admin option
+1. Fronend: Default look after adding video
+2. Frontend: After clicking bubble
+3. Admin: UPLOAD VIDEO
+4. Admin: APPEARANCE - Bubble
+5. Admin: APPEARANCE - Button
+6. Admin: APPEARANCE - Others
+7. Admin: CONTROLS
+8. Admin: TYPOGRAPHY
+9. Admin: ADVANCED
+10. Admin: BACKUP
+11. Admin: Help
+
 
 == Who is for? ==
-<h4>Online business</h4>
+====Online business====
 If you running an online business you can try this video bubble. By which you can give customers an intro about your business.
 
-<h4>Product Marketing</h4>
+====Product Marketing====
 Giving full details about the product while advertising is a worrying matter. A video bubble can help you to give a full introduction.
 
-<h4>Health & Doctors</h4>
+====Health & Doctors====
 Video bubbles can help you with giving your patients a warm welcome and intro about service.
 
-<h4>Real Estate Agents</h4>
+====Real Estate Agents====
 Video bubbles can help you to give an intro about yourself to your audience. It will make your website looks good.
 
-<h4>Public Figure and influencer</h4>
+====Public Figure and influencer====
 Video bubbles can help you to give an intro about yourself to your audience. It will make your website looks good.
 
 == Changelog ==
