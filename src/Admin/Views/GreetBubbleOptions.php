@@ -160,7 +160,7 @@ class GreetBubbleOptions
                                 ),
                 
                                 array(
-                                    'id'          => 'greet_positon',
+                                    'id'          => 'greet_position',
                                     'type'        => 'button_set',
                                     'title'       => esc_html__('Bubble position', 'greet-bubble'),
                                     'desc' => esc_html__('Select bubble position you want to show.', 'greet-bubble'),
@@ -173,6 +173,34 @@ class GreetBubbleOptions
                                         ),
                                     ),
                                     'default'     => 'right'
+                                ),
+
+                                array(
+                                    'id'    => 'margin_form_right_bottom',
+                                    'type'  => 'spacing',
+                                    'title' => esc_html__('Margin From Right Bottom', 'greet-bubble-pro'),
+                                    'top'   => false,
+                                    'left'  => false,
+                                    'default'  => array(
+                                        'right'    => '30',
+                                        'bottom'  => '30',
+                                        'unit'   => 'px',
+                                    ),
+                                    'dependency' => array('greet_position', '==', 'right'),
+                                ),
+                                
+                                array(
+                                    'id'    => 'margin_form_left_bottom',
+                                    'type'  => 'spacing',
+                                    'title' => esc_html__('Margin From Left Bottom', 'greet-bubble-pro'),
+                                    'top'   => false,
+                                    'right'  => false,
+                                    'default'  => array(
+                                        'left'    => '30',
+                                        'bottom'  => '30',
+                                        'unit'   => 'px',
+                                    ),
+                                    'dependency' => array('greet_position', '==', 'greet-left'),
                                 ),
 
                                 array(

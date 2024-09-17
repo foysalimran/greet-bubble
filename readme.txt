@@ -4,7 +4,7 @@ Donate link: https://1.envato.market/gbdm79
 Tags: Welcome, Video, Engagement, greetings, introduce
 Requires at least: 5.0
 Tested up to: 6.6.1
-Stable tag: 4.1.3
+Stable tag: 4.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -158,6 +158,10 @@ Video bubbles can help you to give an intro about yourself to your audience. It 
 Video bubbles can help you to give an intro about yourself to your audience. It will make your website looks good.
 
 == Changelog ==
+= 4.1.4  – Sep 17, 2024
+- Added: New option for positioning from left bottom
+- Added: New option for positioning from right bottom
+
 = 4.1.3  – Sep 13, 2024
 - Added: Unlimited icons from the Icofont library.
 - Added: Icons in the Appearance tab options.

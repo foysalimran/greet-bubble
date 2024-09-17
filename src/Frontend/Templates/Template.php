@@ -11,7 +11,7 @@ class Template
         $bubble_buttons = isset($options['bubble_buttons']) ? $options['bubble_buttons'] : '';
         $button_display_type = isset($options['button_display_type']) ? $options['button_display_type'] : '';
 ?>
-        <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr($options['greet_positon']) ?>">
+        <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr($options['greet_position']) ?>">
             <video id="greet_video" <?php if (isset($options['poster']['url'])) : ?>poster="<?php echo esc_url($options['poster']['url']); ?>" <?php endif; ?>>
                 <source id="playVideo" type="video/mp4" src="<?php echo esc_url($video_url) ?>#t=0.5" />
             </video>
