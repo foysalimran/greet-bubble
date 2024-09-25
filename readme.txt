@@ -1,14 +1,14 @@
 === Greet - Video Bubble Warm Welcome Plugin for WordPress ===
 Contributors: ThemeAtelier
 Donate link: https://1.envato.market/gbdm79
-Tags: Welcome, Video, Engagement, greetings, introduce
+Tags: Greetings, Video, WhatsApp, Contact Form, WooCommerce
 Requires at least: 5.0
 Tested up to: 6.6.1
-Stable tag: 4.1.4
+Stable tag: 4.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Boost Engagement and Retention with a Personalized Video Greeting.
+Boost Engagement and Retention with a Personalised Video Greeting, Contact Form, and WhatsApp Form.
 
 == Description ==
 
@@ -172,119 +172,119 @@ Video bubbles can help you to give an intro about yourself to your audience. It 
 Video bubbles can help you to give an intro about yourself to your audience. It will make your website looks good.
 
 == Changelog ==
-= 4.1.5  – Sep 25, 2024
-- Fixed: Admin options data saving issue
+= 4.1.5  – Sep 25, 2024 =
+* Fixed: Admin options data saving issue
 
-= 4.1.4  – Sep 17, 2024
-- Added: New option for positioning from left bottom
-- Added: New option for positioning from right bottom
+= 4.1.4  – Sep 17, 2024 =
+* Added: New option for positioning from left bottom
+* Added: New option for positioning from right bottom
 
-= 4.1.3  – Sep 13, 2024
-- Added: Unlimited icons from the Icofont library.
-- Added: Icons in the Appearance tab options.
+= 4.1.3  – Sep 13, 2024 =
+* Added: Unlimited icons from the Icofont library.
+* Added: Icons in the Appearance tab options.
 
-= 4.1.2  – Sep 10, 2024
-- Fix: PHP 8.1.12 Compatibility Issue
-- Fix: WordPress 6.6.1 Compatibility Issue
+= 4.1.2  – Sep 10, 2024 =
+* Fix: PHP 8.1.12 Compatibility Issue
+* Fix: WordPress 6.6.1 Compatibility Issue
 
-= 4.1.1  – Sep 7, 2024
-- Added: Buttons icon options
-- Update: Apperience UX to tab style
-- Added: Buttons display type Option
-- Fixed: Some minor issues
+= 4.1.1  – Sep 7, 2024 =
+* Added: Buttons icon options
+* Update: Apperience UX to tab style
+* Added: Buttons display type Option
+* Fixed: Some minor issues
 
-= 4.1.0  – Aug 20, 2024
-- Fixed: Old data migration
+= 4.1.0  – Aug 20, 2024 =
+* Fixed: Old data migration
 
-= 4.0.2  – Aug 20, 2024
-- Added: Repetative video option
-- Added: Multiple video option
-- Added: Multiple links option
-- Fixed: Icons for dashboard
+= 4.0.2  – Aug 20, 2024 =
+* Added: Repetative video option
+* Added: Multiple video option
+* Added: Multiple links option
+* Fixed: Icons for dashboard
 
-= 4.0.1  – Aug 08, 2024
-- Fix: Plugin settings URL redirection issue
+= 4.0.1  – Aug 08, 2024 =
+* Fix: Plugin settings URL redirection issue
 
-= 4.0.0  – Aug 06, 2024
-- Fix: Update code structure
-- Update: Code compatibility with latest WordPress version
-- Update: Code compatibility with latest PHP version
-- Update: Plugin description
+= 4.0.0  – Aug 06, 2024 =
+* Fix: Update code structure
+* Update: Code compatibility with latest WordPress version
+* Update: Code compatibility with latest PHP version
+* Update: Plugin description
 
-= 3.6.2
-1. Fixed: Button link target issue 
+= 3.6.2 =
+* Fixed: Button link target issue 
  
-= 3.5.0
-1. Compatibility with latest WordPress version
-2. Compatibility with latest php version
+= 3.5.0 =
+* Compatibility with latest WordPress version
+* Compatibility with latest php version
 
-= 3.6.0
-1. Added: Default video poster option
-2. Updated language file for latest language strings
-3. Compatibility with latest WordPress version
-4. Compatibility with latest php version
-5. Added option to add additional CSS and JS from admin panel
-6. Removed pro version banner
-7. Added controls section
-8. Added pro version compare fields
-9. Update some codebase
-10. Fixed video reply button click JS error
-11. Fixed video push button not dissapering when back from another tab on pushed vid
+= 3.6.0 =
+* Added: Default video poster option
+* Updated language file for latest language strings
+* Compatibility with latest WordPress version
+* Compatibility with latest php version
+* Added option to add additional CSS and JS from admin panel
+* Removed pro version banner
+* Added controls section
+* Added pro version compare fields
+* Update some codebase
+* Fixed video reply button click JS error
+* Fixed video push button not dissapering when back from another tab on pushed vid
 
-= 3.6.1
-1. Updated language file for latest language strings
-2. Added plugin short description as per WordPress recommendation
+= 3.6.1 =
+* Updated language file for latest language strings
+* Added plugin short description as per WordPress recommendation
 
-= 3.4.10
-1. Fixed visibility of push icon issue on browser tab switch
+= 3.4.10 =
+* Fixed visibility of push icon issue on browser tab switch
 
-= 3.4.9
-1. Added help video in admin
+= 3.4.9 =
+* Added help video in admin
 
-= 3.4.8
-1. Fixed javascript code confiliction issue
+= 3.4.8 =
+* Fixed javascript code confiliction issue
 
-= Greet 3.4.7
-1. Updated coding standards for good performance
+= Greet 3.4.7 =
+* Updated coding standards for good performance
 
-= Greet 3.4.6
-1. Admin UI improvement
+= Greet 3.4.6 =
+* Admin UI improvement
 
-= Greet 3.4.5
-1. Fixed video circle issue on the Firefox browser
+= Greet 3.4.5 =
+* Fixed video circle issue on the Firefox browser
 
-= Greet 3.4.4
-1. Changed admin UI to more user friendly
-2. Added some translation strings
+= Greet 3.4.4 =
+* Changed admin UI to more user friendly
+* Added some translation strings
 
-= Greet 3.4.3
-1. Added compatibility with WordPress 6.4.2
+= Greet 3.4.3 =
+* Added compatibility with WordPress 6.4.2
 
-= Greet 3.4.2
-1. Updated all language strings
-2. Added compatibility with WordPress 6.3.2
+= Greet 3.4.2 =
+* Updated all language strings
+* Added compatibility with WordPress 6.3.2
 
 = Greet 3.4.1
-1. Added auto preload poser to avoild blank screen on iphone deveices.
+* Added auto preload poser to avoild blank screen on iphone deveices.
 
-= Greet 3.2.0
-1. Added multiple button group
+= Greet 3.2.0 =
+* Added multiple button group
 
-= Greet 3.0.0
-1. Completely new admin option panel.
-2. Option to enable pause video when leaving page.
-3. Added option to customize different things for buttons like color, border, text etc.
-4. There has 2 different button version called Square & Rounded.
-5. Export or import option to use same settings in different websites.
+= Greet 3.0.0 =
+* Completely new admin option panel.
+* Option to enable pause video when leaving page.
+* Added option to customize different things for buttons like color, border, text etc.
+* There has 2 different button version called Square & Rounded.
+* Export or import option to use same settings in different websites.
 
-= Greet 1.2
-1. Added option to add button as external link
+= Greet 1.2 =
+* Added option to add button as external link
 
-= Greet 1.0.1
-1. Updated code stractures
+= Greet 1.0.1 =
+* Updated code stractures
 
-= Greet 1.0
-1. Initial release
+= Greet 1.0 =
+* Initial release
 
 == Upgrade Notice ==
 It's recommended to have a backup of your website before hitting the update button.
