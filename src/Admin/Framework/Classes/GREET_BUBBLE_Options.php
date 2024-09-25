@@ -687,7 +687,11 @@ if ( ! class_exists( 'GREET_BUBBLE_Options' ) ) {
                     $field['default'] = $this->get_default( $field );
                   }
 
-                  $value = ( ! empty( $field['id'] ) && isset( $this->options[$field['id']] ) ) ? $this->options[$field['id']] : '';
+                  if ('tabbed' === $field['type']) { // field type tabbed, no field id.
+                    $value = $this->options;
+                  } else {
+                    $value = (!empty($field['id']) && isset($this->options[$field['id']])) ? $this->options[$field['id']] : '';
+                  }
 
                   GREET_BUBBLE::field( $field, $value, $this->unique, 'options' );
 
