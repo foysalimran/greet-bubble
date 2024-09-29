@@ -154,7 +154,6 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 10. Admin: BACKUP
 11. Admin: Help
 
-
 == Who is for? ==
 ====Online business====
 If you running an online business you can try this video bubble. By which you can give customers an intro about your business.
