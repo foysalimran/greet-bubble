@@ -79,6 +79,19 @@ class Frontend
         $scroll_bar_colors      = isset($options['scroll_bar_colors']) ? $options['scroll_bar_colors'] : '';
         $thumb_bg               = isset($scroll_bar_colors['thumb_bg']) ? $scroll_bar_colors['thumb_bg'] : '#7432ff';
         $track_bg               = isset($scroll_bar_colors['track_bg']) ? $scroll_bar_colors['track_bg'] : '#eeeeee';
+
+        $greet_position = isset($options['greet_position']) ? $options['greet_position'] : 'right';
+
+        $margin_form_right_bottom = isset($options['margin_form_right_bottom']) ? $options['margin_form_right_bottom'] : [];
+        $margin_form_right_bottom_right = isset($margin_form_right_bottom['right']) ? $margin_form_right_bottom['right'] : 'right';
+        $margin_form_right_bottom_bottom = isset($margin_form_right_bottom['bottom']) ? $margin_form_right_bottom['bottom'] : 'bottom';
+        $margin_form_right_bottom_unit = isset($margin_form_right_bottom['unit']) ? $margin_form_right_bottom['unit'] : 'px';
+
+        $margin_form_left_bottom = isset($options['margin_form_left_bottom']) ? $options['margin_form_left_bottom'] : [];
+        $margin_form_left_bottom_left = isset($margin_form_left_bottom['left']) ? $margin_form_left_bottom['left'] : 'left';
+        $margin_form_left_bottom_bottom = isset($margin_form_left_bottom['bottom']) ? $margin_form_left_bottom['bottom'] : 'bottom';
+        $margin_form_left_bottom_unit = isset($margin_form_left_bottom['unit']) ? $margin_form_left_bottom['unit'] : 'px';
+
         $custom_css = "
         :root {
             --border-color: {$border_color};
@@ -90,6 +103,11 @@ class Frontend
             --track-bg: {$track_bg};
         }
         ";
+
+        if('right' === $greet_position ) {$custom_css .=".greet_wrapper{right:{$margin_form_right_bottom_right}{$margin_form_right_bottom_unit};bottom:{$margin_form_right_bottom_bottom}{$margin_form_right_bottom_unit};}";}
+
+        if('greet-left' === $greet_position ) {$custom_css .=".greet_wrapper{left:{$margin_form_left_bottom_left}{$margin_form_left_bottom_unit};bottom:{$margin_form_left_bottom_bottom}{$margin_form_left_bottom_unit};}";}
+        
         if ($button_type == 'rounded') {
             $custom_css .= ".greet_wrapper_full .greet_change_video [class*=video] a {border-radius: {$button_radius}px}";
         }
@@ -102,12 +120,16 @@ class Frontend
         if (!empty($custom_js)) {
             wp_add_inline_script('greet-script', $custom_js);
         }
+
+        $pause_video = isset($options['pause-video']) ? $options['pause-video'] : false;
+        $session_hide = isset($options['session-hide']) ? $options['session-hide'] : false;
+
         wp_localize_script(
             'greet-script',
             'frontend_scripts',
             array(
-                'pause_on_switch' => esc_attr($options['pause-video']),
-                'hide_for_session' => esc_attr($options['session-hide']),
+                'pause_on_switch' => esc_attr($pause_video),
+                'hide_for_session' => esc_attr($session_hide),
                 'ajaxurl' => admin_url('admin-ajax.php'),
                 'nonce'   => wp_create_nonce('greet_nonce'),
             )
@@ -118,7 +140,7 @@ class Frontend
     {
         // Meta csf option
         $options = get_option('_greet');
-        $show_pages = $options['show_pages'];
+        $show_pages = isset($options['show_pages']) ? $options['show_pages'] : false;
         $meta = get_post_meta(get_the_ID(), '_greet_meta', true);
 
         if (!empty($meta['video']['url'])) :

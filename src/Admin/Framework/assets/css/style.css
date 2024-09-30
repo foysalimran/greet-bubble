@@ -45,6 +45,7 @@
  *     03. 20. Field: media
  *     03. 21. Field: palette
  *     03. 22. Field: repeater
+ *     03. 29. Field: section_tab
  *     03. 23. Field: select
  *     03. 24. Field: slider
  *     03. 25. Field: sortable
@@ -945,8 +946,8 @@
 .greet-bubble-field-button_set .greet-bubble--active {
   z-index: 2;
   color: #fff;
-  border-color: #006799;
-  background-color: #0085ba;
+  border-color: #7432ff;
+  background-color: #7113ff;
 }
 .greet-bubble-field-button_set input {
   display: none;
@@ -2056,6 +2057,45 @@
   outline: none;
   box-shadow: none;
 }
+/**
+ * 03. 29. Field: section_tab
+ */
+.greet-bubble-field-section_tab .greet-bubble-section_tab-content {
+  border: 1px solid #ccd0d4;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.greet-bubble-field-section_tab .greet-bubble-section_tab-content > .greet-bubble-field {
+  padding: 15px;
+}
+.greet-bubble-field-section_tab .greet-bubble-section_tab-nav .greet-bubble--icon {
+  padding-right: 5px;
+}
+.greet-bubble-field-section_tab .greet-bubble-section_tab-nav a {
+  display: inline-block;
+  padding: 12px 15px;
+  margin-top: 1px;
+  margin-right: 5px;
+  margin-bottom: -1px;
+  position: relative;
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  border: 1px solid #ccd0d4;
+  background-color: #f3f3f3;
+  transition: all 0.2s;
+}
+.greet-bubble-field-section_tab .greet-bubble-section_tab-nav a:hover {
+  background-color: #f9f9f9;
+}
+.greet-bubble-field-section_tab .greet-bubble-section_tab-nav a.greet-bubble-section_tab-active {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+.greet-bubble-field-section_tab .greet-bubble-section_tab-nav a:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 /**
  * 03. 30. Field: text
@@ -2804,6 +2844,7 @@
   border-color: #e5e5e5;
 }
 .control-section .greet-bubble-tabbed-content > .greet-bubble-field,
+.control-section .greet-bubble-section_tab-content > .greet-bubble-field,
 .control-section .greet-bubble-sortable-content > .greet-bubble-field,
 .control-section .greet-bubble-repeater-content > .greet-bubble-field,
 .control-section .greet-bubble-fieldset-content > .greet-bubble-field,
@@ -2812,6 +2853,7 @@
   padding: 10px;
 }
 .control-section .greet-bubble-tabbed-content > .greet-bubble-field .greet-bubble-title,
+.control-section .greet-bubble-section_tab-content > .greet-bubble-field .greet-bubble-title,
 .control-section .greet-bubble-sortable-content > .greet-bubble-field .greet-bubble-title,
 .control-section .greet-bubble-repeater-content > .greet-bubble-field .greet-bubble-title,
 .control-section .greet-bubble-fieldset-content > .greet-bubble-field .greet-bubble-title,
@@ -2820,6 +2862,7 @@
   margin-bottom: 5px;
 }
 .control-section .greet-bubble-tabbed-content > .greet-bubble-field h4,
+.control-section .greet-bubble-section_tab-content > .greet-bubble-field h4,
 .control-section .greet-bubble-sortable-content > .greet-bubble-field h4,
 .control-section .greet-bubble-repeater-content > .greet-bubble-field h4,
 .control-section .greet-bubble-fieldset-content > .greet-bubble-field h4,

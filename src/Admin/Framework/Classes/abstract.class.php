@@ -65,6 +65,13 @@ if ( ! class_exists( 'GREET_BUBBLE_Abstract' ) ) {
                 }
               }
             }
+            if( $field_type === 'section_tab' ) {
+              if ( ! empty( $field['tabs'] ) ) {
+                foreach ( $field['tabs'] as $accordion ) {
+                  $this->recursive_output_css( $accordion['fields'], $field );
+                }
+              }
+            }
 
             if ( class_exists( $field_class ) ) {
 

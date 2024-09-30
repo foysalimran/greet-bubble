@@ -9,13 +9,16 @@ class Template
         $video = isset($options['video']) ? $options['video'] : '';
         $video_url = isset($video['url']) ? $video['url'] : '';
         $bubble_buttons = isset($options['bubble_buttons']) ? $options['bubble_buttons'] : '';
+        $button_display_type = isset($options['button_display_type']) ? $options['button_display_type'] : '';
+        $greet_position = isset($options['greet_position']) ? $options['greet_position'] : '';
+        $hi_text = isset($options['hi_text']) ? $options['hi_text'] : '';
 ?>
-        <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr($options['greet_positon']) ?>">
+        <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr($greet_position) ?>">
             <video id="greet_video" <?php if (isset($options['poster']['url'])) : ?>poster="<?php echo esc_url($options['poster']['url']); ?>" <?php endif; ?>>
                 <source id="playVideo" type="video/mp4" src="<?php echo esc_url($video_url) ?>#t=0.5" />
             </video>
 
-            <h4 id="greet_text" class="greet_text"><?php echo esc_html($options['hi_text'])  ?></h4>
+            <h4 id="greet_text" class="greet_text"><?php echo esc_html($hi_text)  ?></h4>
 
             <div class="greet_close">
                 <i class="icofont-close-circled"></i>
@@ -61,25 +64,33 @@ class Template
                                 $button_behavior    = isset($button['button_behavior']) ? $button['button_behavior'] : '';
                                 $video_link_url     = isset($button['video_link']['url']) ? $button['video_link']['url'] : '';
                                 $button_text        = isset($button['button_text']) ? $button['button_text'] : '';
+                                $button_icon        = isset($button['button_icon']) ? $button['button_icon'] : '';
                                 $button_link        = isset($button['button_link']) ? $button['button_link'] : '';
                                 $button_link_url    = isset($button_link['url']) ? $button_link['url'] : '';
-                                $button_link_text   = isset($button_link['text']) ? $button_link['text'] : '';
                                 $button_link_target = isset($button_link['target']) ? $button_link['target'] : '';
+
+                                if($button_display_type == 'with_icon_and_text') {
+                                    $button_html = '<i class="' . esc_attr($button_icon) . '"></i>' . esc_html($button_text);
+                                } elseif($button_display_type == 'text_only') {
+                                    $button_html = esc_html($button_text);
+                                } else{
+                                    $button_html = esc_html($button_text);
+                                }
                             }
                             switch ($button) {
                                 case $button_behavior == 'another_video':
                                     if ($button_text) {  ?>
                                         <div <?php if ($video_link_url) {  ?> onclick="videoChange('<?php echo esc_url($video_link_url) ?>')" <?php } ?> class="greet_video">
                                             <?php if ($button_text) {  ?>
-                                                <a><?php echo esc_html($button_text) ?></a>
+                                                <a class="<?php echo esc_attr($button_display_type); ?>"><?php echo wp_kses_post($button_html) ?></a>
                                             <?php } ?>
                                         </div>
                     <?php }
                                     break;
                                 case $button_behavior == 'external_link':
-                                    if ($button_link_text) {
+                                    if ($button_text) {
                                         echo '<div class="greet_video">';
-                                        echo '<a href="' . esc_url($button_link_url) . '" target="' . esc_attr($button_link_target) . '">' . esc_html($button_link_text) . '</a>';
+                                        echo '<a href="' . esc_url($button_link_url) . '" target="' . esc_attr($button_link_target) . '">' . wp_kses_post($button_html) . '</a>';
                                         echo '</div>';
                                     }
                                     break;
@@ -89,7 +100,6 @@ class Template
                     ?>
                 </div>
             </div>
-
         </div>
 <?php
     }

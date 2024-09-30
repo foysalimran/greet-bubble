@@ -53,6 +53,7 @@ class Helpers
         wp_register_style('ico-font', GREET_BUBBLE_ASSETS . 'css/icofont' . $this->min . '.css', array(), GREET_BUBBLE_VERSION, 'all');
         wp_register_style('greet-style', GREET_BUBBLE_ASSETS . 'css/greet-style' . $this->min . '.css', array(), GREET_BUBBLE_VERSION, 'all');
         wp_register_style('greet-help', GREET_BUBBLE_ASSETS . 'css/help' . $this->min . '.css', array(), GREET_BUBBLE_VERSION, 'all');
+        wp_register_style('greet-global-admin', GREET_BUBBLE_ASSETS . 'css/admin' . $this->min . '.css', array(), GREET_BUBBLE_VERSION, 'all');
 
         wp_register_script('greet-script', GREET_BUBBLE_ASSETS . 'js/greet-script' . $this->min . '.js', array('jquery'), GREET_BUBBLE_VERSION, true);
     }
