@@ -171,6 +171,14 @@ Video bubbles can help you to give an intro about yourself to your audience. It 
 Video bubbles can help you to give an intro about yourself to your audience. It will make your website looks good.
 
 == Changelog ==
+= 4.1.6 - Sep 31, 2024 =
+* NEW: Position bubble button from screen with specific dimension.
+* NEW: Added positioning option for floating chatbox.
+* NEW: Renamed option tabs names.
+* NEW: Order admin options for better access.
+* NEW: Added button tooltip.
+* Update: Code compatibility.
+
 = 4.1.5  – Sep 25, 2024 =
 * Fixed: Admin options data saving issue.
 * Tested: WordPress 6.6.2 compatibility.
