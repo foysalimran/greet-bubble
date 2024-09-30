@@ -7,6 +7,8 @@
  * @version 1.0.0
  *
  */
+use ThemeAtelier\GreetBubble\Admin\Framework\Classes\GREET_BUBBLE;
+
 if ( ! class_exists( 'GREET_BUBBLE_Field_repeater' ) ) {
   class GREET_BUBBLE_Field_repeater extends GREET_BUBBLE_Fields {
 

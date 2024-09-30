@@ -7,6 +7,8 @@
  * @version 1.0.0
  *
  */
+use ThemeAtelier\GreetBubble\Admin\Framework\Classes\GREET_BUBBLE;
+
 if ( ! class_exists( 'GREET_BUBBLE_Field_fieldset' ) ) {
   class GREET_BUBBLE_Field_fieldset extends GREET_BUBBLE_Fields {
 

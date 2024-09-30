@@ -300,6 +300,7 @@ if ( ! class_exists( 'GREET_BUBBLE' ) ) {
         'palette',
         'radio',
         'repeater',
+        'section_tab',
         'select',
         'slider',
         'sortable',

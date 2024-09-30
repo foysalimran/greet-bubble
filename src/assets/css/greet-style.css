@@ -178,8 +178,82 @@
   font-size: 14px;
   text-decoration: none;
 }
+.greet_wrapper_full .greet_change_video [class*=video] a.with_icon_and_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 .greet_wrapper_full .greet_change_video [class*=video] a:hover {
   background-color: var(--buttons-hover-bg-color);
+}
+.greet_wrapper_full .greet_change_video .greet_video {
+  position: relative;
+}
+.greet_wrapper_full .greet_change_video .greet_video:hover [class*=btn_tooltip_text] {
+  visibility: visible;
+}
+.greet_wrapper_full .greet_change_video .greet_video:hover [class*=btn_tooltip_text]::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+.greet_wrapper_full .greet_change_video .greet_video [class*=btn_tooltip_text] {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 1;
+  font-size: 12px;
+  font-weight: 400;
+}
+.greet_wrapper_full .greet_change_video .greet_video .btn_tooltip_text_top {
+  top: -40px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.greet_wrapper_full .greet_change_video .greet_video .btn_tooltip_text_top::after {
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-color: black transparent transparent transparent;
+}
+.greet_wrapper_full .greet_change_video .greet_video .btn_tooltip_text_left {
+  left: -8px;
+  transform: translate(-100%, -50%);
+  top: 50%;
+}
+.greet_wrapper_full .greet_change_video .greet_video .btn_tooltip_text_left::after {
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-color: transparent transparent transparent black;
+}
+.greet_wrapper_full .greet_change_video .greet_video .btn_tooltip_text_bottom {
+  bottom: -40px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.greet_wrapper_full .greet_change_video .greet_video .btn_tooltip_text_bottom::after {
+  bottom: 100%;
+  left: 50%;
+  border-color: transparent transparent black transparent;
+}
+.greet_wrapper_full .greet_change_video .greet_video .btn_tooltip_text_right {
+  right: -8px;
+  transform: translate(100%, -50%);
+  top: 50%;
+}
+.greet_wrapper_full .greet_change_video .greet_video .btn_tooltip_text_right::after {
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-color: transparent black transparent transparent;
 }
 .greet_wrapper_full .greet_add-form a {
   background-color: var(--buttons-bg-color);
@@ -194,6 +268,43 @@
 .greet_wrapper_full .greet_add-form a:hover {
   color: var(--buttons-hover-color);
   background-color: var(--buttons-hover-color);
+}
+.greet_wrapper .tooltip_text {
+  visibility: visible;
+  background-color: #f5f7f9;
+  color: #222;
+  padding: 4px 10px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 999999;
+  transition: all 0.3s;
+  left: 120%;
+  right: unset;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: initial;
+  cursor: auto;
+}
+.greet_wrapper .tooltip_text strong {
+  font-weight: 600;
+}
+.greet_wrapper .tooltip_text::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #f5f7f9;
+  top: 50%;
+  right: -4px;
+  z-index: 99999;
+  transform: translateY(-50%) rotate(130deg);
+}
+.greet_wrapper.greet_wrapper_full .tooltip_text {
+  display: none;
 }
 .greet_change_video {
   display: none;
