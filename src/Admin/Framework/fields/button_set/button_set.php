@@ -47,9 +47,7 @@ if ( ! class_exists( 'GREET_BUBBLE_Field_button_set' ) ) {
             echo '<input type="'. esc_attr( $type ) .'" ' . $pro_only . ' name="'. esc_attr( $this->field_name( $extra ) ) .'" value="'. esc_attr( $key ) .'"'. $this->field_attributes() . esc_attr( $checked ) .'/>';
             echo wp_kses_post( $option['text'] );
             echo '</div>';
-
           }
-
           echo '</div>';
 
         } else {

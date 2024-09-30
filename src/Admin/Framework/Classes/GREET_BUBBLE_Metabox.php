@@ -160,7 +160,9 @@ if ( ! class_exists( 'GREET_BUBBLE_Metabox' ) ) {
           $value = ( isset( $meta[$field['id']] ) ) ? $meta[$field['id']] : null;
         }
 
-      }
+      } elseif ( 'section_tab' === $field['type'] ) {
+				$value = get_post_meta( $post->ID, $this->unique, true );
+			}
 
       $default = ( isset( $field['id'] ) ) ? $this->get_default( $field ) : '';
       $value   = ( isset( $value ) ) ? $value : $default;
@@ -322,45 +324,71 @@ if ( ! class_exists( 'GREET_BUBBLE_Metabox' ) ) {
 
             foreach ( $section['fields'] as $field ) {
 
-              if ( ! empty( $field['id'] ) ) {
+              if ('section_tab' === $field['type']) {
+                $tabs = $field['tabs'];
+                foreach ($tabs as $fields) {
+                  $fields = $fields['fields'];
+                  foreach ($fields as $field) {
+                    $field_id    = isset($field['id']) ? $field['id'] : '';
+                    $field_value = isset($request[$field_id]) ? $request[$field_id] : '';
+
+                    // Sanitize "post" request of field.
+                    if (!isset($field['sanitize'])) {
+                      if (is_array($field_value)) {
+                        $data[$field_id] = wp_kses_post_deep($field_value);
+                      } else {
+                        $data[$field_id] = wp_kses_post($field_value);
+                      }
+                    } elseif (isset($field['sanitize']) && is_callable($field['sanitize'])) {
+                      $data[$field_id] = call_user_func($field['sanitize'], $field_value);
+                    } else {
+                      $data[$field_id] = $field_value;
+                    }
+
+                    // Validate "post" request of field.
+                    if (isset($field['validate']) && is_callable($field['validate'])) {
+                      $has_validated = call_user_func($field['validate'], $field_value);
+                      if (! empty($has_validated)) {
+                        $errors['sections'][$count] = true;
+                        $errors['fields'][$field_id] = $has_validated;
+                        $data[$field_id] = $this->get_meta_value($field);
+                      }
+                    }
+                  }
+                }
+              } elseif (! empty($field['id'])) {
 
                 $field_id    = $field['id'];
-                $field_value = isset( $request[$field_id] ) ? $request[$field_id] : '';
+                $field_value = isset($request[$field_id]) ? $request[$field_id] : '';
 
                 // Sanitize "post" request of field.
-                if ( ! isset( $field['sanitize'] ) ) {
+                if (!isset($field['sanitize'])) {
 
-                  if( is_array( $field_value ) ) {
-                    $data[$field_id] = wp_kses_post_deep( $field_value );
+                  if (is_array($field_value)) {
+                    $data[$field_id] = wp_kses_post_deep($field_value);
                   } else {
-                    $data[$field_id] = wp_kses_post( $field_value );
+                    $data[$field_id] = wp_kses_post($field_value);
                   }
+                } else if (isset($field['sanitize']) && is_callable($field['sanitize'])) {
 
-                } else if( isset( $field['sanitize'] ) && is_callable( $field['sanitize'] ) ) {
-
-                  $data[$field_id] = call_user_func( $field['sanitize'], $field_value );
-
+                  $data[$field_id] = call_user_func($field['sanitize'], $field_value);
                 } else {
 
                   $data[$field_id] = $field_value;
-
                 }
 
                 // Validate "post" request of field.
-                if ( isset( $field['validate'] ) && is_callable( $field['validate'] ) ) {
+                if (isset($field['validate']) && is_callable($field['validate'])) {
 
-                  $has_validated = call_user_func( $field['validate'], $field_value );
+                  $has_validated = call_user_func($field['validate'], $field_value);
 
-                  if ( ! empty( $has_validated ) ) {
+                  if (! empty($has_validated)) {
 
                     $errors['sections'][$count] = true;
                     $errors['fields'][$field_id] = $has_validated;
-                    $data[$field_id] = $this->get_meta_value( $field );
-
+                    $data[$field_id] = $this->get_meta_value($field);
                   }
-
                 }
-
               }
 
             }

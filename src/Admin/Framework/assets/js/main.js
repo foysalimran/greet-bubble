@@ -1725,6 +1725,34 @@
 
     });
   };
+  //
+  // Field: section_tab
+  //
+  $.fn.greet_bubble_field_section_tab = function() {
+    return this.each( function() {
+
+      var $this     = $(this),
+          $links    = $this.find('.greet-bubble-section_tab-nav a'),
+          $contents = $this.find('.greet-bubble-section_tab-content');
+
+      $contents.eq(0).greet_bubble_reload_script();
+
+      $links.on( 'click', function( e ) {
+
+       e.preventDefault();
+
+        var $link    = $(this),
+            index    = $link.index(),
+            $content = $contents.eq(index);
+
+        $link.addClass('greet-bubble-section_tab-active').siblings().removeClass('greet-bubble-section_tab-active');
+        $content.greet_bubble_reload_script();
+        $content.removeClass('hidden').siblings().addClass('hidden');
+
+      });
+
+    });
+  };
 
   //
   // Field: typography
@@ -3445,6 +3473,7 @@
         $this.children('.greet-bubble-field-sorter').greet_bubble_field_sorter();
         $this.children('.greet-bubble-field-spinner').greet_bubble_field_spinner();
         $this.children('.greet-bubble-field-switcher').greet_bubble_field_switcher();
+        $this.children('.greet-bubble-field-section_tab').greet_bubble_field_section_tab();
         $this.children('.greet-bubble-field-tabbed').greet_bubble_field_tabbed();
         $this.children('.greet-bubble-field-typography').greet_bubble_field_typography();
         $this.children('.greet-bubble-field-upload').greet_bubble_field_upload();

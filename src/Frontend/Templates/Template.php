@@ -10,13 +10,15 @@ class Template
         $video_url = isset($video['url']) ? $video['url'] : '';
         $bubble_buttons = isset($options['bubble_buttons']) ? $options['bubble_buttons'] : '';
         $button_display_type = isset($options['button_display_type']) ? $options['button_display_type'] : '';
+        $greet_position = isset($options['greet_position']) ? $options['greet_position'] : '';
+        $hi_text = isset($options['hi_text']) ? $options['hi_text'] : '';
 ?>
-        <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr($options['greet_position']) ?>">
+        <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr($greet_position) ?>">
             <video id="greet_video" <?php if (isset($options['poster']['url'])) : ?>poster="<?php echo esc_url($options['poster']['url']); ?>" <?php endif; ?>>
                 <source id="playVideo" type="video/mp4" src="<?php echo esc_url($video_url) ?>#t=0.5" />
             </video>
 
-            <h4 id="greet_text" class="greet_text"><?php echo esc_html($options['hi_text'])  ?></h4>
+            <h4 id="greet_text" class="greet_text"><?php echo esc_html($hi_text)  ?></h4>
 
             <div class="greet_close">
                 <i class="icofont-close-circled"></i>

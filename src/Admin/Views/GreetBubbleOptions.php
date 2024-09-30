@@ -145,7 +145,7 @@ class GreetBubbleOptions
             'fields'      => array(
                 
                 array(
-                    'type' => 'tabbed',
+                    'type' => 'section_tab',
                     'tabs' => array(
                         array(
                             'title' => esc_html__('Bubble', 'greet-bubble'),
