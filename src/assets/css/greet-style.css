@@ -178,6 +178,12 @@
   font-size: 14px;
   text-decoration: none;
 }
+.greet_wrapper_full .greet_change_video [class*=video] a.with_icon_and_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 .greet_wrapper_full .greet_change_video [class*=video] a:hover {
   background-color: var(--buttons-hover-bg-color);
 }
