@@ -11,15 +11,27 @@ class Template
         $bubble_buttons = isset($options['bubble_buttons']) ? $options['bubble_buttons'] : '';
         $button_display_type = isset($options['button_display_type']) ? $options['button_display_type'] : '';
         $greet_position = isset($options['greet_position']) ? $options['greet_position'] : '';
+
+        $bubble_visibility = isset($options['bubble_visibility']) ? $options['bubble_visibility'] : 'everywhere';
         $hi_text = isset($options['hi_text']) ? $options['hi_text'] : '';
-?>
-        <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr($greet_position) ?>">
+        $buttons_tooltip = isset($options['buttons_tooltip']) ? $options['buttons_tooltip'] : '';
+        $buttons_tooltip_position = isset($options['buttons_tooltip_position']) ? $options['buttons_tooltip_position'] : '';
+        $bubble_button_tooltip = isset($options['bubble_button_tooltip']) ? $options['bubble_button_tooltip'] : '';
+        $bubble_button_tooltip_text = isset($options['bubble_button_tooltip_text']) ? $options['bubble_button_tooltip_text'] : '';
+        
+        ?>
+        <div id="greet_wrapper" class="greet_wrapper greet_toggler <?php echo esc_attr('greet-only-' . $bubble_visibility); ?> <?php echo esc_attr($greet_position) ?>">
             <video id="greet_video" <?php if (isset($options['poster']['url'])) : ?>poster="<?php echo esc_url($options['poster']['url']); ?>" <?php endif; ?>>
                 <source id="playVideo" type="video/mp4" src="<?php echo esc_url($video_url) ?>#t=0.5" />
             </video>
-
-            <h4 id="greet_text" class="greet_text"><?php echo esc_html($hi_text)  ?></h4>
-
+            <?php
+            if ($bubble_button_tooltip && $bubble_button_tooltip_text) {
+                echo '<span class="tooltip_text">' . wp_kses_post($bubble_button_tooltip_text) . '</span>';
+            }
+            ?>
+            <?php if ($hi_text) : ?>
+                <h4 id="greet_text" class="greet_text"><?php echo esc_html($hi_text)  ?></h4>
+            <?php endif; ?>
             <div class="greet_close">
                 <i class="icofont-close-circled"></i>
             </div>
@@ -69,11 +81,11 @@ class Template
                                 $button_link_url    = isset($button_link['url']) ? $button_link['url'] : '';
                                 $button_link_target = isset($button_link['target']) ? $button_link['target'] : '';
 
-                                if($button_display_type == 'with_icon_and_text') {
+                                if ($button_display_type == 'with_icon_and_text') {
                                     $button_html = '<i class="' . esc_attr($button_icon) . '"></i>' . esc_html($button_text);
-                                } elseif($button_display_type == 'text_only') {
+                                } elseif ($button_display_type == 'text_only') {
                                     $button_html = esc_html($button_text);
-                                } else{
+                                } else {
                                     $button_html = esc_html($button_text);
                                 }
                             }
@@ -81,6 +93,11 @@ class Template
                                 case $button_behavior == 'another_video':
                                     if ($button_text) {  ?>
                                         <div <?php if ($video_link_url) {  ?> onclick="videoChange('<?php echo esc_url($video_link_url) ?>')" <?php } ?> class="greet_video">
+                                            <?php
+                                            if ($buttons_tooltip && $button_text) {
+                                                echo '<span class="btn_tooltip_text_' . esc_attr($buttons_tooltip_position) . '">' . wp_kses_post($button_text) . '</span>';
+                                            }
+                                            ?>
                                             <?php if ($button_text) {  ?>
                                                 <a class="<?php echo esc_attr($button_display_type); ?>"><?php echo wp_kses_post($button_html) ?></a>
                                             <?php } ?>
@@ -90,6 +107,9 @@ class Template
                                 case $button_behavior == 'external_link':
                                     if ($button_text) {
                                         echo '<div class="greet_video">';
+                                        if ($buttons_tooltip && $button_text) {
+                                            echo '<span class="btn_tooltip_text_' . esc_attr($buttons_tooltip_position) . '">' . wp_kses_post($button_text) . '</span>';
+                                        }
                                         echo '<a href="' . esc_url($button_link_url) . '" target="' . esc_attr($button_link_target) . '">' . wp_kses_post($button_html) . '</a>';
                                         echo '</div>';
                                     }

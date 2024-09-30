@@ -1,4 +1,17 @@
-.greet-bubble-pro-text{
-    color: #35b747;
-    font-weight: bold;
+.greet-bubble-pro-text {
+  color: #35b747;
+  font-weight: bold;
+}
+
+.greet-bubble--switcher.only_pro_switcher .greet-bubble--ball::after {
+  content: "PRO";
+  position: relative;
+  text-align: center;
+  width: 24px;
+  float: right;
+  font-weight: 600;
+  font-size: 8px;
+  color: #8796a1;
+  opacity: 1;
+  line-height: 18px;
 }

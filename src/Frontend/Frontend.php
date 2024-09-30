@@ -68,49 +68,9 @@ class Frontend
         wp_enqueue_style('ico-font');
         wp_enqueue_style('greet-style');
 
-        $button_type           = isset($options['button_type']) ? $options['button_type'] : '';
-        $button_radius           = isset($options['button_radius']) ? $options['button_radius'] : '';
-        $border_color           = isset($options['border_color']) ? $options['border_color'] : '#7432ff';
-        $buttonsColors          = isset($options['buttonsColors']) ? $options['buttonsColors'] : '';
-        $buttons_bg             = isset($buttonsColors['buttons_bg']) ? $buttonsColors['buttons_bg'] : '#7432ff';
-        $buttons_hover_bg       = isset($buttonsColors['buttons_hover_bg']) ? $buttonsColors['buttons_hover_bg'] : '#7432ff';
-        $buttons_color          = isset($buttonsColors['buttons_color']) ? $buttonsColors['buttons_color'] : '#ffffff';
-        $buttons_hover_color    = isset($buttonsColors['buttons_hover_color']) ? $buttonsColors['buttons_hover_color'] : '#ffffff';
-        $scroll_bar_colors      = isset($options['scroll_bar_colors']) ? $options['scroll_bar_colors'] : '';
-        $thumb_bg               = isset($scroll_bar_colors['thumb_bg']) ? $scroll_bar_colors['thumb_bg'] : '#7432ff';
-        $track_bg               = isset($scroll_bar_colors['track_bg']) ? $scroll_bar_colors['track_bg'] : '#eeeeee';
 
-        $greet_position = isset($options['greet_position']) ? $options['greet_position'] : 'right';
-
-        $margin_form_right_bottom = isset($options['margin_form_right_bottom']) ? $options['margin_form_right_bottom'] : [];
-        $margin_form_right_bottom_right = isset($margin_form_right_bottom['right']) ? $margin_form_right_bottom['right'] : 'right';
-        $margin_form_right_bottom_bottom = isset($margin_form_right_bottom['bottom']) ? $margin_form_right_bottom['bottom'] : 'bottom';
-        $margin_form_right_bottom_unit = isset($margin_form_right_bottom['unit']) ? $margin_form_right_bottom['unit'] : 'px';
-
-        $margin_form_left_bottom = isset($options['margin_form_left_bottom']) ? $options['margin_form_left_bottom'] : [];
-        $margin_form_left_bottom_left = isset($margin_form_left_bottom['left']) ? $margin_form_left_bottom['left'] : 'left';
-        $margin_form_left_bottom_bottom = isset($margin_form_left_bottom['bottom']) ? $margin_form_left_bottom['bottom'] : 'bottom';
-        $margin_form_left_bottom_unit = isset($margin_form_left_bottom['unit']) ? $margin_form_left_bottom['unit'] : 'px';
-
-        $custom_css = "
-        :root {
-            --border-color: {$border_color};
-            --buttons-bg-color: {$buttons_bg};
-            --buttons-hover-bg-color: {$buttons_hover_bg};
-            --buttons-color: {$buttons_color};
-            --buttons-hover-color: {$buttons_hover_color};
-            --thumb-bg: {$thumb_bg};
-            --track-bg: {$track_bg};
-        }
-        ";
-
-        if('right' === $greet_position ) {$custom_css .=".greet_wrapper{right:{$margin_form_right_bottom_right}{$margin_form_right_bottom_unit};bottom:{$margin_form_right_bottom_bottom}{$margin_form_right_bottom_unit};}";}
-
-        if('greet-left' === $greet_position ) {$custom_css .=".greet_wrapper{left:{$margin_form_left_bottom_left}{$margin_form_left_bottom_unit};bottom:{$margin_form_left_bottom_bottom}{$margin_form_left_bottom_unit};}";}
-        
-        if ($button_type == 'rounded') {
-            $custom_css .= ".greet_wrapper_full .greet_change_video [class*=video] a {border-radius: {$button_radius}px}";
-        }
+        $custom_css = '';
+            include 'dynamic-css/dynamic-css.php';
         wp_add_inline_style('greet-style', $custom_css);
 
         wp_enqueue_script('greet-script');
