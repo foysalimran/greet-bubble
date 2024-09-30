@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-30 08:26+0000\n"
+"POT-Creation-Date: 2024-09-30 13:17+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -18,7 +18,7 @@ msgstr ""
 msgid "You should not access this file directly.!"
 msgstr ""
 
-#: src/Admin/Admin.php:89, src/Admin/Admin.php:90, src/Admin/Views/GreetBubbleOptions.php:29, src/Admin/Views/GreetBubbleOptions.php:32
+#: src/Admin/Admin.php:89, src/Admin/Admin.php:90, src/Admin/Views/GreetBubbleOptions.php:36, src/Admin/Views/GreetBubbleOptions.php:39
 msgid "Greet Bubble"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgstr ""
 msgid "Left Center"
 msgstr ""
 
-#: src/Admin/Framework/fields/background/background.php:166
+#: src/Admin/Framework/fields/background/background.php:166, src/Admin/Views/GreetBubbleAppearance.php:147
 msgid "Left Bottom"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Right Center"
 msgstr ""
 
-#: src/Admin/Framework/fields/background/background.php:172
+#: src/Admin/Framework/fields/background/background.php:172, src/Admin/Views/GreetBubbleAppearance.php:144
 msgid "Right Bottom"
 msgstr ""
 
@@ -402,7 +402,7 @@ msgstr ""
 msgid "Add New"
 msgstr ""
 
-#: src/Admin/Framework/fields/group/group.php:54, src/Admin/Framework/fields/group/group.php:109, src/Admin/Framework/fields/repeater/repeater.php:48, src/Admin/Framework/fields/repeater/repeater.php:76
+#: src/Admin/Framework/fields/group/group.php:54, src/Admin/Framework/fields/group/group.php:109, src/Admin/Framework/fields/repeater/repeater.php:50, src/Admin/Framework/fields/repeater/repeater.php:78
 msgid "Are you sure to delete this item?"
 msgstr ""
 
@@ -410,11 +410,11 @@ msgstr ""
 msgid "You cannot add more. To add unlimited items <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
 msgstr ""
 
-#: src/Admin/Framework/fields/group/group.php:144, src/Admin/Framework/fields/repeater/repeater.php:90
+#: src/Admin/Framework/fields/group/group.php:144, src/Admin/Framework/fields/repeater/repeater.php:92
 msgid "You cannot remove more."
 msgstr ""
 
-#: src/Admin/Framework/fields/group/group.php:43, src/Admin/Framework/fields/repeater/repeater.php:27
+#: src/Admin/Framework/fields/group/group.php:43, src/Admin/Framework/fields/repeater/repeater.php:29
 msgid "Error: Field ID conflict."
 msgstr ""
 
@@ -470,7 +470,7 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: src/Admin/Framework/fields/repeater/repeater.php:89
+#: src/Admin/Framework/fields/repeater/repeater.php:91
 msgid "You cannot add more."
 msgstr ""
 
@@ -526,7 +526,7 @@ msgstr ""
 msgid "Inherit"
 msgstr ""
 
-#: src/Admin/Framework/fields/typography/typography.php:173, src/Admin/Views/GreetBubbleOptions.php:172
+#: src/Admin/Framework/fields/typography/typography.php:173, src/Admin/Views/GreetBubbleAppearance.php:350
 msgid "Left"
 msgstr ""
 
@@ -534,7 +534,7 @@ msgstr ""
 msgid "Center"
 msgstr ""
 
-#: src/Admin/Framework/fields/typography/typography.php:175, src/Admin/Views/GreetBubbleOptions.php:169
+#: src/Admin/Framework/fields/typography/typography.php:175, src/Admin/Views/GreetBubbleAppearance.php:353
 msgid "Right"
 msgstr ""
 
@@ -662,7 +662,7 @@ msgstr ""
 msgid "Please enter a valid URL."
 msgstr ""
 
-#: src/Admin/Settings/GreetBubbleSettings.php:30, src/Admin/Settings/GreetBubbleSettings.php:44
+#: src/Admin/Settings/GreetBubbleSettings.php:30, src/Admin/Settings/GreetBubbleSettings.php:44, src/Admin/Views/GreetBubbleGeneral.php:33
 msgid "GENERAL"
 msgstr ""
 
@@ -670,316 +670,420 @@ msgstr ""
 msgid "Test"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:35
-msgid "If you love the plugin don't forgot to add a review at <a target=\"_blank\" href=\"https://wordpress.org/support/plugin/greet-bubble/reviews/#new-post\">WordPress plugin repository</a>. "
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:50
-msgid "UPLOAD VIDEO"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:57
-msgid "Default video poster"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:58
-msgid "Specifies an image to be shown while the video is downloading, or until the user hits the play button. If this is not included, the first frame of the video will be used instead."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:66, src/Admin/Views/GreetBubbleOptions.php:120
-msgid "Upload Video (mp4)*"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:67, src/Admin/Views/GreetBubbleOptions.php:121
-msgid "If you do not have a mp4 video you may use <a href=\"http://www.freeconvert.com\" target=\"_blank\">this website</a> to convert your current version of video."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:76
-msgid "Include Buttons"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:77
-msgid "By including a button you will able to use different functionalities on button click."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:81
-msgid "Button Text"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:82
-msgid "Add button text here."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:84
-msgid "Make a booking"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:89
-msgid "Button Icon"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:90
-msgid "Select Button icon"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:99
-msgid "Button Behavior"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:100
-msgid "Select option to behave on button click. To access advanced form features such as WhatsApp forms, Web3 forms, and third-party form shortcodes, please <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:104
-msgid "Another Video"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:107
-msgid "External Link"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:110
-msgid "Contact Form"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:128
-msgid "Add Button Link"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:129
-msgid "Add link for opening as external link on first button click. Remove link if you want to load second video instead of link."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:143
-msgid "APPEARANCE"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:151
-msgid "Bubble"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:156
-msgid "Hi text Input"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:157
-msgid "Change small 'Hi' text here."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:159
-msgid "Hi"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:165
-msgid "Bubble position"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:166
-msgid "Select bubble position you want to show."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:210
-msgid "Hide for session"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:211
-msgid "Turn on to hide permenently for this session of user visit on close button click. <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:218
-msgid "Pause video when leaving page"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:219
-msgid "Turn on the option to pause video if they switch browser tab. "
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:226
-msgid "Border Color"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:227
-msgid "Change bubble border color here."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:234
-msgid "Button"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:241
-msgid "Button Display Type"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:244
-msgid "Text Only"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:247
-msgid "With Icon and Text"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:250
-msgid "Icon Only"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:259
-msgid "Button type"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:260
-msgid "Select type of the buttons."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:263
-msgid "Square"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:266
-msgid "Rounded"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:276
-msgid "Button radius"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:277
-msgid "Use buttons border radius value in px."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:285
-msgid "Buttons colors"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:286
-msgid "Change buttons Background, text, and hover colors from here. "
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:288
-msgid "Backorund"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:289
-msgid "Text color"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:290
-msgid "Background hover"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:291
-msgid "Hover text color"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:303
-msgid "Others"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:310
-msgid "Scroll bar colors"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:311
-msgid "Some popup elements like contact forms uses scroll bars. Change their colors from this option."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:313
-msgid "Track background"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:314
-msgid "Thumb background"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:326
-msgid "Show Specefic pages only"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:332
-msgid "Select pages"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:333
-msgid "Want to show your <strong>Greet Bubble</strong> on specefic page only? <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:344
-msgid "CONTROLS"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:351
-msgid "Want essential controls over your <strong>Greet bubble</strong>? <a href=\"https://1.envato.market/gbdm79\" target=\"_blank\"><b>Upgrade To Pro!</b></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:357
-msgid "Bubble visibility"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:361
-msgid "Everywhere"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:364
-msgid "Desktop Only"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:369
-msgid "Tablet Only"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:374
-msgid "Mobile Only"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:380
-msgid "Hide re-play control"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:384, src/Admin/Views/GreetBubbleOptions.php:394, src/Admin/Views/GreetBubbleOptions.php:404
-msgid "Yes"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:385, src/Admin/Views/GreetBubbleOptions.php:395, src/Admin/Views/GreetBubbleOptions.php:405
-msgid "No"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:390
-msgid "Hide mute/unmute control"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:400
-msgid "Hide fullscreen control"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:420, src/Admin/Views/GreetBubbleOptions.php:427
-msgid "To unlock These Typography (940+ Google Fonts) options, <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:421
-msgid "'Hi' text typography."
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:429
-msgid "Buttons Typography"
-msgstr ""
-
-#: src/Admin/Views/GreetBubbleOptions.php:440
+#: src/Admin/Views/GreetBubbleAdvanced.php:29
 msgid "ADVANCED"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:446
+#: src/Admin/Views/GreetBubbleAdvanced.php:35
 msgid "Additional CSS"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:455
+#: src/Admin/Views/GreetBubbleAdvanced.php:44
 msgid "Additional JS"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:467
+#: src/Admin/Views/GreetBubbleAppearance.php:34
+msgid "APPEARANCE"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:42
+msgid "Bubble"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:47
+msgid "Hi text Input"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:48
+msgid "Change small 'Hi' text here."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:50
+msgid "Hi"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:56
+msgid "Hide for session"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:57
+msgid "Turn on to hide permenently for this session of user visit on close button click. <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:64
+msgid "Pause video when leaving page"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:65
+msgid "Turn on the option to pause video if they switch browser tab. "
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:72
+msgid "Border Color"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:73
+msgid "Change bubble border color here."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:80
+msgid "Bubble tooltip"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:81
+msgid "Show bubble tooltip."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:82, src/Admin/Views/GreetBubbleAppearance.php:321
+msgid "Show"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:83, src/Admin/Views/GreetBubbleAppearance.php:322
+msgid "Hide"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:89
+msgid "Button Tooltip Text"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:90
+msgid "Set button tooltip text."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:91
+msgid "Need Help? <strong>Chat with us</strong>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:97
+msgid "Button Tooltip Width"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:98
+msgid "Set bubble button tooltip width."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:109
+msgid "Bubble Visibility"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:110
+msgid "Select bubble visibility you want to show"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:113
+msgid "Everywhere"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:116
+msgid "Desktop Only"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:120
+msgid "Tablet Only"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:124
+msgid "Mobile Only"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:134
+msgid "Position"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:140
+msgid "Bubble position"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:150
+msgid "Right Middle"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:154
+msgid "Left Middle"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:163
+msgid "Margin From Right Bottom"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:177
+msgid "Margin From Left Bottom"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:191
+msgid "Margin From Right Middle"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:205
+msgid "Margin From Left Middle"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:218
+msgid "Different Positioning on Tablet"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:226
+msgid "Use Different Positioning for Tablet Devices"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:227, src/Admin/Views/GreetBubbleAppearance.php:242, src/Admin/Views/GreetBubbleControls.php:45, src/Admin/Views/GreetBubbleControls.php:55, src/Admin/Views/GreetBubbleControls.php:65
+msgid "Yes"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:228, src/Admin/Views/GreetBubbleAppearance.php:243, src/Admin/Views/GreetBubbleControls.php:46, src/Admin/Views/GreetBubbleControls.php:56, src/Admin/Views/GreetBubbleControls.php:66
+msgid "No"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:234
+msgid "Different Positioning on Mobile"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:241
+msgid "Use Different Positioning for Mobile Devices"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:250
+msgid "Button"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:257
+msgid "Button Display Type"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:260
+msgid "Text Only"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:263
+msgid "With Icon and Text"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:266
+msgid "Icon Only"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:275
+msgid "Button type"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:276
+msgid "Select type of the buttons."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:279
+msgid "Square"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:282
+msgid "Rounded"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:292
+msgid "Button radius"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:293
+msgid "Use buttons border radius value in px."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:301
+msgid "Buttons colors"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:302
+msgid "Change buttons Background, text, and hover colors from here. "
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:304
+msgid "Backorund"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:305
+msgid "Text color"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:306
+msgid "Background hover"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:307
+msgid "Hover text color"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:319
+msgid "Buttons tooltip"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:320
+msgid "Show button tooltip."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:329
+msgid "Buttons Tooltip Width"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:330
+msgid "Set bubble under button tooltip width."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:341
+msgid "Buttons tooltip Position"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:344
+msgid "Top"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:347
+msgid "Bottom"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:361
+msgid "Others"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:368
+msgid "Scroll bar colors"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:369
+msgid "Some popup elements like contact forms uses scroll bars. Change their colors from this option."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:371
+msgid "Track background"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:372
+msgid "Thumb background"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:384
+msgid "Show Specefic pages only"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:390
+msgid "Select pages"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleAppearance.php:391
+msgid "Want to show your <strong>Greet Bubble</strong> on specefic page only? <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleBackup.php:29
 msgid "BACKUP"
 msgstr ""
 
-#: src/Admin/Views/GreetBubbleOptions.php:469
+#: src/Admin/Views/GreetBubbleBackup.php:31
 msgid "Export or import to use same settings in different websites."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleControls.php:31
+msgid "CONTROLS"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleControls.php:38
+msgid "Want essential controls over your <strong>Greet bubble</strong>? <a href=\"https://1.envato.market/gbdm79\" target=\"_blank\"><b>Upgrade To Pro!</b></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleControls.php:41
+msgid "Hide re-play control"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleControls.php:51
+msgid "Hide mute/unmute control"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleControls.php:61
+msgid "Hide fullscreen control"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:40
+msgid "Default video poster"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:41
+msgid "Specifies an image to be shown while the video is downloading, or until the user hits the play button. If this is not included, the first frame of the video will be used instead."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:48, src/Admin/Views/GreetBubbleGeneral.php:102
+msgid "Upload Video (mp4)*"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:49, src/Admin/Views/GreetBubbleGeneral.php:103
+msgid "If you do not have a mp4 video you may use <a href=\"http://www.freeconvert.com\" target=\"_blank\">this website</a> to convert your current version of video."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:58
+msgid "Include Buttons"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:59
+msgid "By including a button you will able to use different functionalities on button click."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:63
+msgid "Button Text"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:64
+msgid "Add button text here."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:66
+msgid "Make a booking"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:71
+msgid "Button Icon"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:72
+msgid "Select Button icon"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:81
+msgid "Button Behavior"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:82
+msgid "Select option to behave on button click. To access advanced form features such as WhatsApp forms, Web3 forms, and third-party form shortcodes, please <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:86
+msgid "Another Video"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:89
+msgid "External Link"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:92
+msgid "Contact Form"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:110
+msgid "Add Button Link"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleGeneral.php:111
+msgid "Add link for opening as external link on first button click. Remove link if you want to load second video instead of link."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleOptions.php:42
+msgid "If you love the plugin don't forgot to add a review at <a target=\"_blank\" href=\"https://wordpress.org/support/plugin/greet-bubble/reviews/#new-post\">WordPress plugin repository</a>. "
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleTypography.php:36, src/Admin/Views/GreetBubbleTypography.php:43
+msgid "To unlock These Typography (940+ Google Fonts) options, <a target=\"_blank\" href=\"https://1.envato.market/gbdm79\"><strong><i>Upgrade To Pro!</i></strong></a>"
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleTypography.php:37
+msgid "'Hi' text typography."
+msgstr ""
+
+#: src/Admin/Views/GreetBubbleTypography.php:45
+msgid "Buttons Typography"
 msgstr ""
 
 #: src/Admin/Views/Views.php:32

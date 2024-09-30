@@ -77,11 +77,10 @@ class GreetBubbleAppearance
                                 array(
                                     'id'    => 'bubble_button_tooltip',
                                     'type'    => 'switcher',
-                                    'title'   => esc_html__('Button tooltip', 'greet-bubble'),
-                                    'subtitle' => esc_html__('Show button tooltip.', 'greet-bubble'),
+                                    'title'   => esc_html__('Bubble tooltip', 'greet-bubble'),
+                                    'subtitle' => esc_html__('Show bubble tooltip.', 'greet-bubble'),
                                     'text_on' => esc_html__('Show', 'greet-bubble'),
                                     'text_off'  => esc_html__('Hide', 'greet-bubble'),
-                                    'default'   => true,
                                     'text_width'    => 80,
                                 ),
                                 array(
@@ -115,12 +114,15 @@ class GreetBubbleAppearance
                                         ),
                                         'desktop'  => array(
                                             'text'  => esc_html__('Desktop Only', 'greet-bubble'),
+                                            'pro_only'  => true,
                                         ),
                                         'tablet'  => array(
                                             'text'  => esc_html__('Tablet Only', 'greet-bubble'),
+                                            'pro_only'  => true,
                                         ),
                                         'mobile'  => array(
                                             'text'  => esc_html__('Mobile Only', 'greet-bubble'),
+                                            'pro_only'  => true,
                                         ),
                                     ),
                                     'default' => 'everywhere',

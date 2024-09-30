@@ -37,32 +37,6 @@ class GreetBubbleControls
                     'class'   => 'greet_pro_notice',
                     'content' => __('Want essential controls over your <strong>Greet bubble</strong>? <a href="https://1.envato.market/gbdm79" target="_blank"><b>Upgrade To Pro!</b></a>', 'greet-bubble'),
                 ),
-                // bubble visibility
-                array(
-                    'id'      => 'bubble-visibility',
-                    'type'    => 'button_set',
-                    'title'   => esc_html__('Bubble visibility', 'greet-bubble'),
-                    'default' => 'everywhere',
-                    'options'    => array(
-                        'everywhere' => array(
-                            'text' => esc_html__('Everywhere', 'greet-bubble'),
-                        ),
-                        'desktop' => array(
-                            'text' => esc_html__('Desktop Only', 'greet-bubble'),
-                            'pro_only'  => true,
-                        ),
-
-                        'tablet' => array(
-                            'text' => esc_html__('Tablet Only', 'greet-bubble'),
-                            'pro_only'  => true,
-                        ),
-
-                        'mobile' => array(
-                            'text' => esc_html__('Mobile Only', 'greet-bubble'),
-                            'pro_only'  => true,
-                        ),
-                    ),
-                ),
                 array(
                     'title'   => __('Hide re-play control', 'greet-bubble'),
                     'class'   => 'switcher_pro_only',
