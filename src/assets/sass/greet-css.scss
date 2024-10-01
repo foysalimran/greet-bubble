@@ -179,7 +179,7 @@
           color: #fff;
           font-size: 14px;
           text-decoration: none;
-          &.with_icon_and_text{
+          &.with_icon_and_text {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -187,6 +187,76 @@
           }
           &:hover {
             background-color: var(--buttons-hover-bg-color);
+          }
+        }
+        .greet_video {
+          position: relative;
+          &:hover {
+            [class*="btn_tooltip_text"] {
+              visibility: visible;
+              &::after {
+                content: "";
+                position: absolute;
+                border-width: 5px;
+                border-style: solid;
+              }
+            }
+          }
+          [class*="btn_tooltip_text"] {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 8px;
+            position: absolute;
+            z-index: 1;
+            font-size: 12px;
+            font-weight: 400;
+          }
+          .btn_tooltip_text_top {
+            top: -40px;
+            transform: translateX(-50%);
+            left: 50%;
+            &::after {
+              top: 100%;
+              left: 50%;
+              margin-left: -5px;
+              border-color: black transparent transparent transparent;
+            }
+          }
+          .btn_tooltip_text_left {
+            left: -8px;
+            transform: translate(-100%, -50%);
+            top: 50%;
+            &::after {
+              top: 50%;
+              left: 100%;
+              margin-top: -5px;
+              border-color: transparent transparent transparent black;
+            }
+          }
+          .btn_tooltip_text_bottom {
+            bottom: -40px;
+            transform: translateX(-50%);
+            left: 50%;
+            &::after {
+              bottom: 100%;
+              left: 50%;
+              border-color: transparent transparent black transparent;
+            }
+          }
+          .btn_tooltip_text_right {
+            right: -8px;
+            transform: translate(100%, -50%);
+            top: 50%;
+            &::after {
+              top: 50%;
+              right: 100%;
+              margin-top: -5px;
+              border-color: transparent black transparent transparent;
+            }
           }
         }
       }
@@ -205,6 +275,45 @@
         background-color: var(--buttons-hover-color);
       }
     }
+    .tooltip_text {
+      visibility: visible;
+      background-color: #f5f7f9;
+      color: #222;
+      padding: 4px 10px;
+      border-radius: 4px;
+      position: absolute;
+      z-index: 999999;
+      transition: all 0.3s;
+      left: 120%;
+      right: unset;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+      text-wrap: initial;
+      cursor: auto;
+      strong {
+        font-weight: 600;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #f5f7f9;
+        top: 50%;
+        right: -4px;
+        z-index: 99999;
+        transform: translateY(-50%) rotate(130deg);
+      }
+    }
+    &.greet_wrapper_full {
+      .tooltip_text {
+        display: none;
+      }
+    }
   }
   &_change_video {
     display: none;
@@ -219,9 +328,7 @@
   }
 }
 
-
 .greet_contact_form {
-
   position: absolute;
   top: 0;
   left: 0;
@@ -233,12 +340,12 @@
   cursor: auto;
   padding-top: 40px;
   .wpforms-container {
-    .wpforms-field-row.wpforms-field-medium{
+    .wpforms-field-row.wpforms-field-medium {
       width: 100%;
       max-width: 100%;
     }
     .wpforms-one-half,
-   .wpforms-field {
+    .wpforms-field {
       width: 100% !important;
       padding: 0 !important;
       label {
@@ -420,7 +527,6 @@
     opacity: 1;
   }
 }
-
 
 .greet__powered__by {
   position: absolute;
