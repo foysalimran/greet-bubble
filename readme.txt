@@ -37,8 +37,6 @@ Whether your goal is to increase engagement, boost brand awareness, or simply pr
 
 == Key Features of Greet Video Bubble Plugin ==
 
-Here’s a rewritten version of the key features for your plugin:
-
 - **Intro Video Display**: Showcase engaging introductory videos about your product or service with interactive buttons for external actions.
 - **Custom Video Controls**: Assign different videos to buttons, allowing users to switch between them easily.
 - **Drag-and-Drop Management**: Effortlessly organize video items with a simple drag-and-drop interface.
@@ -68,8 +66,6 @@ Here’s a rewritten version of the key features for your plugin:
 - **Cross-Browser Compatibility**: Functions flawlessly across all major browsers, including IE, Firefox, Chrome, Safari, Opera, and Edge.
 - **Comprehensive Documentation & Tutorials**: Provides detailed guides and video tutorials for effortless setup and use.
 - **Fast and Responsive Support**: Enjoy quick and helpful customer support whenever you need assistance.
-
-This version organizes the features in a similar, professional style to the example you provided.
 
 ==== Greet 3.0 ====
 **Greet 3.0**  has completely been rebuilt and this provides you now many improvements and new amazing features.
