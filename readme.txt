@@ -12,91 +12,64 @@ Boost Engagement and Retention with a Personalised Video Greeting, Contact Form,
 
 == Description ==
 
-Greet is a powerful and user-friendly video bubble plugin for WordPress that provides website owners with the opportunity to create a dynamic and engaging welcome experience for their visitors. This professional plugin makes it easy to display a welcoming video in a fun and attention-grabbing manner, providing a memorable first impression that will keep visitors engaged and coming back for more.
+Greet is a powerful, user-friendly video bubble plugin for WordPress, designed to create dynamic and engaging welcome experiences for your website visitors. With this professional plugin, you can easily display welcoming videos in an eye-catching and interactive way, leaving a memorable first impression that encourages visitors to stay longer and return more often.
+
+Seamlessly integrating with any WordPress site, Greet features an intuitive interface, making it simple to set up video bubbles with just a few clicks. Whether you're tech-savvy or not, you'll find it easy to customize the video bubble’s appearance to align with your website's look and feel. Choose from a variety of bubble styles, colors, animations, and more to create a personalized and unique welcome experience.
+
+Beyond ease of use, Greet offers advanced customization options, allowing you to control video display, adjust colors, positioning, text, and more.
+
+Whether your goal is to increase engagement, boost brand awareness, or simply provide a fun and interactive welcome for visitors, Greet is the perfect tool to enhance your website’s experience. Install Greet today and start creating memorable first impressions!
 
 **👁️[Plugin Demo](http://wp-plugins.themeatelier.net/greet/) | 🚀[Pro Version](https://1.envato.market/gbdm79) | 👩🏼‍💻[Support](https://wordpress.org/support/plugin/greet-bubble/) | 🌟[Rate this plugin](https://wordpress.org/support/plugin/greet-bubble/reviews/#new-post)**
-
-The Greet plugin is built to integrate seamlessly with any WordPress website, and its intuitive and user-friendly interface makes it simple to create a video bubble in just a few clicks. Whether you're a technical or non technical person you'll find it easy to customize the appearance of your video bubble to match the look and feel of your website, and you can even choose from a variety of bubble styles, colors, and animations to create a truly unique and personalized welcome experience.
-
-In addition to its ease of use and customization options, Greet also offers powerful features that allow you to control the display of your video bubble, change colors of bubble, change positioning, text on video etc.
-
-Whether you're looking to increase engagement, build brand awareness, or simply provide a fun and unique welcome experience for your visitors, Greet is the perfect plugin for you. So why wait? Install Greet today and start making a great and fun first impression!
 
 == Video demo ==
 [youtube https://youtu.be/3LbuUw7SdNQ]
 
-== HERE’S WHAT USERS SAY ABOUT "Greet.wp - Video bubble WordPress plugin" ==
+== Listen to What People Have to Say About: "Greet.wp - Video bubble WordPress plugin" ==
 
->😻 __for Customer Support__
+🙆 "Awesome, i love this one and the support is awesome! Thank you so much for your nice work!" - By @AroundWorld
 
->Awesome, i love this one and the support is awesome! Thank you so much for your nice work!
-- By @AroundWorld
+🙆 Great developer. After purchasing the plugin, some errors were found, which the author quickly corrected. At the moment, this is the best plugin for video greetings. Works with the Avada theme 100 percent - By @son185
 
->😻 __for Design Quality__
+🙆 Hi - this plugin is awesome, and just what I needed without monthly fees. Keep up the good work. You can see an example on my homepage here: www.firmafotografering.dk - By @firmafotografering
 
->I like the plugin.
-Easy to install and configure.
-Nice experience!
-- By @rainerruff
+🙆 This plugin is wonderful! It is possible to place different bubble videos within posts or pages. For example, on the HOME page I place bubble video 1. On the CONTACT page I place bubble video 2 and so on. We can also put up to 4 videos or links in the same bubble, which is fantastic. Bubble customization is also possible, which makes it easy to match the style of the site. The possibilities are endless and the best, without paying abusive monthly fees for it. The developer is very attentive and helpful. I loved the plugin and recommend it to anyone looking for a solution like this. - By @angelotaquari
 
->😻 __for Feature Availability__
+== Key Features of Greet Video Bubble Plugin ==
 
->great plugin for adding conversions to your website
-- By @Steveeb
+Here’s a rewritten version of the key features for your plugin:
 
->😻 __for Customer Support__
+- **Intro Video Display**: Showcase engaging introductory videos about your product or service with interactive buttons for external actions.
+- **Custom Video Controls**: Assign different videos to buttons, allowing users to switch between them easily.
+- **Drag-and-Drop Management**: Effortlessly organize video items with a simple drag-and-drop interface.
+- **Customizable Video Poster**: Set default video thumbnails or posters to enhance the presentation of your videos.
+- **Editable Button Text and Icons**: Personalize the text and icons for each button to match your content.
+- **Flexible Button Behavior**: Configure buttons to either play videos or link to external pages and URLs.
+- **Internal and External Linking**: Easily link buttons to internal site pages or external websites.
+- **Bubble Intro Text Customization**: Modify the introductory text within the video bubble to suit your messaging.
+- **Bubble Positioning Options**: Position the video bubble on the left or right side of the screen.
+- **Precise Positioning**: Control bubble placement with pixel (px), em, or percentage (%) values for accurate positioning on the bottom corners.
+- **Video Pausing on Tab Switch**: Automatically pause videos when users switch to a different browser tab.
+- **Customizable Colors**: Adapt all colors, including button and bubble colors, to align with your brand’s palette.
+- **Advanced Appearance Settings**: Tailor the appearance of your plugin with extensive customization options.
+- **Multiple Button Display Styles**: Choose between text-only buttons or buttons that display both an icon and text.
+- **Adjustable Button Shapes**: Select either square or rounded button styles.
+- **Border Radius Control**: Customize the border radius for buttons in rounded mode.
+- **Custom Button Colors**: Modify button backgrounds, text colors, hover effects, and hover colors for a personalized look.
+- **Custom CSS and JavaScript**: Add your own custom CSS and JavaScript directly from the plugin settings panel.
+- **Easy Settings Panel**: Manage all settings from a user-friendly, intuitive control panel.
+- **Responsive Design**: Ensures that the plugin looks perfect on any device, providing a consistent experience across desktop and mobile.
+- **Multisite Support**: Fully compatible with WordPress multisite installations.
+- **Multilingual Ready**: Easily translate the plugin into multiple languages for global use.
+- **RTL Language Support**: Compatible with right-to-left (RTL) languages.
+- **Theme Compatibility**: Works seamlessly with any WordPress theme.
+- **Developer-Friendly**: Built with developers in mind, making it easy to extend and customize.
+- **SEO Optimized**: Ensures your site remains SEO-friendly with optimized code and structure.
+- **Cross-Browser Compatibility**: Functions flawlessly across all major browsers, including IE, Firefox, Chrome, Safari, Opera, and Edge.
+- **Comprehensive Documentation & Tutorials**: Provides detailed guides and video tutorials for effortless setup and use.
+- **Fast and Responsive Support**: Enjoy quick and helpful customer support whenever you need assistance.
 
->Great developer. After purchasing the plugin, some errors were found, which the author quickly corrected. At the moment, this is the best plugin for video greetings. Works with the Avada theme 100 percent
-- By @son185
-
->😻 __for Feature Availability__
-
->Hi - this plugin is awesome, and just what I needed without monthly fees. Keep up the good work. You can see an example on my homepage here: www.firmafotografering.dk
-- By @firmafotografering
-
->😻 __for Feature Availability__
-
->This plugin is wonderful! It is possible to place different bubble videos within posts or pages. For example, on the HOME page I place bubble video 1. On the CONTACT page I place bubble video 2 and so on. We can also put up to 4 videos or links in the same bubble, which is fantastic. Bubble customization is also possible, which makes it easy to match the style of the site. The possibilities are endless and the best, without paying abusive monthly fees for it. The developer is very attentive and helpful. I loved the plugin and recommend it to anyone looking for a solution like this.
-- By @angelotaquari
-
->😻 __for Feature Other__
-
->I loved it, super simple and very useful!
-- By @mariavaleria
-
-== CORE FEATURES ==
-
-👉 Show repetative intro videos about your product or service with external buttons.
-👉 Buttons can be also use for playing different types of videos.
-👉 Drag and drop for each video item.
-👉 Default video poster can be set.
-👉 Editable button texts.
-👉 Option to add icon for buttons.
-👉 Button behavior can beh change to use another video or external link.
-👉 Link for buttons can be added from your available pages also you will able to set external link.
-👉 Bubble intro text can be change.
-👉 Position your bubble left or right.
-👉 Exact mesurment with px, em, % for positioning bubble on left bottom side or right bottom side.
-👉 Option to pause video when leaving different tab.
-👉 Options to change all colors to your own brand color.
-👉 Highly customizeable appereance options
-👉 2 different button displah type: Text only, With icon and text.
-👉 You will able to change button styles to Square or Rounded.
-👉 Border radius changing option for buttons on rounded type.
-👉 Buttons background, color, hover background and hover color can be changed.
-👉 Option to add custom CSS and JS codes from plugin option panel.
-👉 Easy and powerful settings panel
-👉 All devices are friendly so users can see this perfectly from any device.
-👉 Multisite Supported.  
-👉 Multilingual Ready.  
-👉 RTL Supported.  
-👉 Compatible with any theme.  
-👉 Developer-friendly & easy to customize.  
-👉 SEO friendly & optimized for speed.  
-👉 Support all modern browsers: IE, Firefox, Chrome, Safari, Opera, Edge, etc.
-👉 Documentation and Video Tutorials.  
-👉 Fast and Active Support.
-👉 And much more.
+This version organizes the features in a similar, professional style to the example you provided.
 
 ==== Greet 3.0 ====
 **Greet 3.0**  has completely been rebuilt and this provides you now many improvements and new amazing features.
@@ -111,23 +84,28 @@ Nice experience!
 
 == OTHER AMAZING PRODUCTS FROM ThemeAtelier ==
 
-➡️ **[Domain For Sale](https://wordpress.org/plugins/domain-for-sale/)** - The most trendy domain for sale plugin for WordPress.
+➡️ **[Domain For Sale](https://wordpress.org/plugins/domain-for-sale/)** - Transform your unused domain names into cash with this easy-to-use plugin that provides a professional template, customizable options, and a contact form for effortless selling.
 
-➡️ **[Greet – Video Bubble Warm Welcome Plugin](https://wordpress.org/plugins/greet-bubble/)** - A powerful and user-friendly video bubble plugin for WordPress that provides website owners with the opportunity to create a dynamic and engaging welcome experience for their visitors.
-
-➡️ **[BizReview](https://wordpress.org/plugins/bizreview/)** - The ultimate WordPress plugin to show Google Business and Google Place Reviews.
+➡️ **[Better WhatsApp Chat Support](https://wordpress.org/plugins/chat-help/)** -  A WordPress plugin that allows website owners to easily add a WhatsApp chat bubble to their website and comes with Gutenberg, Elementor and Shortcode options.
 
 ➡️ **[IDonate](https://wordpress.org/plugins/idonate/)** - A professional blood donation and blood request management plugin.
 
+➡️ **[Eventful – Events Showcase For The Events Calendar](https://wordpress.org/plugins/eventful/)** - Elevate your event management with this dynamic addon, enhancing 'The Events Calendar' with versatile layouts, advanced filtering, and user-friendly features for superior event showcasing.
+
+➡️ **[BizReview](https://wordpress.org/plugins/bizreview/)** - The ultimate WordPress plugin to show Google Business and Google Place Reviews.
+
 == FREQUENTLY ASKED QUESTIONS ==
+
+= Is Greet Video Bubble Plugin free? =
+Yes! Greet is completely free and will always remain so. We also offer a Pro version with additional premium features for those looking for more advanced functionality.
+	
+= Do I need coding skills to use Greet? =
+No coding skills are required! With just a few clicks, you can easily set up and start using Greet without any technical expertise.
 
 = Where do I get Support? =
 
 You can contact us trough this channels
 <a href="https://wordpress.org/support/plugin/greet-bubble/">WordPress Plugin Directory</a> || <a href="https://www.facebook.com/ThemeAtelier/">Facebook Page</a> || <a href="https://codecanyon.net/item/greetwp-video-bubble-wordpress-plugin/39588757/comments">Codecanyon</a>
-
-= Can I add more than one video? =
-In the free version you will able to add one video only. Multiple videos can be added in premium version.
 
 = Is this plugin GDPR compitible? =
 Yes, The plugin don’t save any personal data and don’t use cookies. 
@@ -135,11 +113,22 @@ Yes, The plugin don’t save any personal data and don’t use cookies.
 = Is it translation ready? =
 Yes. The plugin is totally translation ready. If it's not support in your language you need to edit it with any translation plugin.
 
-== Installation ==
 
+= Is Greet Multilingual Ready? =
+Yes, Greet is fully translation-ready and compatible with popular translation plugins like WPML, Polylang, Loco Translate, qTranslate-X, GTranslate, Google Language Translator, WPGlobus, and more.
+
+= Is Greet compatible with Multisite? =
+Absolutely! Greet works seamlessly with WordPress multisite networks.
+
+= Love this plugin and want to support its improvement? =
+If you enjoy using Greet, please consider leaving us a [5 stars rating](https://wordpress.org/support/plugin/greet-bubble/reviews/?filter=5#new-post). Your valuable feedback helps us continue improving and making Greet even better.
+
+Thank you!
+
+== Installation ==
 1. Upload plugin directory to the `/wp-content/plugins/` directory.
 2. Activate the plugin.
-3. Access Greet video menu in left panel of dashboard.
+3. Access Greet Video menu in left panel of dashboard.
 
 == Screenshots ==
 1. Fronend: Default look after adding video
@@ -153,22 +142,6 @@ Yes. The plugin is totally translation ready. If it's not support in your langua
 9. Admin: ADVANCED
 10. Admin: BACKUP
 11. Admin: Help
-
-== Who is for? ==
-====Online business====
-If you running an online business you can try this video bubble. By which you can give customers an intro about your business.
-
-====Product Marketing====
-Giving full details about the product while advertising is a worrying matter. A video bubble can help you to give a full introduction.
-
-====Health & Doctors====
-Video bubbles can help you with giving your patients a warm welcome and intro about service.
-
-====Real Estate Agents====
-Video bubbles can help you to give an intro about yourself to your audience. It will make your website looks good.
-
-====Public Figure and influencer====
-Video bubbles can help you to give an intro about yourself to your audience. It will make your website looks good.
 
 == Changelog ==
 = 4.1.6 - Sep 31, 2024 =

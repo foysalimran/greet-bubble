@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-11 05:53+0000\n"
+"POT-Creation-Date: 2024-10-11 06:12+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -20,6 +20,14 @@ msgstr ""
 
 #: src/GreetBubble.php:209, src/Admin/Admin.php:101, src/Admin/Admin.php:102
 msgid "Settings"
+msgstr ""
+
+#: src/GreetBubble.php:210
+msgid "Support"
+msgstr ""
+
+#: src/GreetBubble.php:211
+msgid "Go Pro"
 msgstr ""
 
 #: src/Admin/Admin.php:89, src/Admin/Admin.php:90, src/Admin/Views/GreetBubbleOptions.php:36, src/Admin/Views/GreetBubbleOptions.php:39
