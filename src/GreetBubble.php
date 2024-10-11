@@ -205,9 +205,12 @@ class GreetBubble
     // Plugin settings in plugin list
     public function greet_bubble_plugin_action_links(array $links)
     {
-        $url = get_admin_url() . "admin.php?page=greet-bubble#tab=general";
-        $settings_link = '<a href="' . esc_url($url) . '">' . esc_html__('Settings', 'greet-bubble') . '</a>';
-        $links[] = $settings_link;
-        return $links;
+
+        $new_links = array(
+			sprintf('<a href="' . esc_url(admin_url('admin.php?page=greet-bubble#tab=general')) . '">' . esc_html__('Settings', 'greet-bubble') . '</a>'),
+			sprintf('<a target="_blank" href="https://themeatelier.net/contact">' . esc_html__('Support', 'greet-bubble') . '</a>'),
+			sprintf('<a style="font-weight: bold;color:#7432ff" target="_blank" href="https://1.envato.market/greet">' . esc_html__('Go Pro', 'greet-bubble') . '</a>'),
+		);
+		return array_merge($new_links, $links);
     }
 }
