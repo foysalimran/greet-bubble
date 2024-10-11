@@ -205,7 +205,6 @@ class GreetBubble
     // Plugin settings in plugin list
     public function greet_bubble_plugin_action_links(array $links)
     {
-
         $new_links = array(
 			sprintf('<a href="' . esc_url(admin_url('admin.php?page=greet-bubble#tab=general')) . '">' . esc_html__('Settings', 'greet-bubble') . '</a>'),
 			sprintf('<a target="_blank" href="https://themeatelier.net/contact">' . esc_html__('Support', 'greet-bubble') . '</a>'),
