@@ -4,7 +4,7 @@ Donate link: https://1.envato.market/gbdm79
 Tags: Greetings, Video, WhatsApp, Contact Form, WooCommerce
 Requires at least: 5.0
 Tested up to: 6.6.1
-Stable tag: 4.1.5
+Stable tag: 4.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

@@ -205,7 +205,7 @@ class GreetBubble
     // Plugin settings in plugin list
     public function greet_bubble_plugin_action_links(array $links)
     {
-        $url = get_admin_url() . "admin.php?page=greet-bubble#tab=upload-video";
+        $url = get_admin_url() . "admin.php?page=greet-bubble#tab=general";
         $settings_link = '<a href="' . esc_url($url) . '">' . esc_html__('Settings', 'greet-bubble') . '</a>';
         $links[] = $settings_link;
         return $links;
